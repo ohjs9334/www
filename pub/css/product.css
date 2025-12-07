@@ -1,0 +1,57 @@
+/* --------------------
+  Reset CSS
+  -------------------- */
+@import url(./reset.css);
+@import url(./common.css);
+@import url(./layout.css);
+
+/* Font-size variable 설정 */
+:root{
+  --font48:48px;
+  --font36:36px;
+  --font32:32px;
+  --font24:24px;
+  --font18:18px;
+  --font16:16px;
+  --font14:14px;
+}
+
+/* -----------------------------------
+   제품소개 페이지
+----------------------------------- */
+.product_intro .products_wrap{}
+.product_intro .products_wrap .inner{margin: 64px auto 36px;}
+.product_intro .products_wrap .inner_visual{margin: 0 auto; display: flex;align-items: center; justify-content: center; background: url("../../pub/images/product/product_back.png") 100% / 100% no-repeat; max-width: 1680px; height: 452px;}
+.product_intro .products_wrap .inner_visual .visual_tit{font-size: var(--font48);line-height: normal;color: var(--white);text-align: center;font-weight: 700;}
+
+.product_intro .products_wrap .inner_content{}
+.product_intro .products_wrap .inner_content .content_tab_box{display: flex; align-items: center; justify-content: space-between; margin: 32px auto 24px; max-width: 1560px; box-sizing: border-box;}
+.product_intro .products_wrap .inner_content .menu_guide_left_box{display: flex;align-items: center;}
+.product_intro .products_wrap .inner_content .menu_guide_left_box{}
+.product_intro .products_wrap .inner_content .menu_guide_left_box i.guide_home{display: block;width: 18px;height: 16px;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%0A%3Csvg width='18' height='16' viewBox='0 0 18 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.9688 8C17.9688 8.5625 17.5 9 16.9688 9H15.9688L16 14C16 14.0938 16 14.1875 16 14.25V14.75C16 15.4688 15.4375 16 14.75 16H14.25C14.1875 16 14.1562 16 14.125 16C14.0938 16 14.0312 16 14 16H13H12.25C11.5312 16 11 15.4688 11 14.75V14V12C11 11.4688 10.5312 11 10 11H8C7.4375 11 7 11.4688 7 12V14V14.75C7 15.4688 6.4375 16 5.75 16H5H4C3.9375 16 3.90625 16 3.84375 16C3.8125 16 3.78125 16 3.75 16H3.25C2.53125 16 2 15.4688 2 14.75V11.25C2 11.25 2 11.2188 2 11.1875V9H1C0.4375 9 0 8.5625 0 8C0 7.71875 0.09375 7.46875 0.3125 7.25L8.3125 0.25C8.53125 0.03125 8.78125 0 9 0C9.21875 0 9.46875 0.0625 9.65625 0.21875L17.625 7.25C17.875 7.46875 18 7.71875 17.9688 8Z' fill='black'/%3E%3C/svg%3E%0A");}
+.product_intro .products_wrap .inner_content .menu_guide_left_box .menu_guide_left_text{display: block;font-size: var(--font24);line-height: 30px;color: var(--black);text-align: center;font-weight: 700; padding-left: 34px; box-sizing: border-box; position: relative;}
+.product_intro .products_wrap .inner_content .menu_guide_left_box .menu_guide_left_text::before{content: ""; display: block; clear: both; width: 7px; height: 12px; margin: 0 12px; position: absolute;left: 0;top: 50%; transform: translateY(-50%); background-repeat: no-repeat; background-position: center; background-image: url("data:image/svg+xml,%0A%3Csvg width='7' height='12' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.90625 5.1875C6.09375 5.375 6.09375 5.71875 5.90625 5.90625L0.90625 10.9062C0.71875 11.0938 0.375 11.0938 0.1875 10.9062C0 10.7188 0 10.375 0.1875 10.1875L4.84375 5.53125L0.1875 0.90625C0 0.71875 0 0.375 0.1875 0.1875C0.375 0 0.71875 0 0.90625 0.1875L5.90625 5.1875Z' fill='%236E6E6E'/%3E%3C/svg%3E%0A");}
+
+
+.product_intro .products_wrap .inner_content .product_tab{}
+.product_intro .products_wrap .inner_content .product_tab .product_tab_list{display: flex;flex-wrap: nowrap;}
+.product_intro .products_wrap .inner_content .product_tab .product_tab_list .product_tab_item{display: flex;flex-wrap: nowrap;}
+.product_intro .products_wrap .inner_content .product_tab .product_tab_list .product_tab_item span{display:block;font-size: var(--font16);line-height: 20px; font-weight: 500; color: var(--black);border-radius: 60px;box-sizing: border-box;padding: 14px 28px;}
+.product_intro .products_wrap .inner_content .product_tab .product_tab_list .product_tab_item.is-active{}
+.product_intro .products_wrap .inner_content .product_tab .product_tab_list .product_tab_item.is-active span{color: var(--white);background-color: var(--black);}
+
+
+/* -----------------------------------
+   테블릿
+----------------------------------- */
+@media (max-width:1228px) {
+
+}
+
+
+/* -----------------------------------
+   모바일
+----------------------------------- */
+@media (max-width:767px) {
+
+}
