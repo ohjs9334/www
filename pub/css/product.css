@@ -20,7 +20,7 @@
    제품소개 페이지
 ----------------------------------- */
 .product_intro .products_wrap{}
-.product_intro .products_wrap .inner{margin: 64px auto 36px;}
+.product_intro .products_wrap .inner{margin: 64px 38px 36px;}
 .product_intro .products_wrap .inner_visual{margin: 0 auto; display: flex;align-items: center; justify-content: center; background: url("../../pub/images/product/product_back.png") 100% / 100% no-repeat; max-width: 1680px; height: 452px;}
 .product_intro .products_wrap .inner_visual .visual_tit{font-size: var(--font48);line-height: normal;color: var(--white);text-align: center;font-weight: 700;}
 
