@@ -100,16 +100,14 @@ header .lnb_wrap.open{display:block;}
     .lnb_wrap .lnb_nav li .depth2 li a{display: block; color:var(--black);font-size:16px;line-height: 19px;}
     .lnb_wrap .lnb_nav .depth1 > li.active .toggle_tit .ico_arr{transform: rotateX(0);}
     .lnb_wrap .lnb_nav .depth1 > li.active .depth2{display: block;}
-
-
-
-
     
     .footer .footer_detail{min-width: auto; font-size:12px;line-height:20px}
     .footer .footer_detail .info_row{flex-wrap: wrap;}
     .footer .footer_inner{padding:36px 38px;}
     .footer .footer_company{font-size:18px;line-height:26px;}
     .footer .footer_nav ul li a{font-size:12px;line-height:22px;}
+
+    .contents{padding:65px 0 100px; min-height:800px;}
 }
 
 /* -----------------------------------
@@ -155,4 +153,6 @@ header .lnb_wrap.open{display:block;}
     .footer .footer_company{font-size:16px;line-height:24px;}
     .footer .footer_nav{display:none;}
     .footer .footer_copy {margin-top:40px;font-size:10px;line-height:12px}
+
+    .contents{padding:55px 0 100px; min-height:800px;}
 }
