@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <script src="./js/jquery.3.1.1.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/ui.js"></script>
+    <script src="./js/products.js"></script>
 </head>
 <body>
 <div class="wrap product_intro">
@@ -195,27 +198,34 @@
                         <!-- 제품 카테고리 탭 (워터펌프 / 오일펌프 …) -->
                         <ul class="product_tab_list" role="tablist">
                             <li class="product_tab_item is-active">
-                                <button type="button" class="product_tab_btn" data-target="tab-waterpump" role="tab" aria-selected="true">
+                                <button type="button" class="product_tab_btn"
+                                        data-target="tab-waterpump" role="tab" aria-selected="true">
                                     <span>워터펌프</span>
                                 </button>
                             </li>
                             <li class="product_tab_item">
-                                <button type="button" class="product_tab_btn" data-target="tab-oilpump" role="tab" aria-selected="false">
+                                <button type="button" class="product_tab_btn"
+                                        data-target="tab-oilpump" role="tab" aria-selected="false">
                                     <span>오일펌프</span>
                                 </button>
                             </li>
                             <li class="product_tab_item">
-                                <button type="button" class="product_tab_btn" data-target="tab-thermostat" role="tab" aria-selected="false">
+                                <button type="button" class="product_tab_btn"
+                                        data-target="tab-thermostat" role="tab"
+                                        aria-selected="false">
                                     <span>써모스탯</span>
                                 </button>
                             </li>
                             <li class="product_tab_item">
-                                <button type="button" class="product_tab_btn" data-target="tab-tensioner" role="tab" aria-selected="false">
+                                <button type="button" class="product_tab_btn"
+                                        data-target="tab-tensioner" role="tab"
+                                        aria-selected="false">
                                     <span>텐셔너</span>
                                 </button>
                             </li>
                             <li class="product_tab_item">
-                                <button type="button" class="product_tab_btn" data-target="tab-idler" role="tab" aria-selected="false">
+                                <button type="button" class="product_tab_btn"
+                                        data-target="tab-idler" role="tab" aria-selected="false">
                                     <span>아이들러</span>
                                 </button>
                             </li>
@@ -225,11 +235,212 @@
                 <div class="content_search_box">
                     <form class="product_search_form" action="" method="get">
                         <label for="productKeyword" class="blind">제품 검색</label>
-                        <input id="productKeyword" name="keyword" type="text" class="product_search_input" placeholder="찾는 제품명을 입력해 주세요.">
+                        <input id="productKeyword" name="keyword" type="text"
+                               class="product_search_input" placeholder="찾는 제품명을 입력해 주세요.">
                         <button type="submit" class="product_search_btn">검색</button>
                     </form>
                 </div>
             </section>
+            <!-- 탭별 컨텐츠 -->
+            <main class="product_tab_panels">
+                <div class="product_tab_result">
+                    <strong>워터펌프</strong>
+                    <p>
+                        실린더 블록 물 재킷 부위에 볼트로 체결되며, 벨트 또는 기어에 의해 크랭크축의 구동력을 전달받아<br>
+                        냉각수를 순환시켜 엔진에서 발생하는 열을 감소시키는 제품입니다.
+                    </p>
+                </div>
+                <section id="tab-waterpump" class="product_tab_panel is-active">
+                    <!-- 워터펌프 탭 -->
+                    <!-- 제품 메인 슬라이더 + 썸네일 묶음 -->
+                    <section class="product_main_area">
+                        <div class="product_main_inner">
+                            <!-- 메인 카드 스와이퍼 -->
+                            <div class="swiper product_main_swiper">
+                                <div class="swiper-wrapper">
+
+                                    <!-- 1번 제품 -->
+                                    <div class="swiper-slide">
+                                        <article class="product_card">
+                                            <div class="product_card_img">
+                                                <img src="./images/product/main01.jpg"
+                                                     alt="Auto Water Pump 제품 이미지 1">
+                                            </div>
+                                            <div class="product_card_info">
+                                                <p class="product_card_category">워터펌프</p>
+                                                <h3 class="product_card_title">Auto Water Pump
+                                                    For HYUNDAI/KIA</h3>
+                                                <p class="product_card_oem">OEM : 2151023001</p>
+
+                                                <dl class="product_card_spec_list">
+                                                    <div class="product_card_spec_item">
+                                                        <dt>제품크기</dt>
+                                                        <dd>56 × 58 × 129 cm</dd>
+                                                    </div>
+                                                    <div class="product_card_spec_item">
+                                                        <dt>제품무게</dt>
+                                                        <dd>7.4kg</dd>
+                                                    </div>
+                                                    <div class="product_card_spec_item">
+                                                        <dt>작동방식</dt>
+                                                        <dd>Auto, Manual</dd>
+                                                    </div>
+                                                    <div class="product_card_spec_item">
+                                                        <dt>무게</dt>
+                                                        <dd>SLAM</dd>
+                                                    </div>
+                                                </dl>
+
+                                                <button type="button" class="product_card_btn">
+                                                    제품 카탈로그 보기
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <!-- 2번 제품 -->
+                                    <div class="swiper-slide">
+                                        <article class="product_card">
+                                            <div class="product_card_img">
+                                                <img src="./images/product/main02.jpg"
+                                                     alt="Auto Water Pump 제품 이미지 2">
+                                            </div>
+                                            <div class="product_card_info">
+                                                <p class="product_card_category">워터펌프</p>
+                                                <h3 class="product_card_title">Auto Water Pump
+                                                    For KIA SUV</h3>
+                                                <p class="product_card_oem">OEM : 2151023002</p>
+
+                                                <dl class="product_card_spec_list">
+                                                    <div class="product_card_spec_item">
+                                                        <dt>제품크기</dt>
+                                                        <dd>60 × 60 × 130 cm</dd>
+                                                    </div>
+                                                    <div class="product_card_spec_item">
+                                                        <dt>제품무게</dt>
+                                                        <dd>7.8kg</dd>
+                                                    </div>
+                                                    <div class="product_card_spec_item">
+                                                        <dt>작동방식</dt>
+                                                        <dd>Auto</dd>
+                                                    </div>
+                                                    <div class="product_card_spec_item">
+                                                        <dt>무게</dt>
+                                                        <dd>SLAM</dd>
+                                                    </div>
+                                                </dl>
+
+                                                <button type="button" class="product_card_btn">
+                                                    제품 카탈로그 보기
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                    <!-- 3번 제품 … 필요만큼 복제해서 추가 -->
+                                    <div class="swiper-slide">
+                                        <article class="product_card">
+                                            <div class="product_card_img">
+                                                <img src="./images/product/main03.jpg"
+                                                     alt="Auto Water Pump 제품 이미지 3">
+                                            </div>
+                                            <div class="product_card_info">
+                                                <p class="product_card_category_title">워터펌프</p>
+                                                <h3 class="product_card_title">Auto Water Pump
+                                                    Premium Line</h3>
+                                                <p class="product_card_oem">OEM : 2151023003</p>
+
+                                                <dl class="product_card_spec_list">
+                                                    <div class="product_card_spec_item">
+                                                        <dt>제품크기</dt>
+                                                        <dd>58 × 60 × 132 cm</dd>
+                                                    </div>
+                                                    <div class="product_card_spec_item">
+                                                        <dt>제품무게</dt>
+                                                        <dd>8.0kg</dd>
+                                                    </div>
+                                                    <div class="product_card_spec_item">
+                                                        <dt>작동방식</dt>
+                                                        <dd>Manual</dd>
+                                                    </div>
+                                                    <div class="product_card_spec_item">
+                                                        <dt>무게</dt>
+                                                        <dd>SLAM</dd>
+                                                    </div>
+                                                </dl>
+
+                                                <button type="button" class="product_card_btn">
+                                                    <span>제품 카탈로그 보기</span>
+                                                </button>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                </div>
+
+                                <!-- 좌우 화살표 (메인 카드) -->
+                                <div class="swiper-button-prev product_main_prev"></div>
+                                <div class="swiper-button-next product_main_next"></div>
+                            </div>
+
+                            <!-- 하단 썸네일 스와이퍼 -->
+                            <div class="swiper product_thumb_swiper">
+                                <div class="swiper-wrapper">
+
+                                    <!-- 1번 제품 썸네일 -->
+                                    <div class="swiper-slide">
+                                        <button type="button" class="product_thumb_item">
+                                                <span class="product_thumb_img">
+                                                  <img src="./images/product/main01.jpg" alt="Auto Water Pump 썸네일 1">
+                                                </span>
+                                            <span class="product_thumb_name">Auto Water Pump Auto<br>Water Pump Auto</span>
+                                        </button>
+                                    </div>
+
+                                    <!-- 2번 제품 썸네일 -->
+                                    <div class="swiper-slide">
+                                        <button type="button" class="product_thumb_item">
+                                                <span class="product_thumb_img">
+                                                  <img src="./images/product/main02.jpg" alt="Auto Water Pump 썸네일 2">
+                                                </span>
+                                            <span class="product_thumb_name">Auto Water Pump KIA<br>Water Pump Auto</span>
+                                        </button>
+                                    </div>
+
+                                    <!-- 3번 제품 썸네일 -->
+                                    <div class="swiper-slide">
+                                        <button type="button" class="product_thumb_item">
+                                                <span class="product_thumb_img">
+                                                  <img src="./images/product/main03.jpg" alt="Auto Water Pump 썸네일 3">
+                                                </span>
+                                            <span class="product_thumb_name">Auto Water Pump Premium<br>Water Pump Auto</span>
+                                        </button>
+                                    </div>
+
+                                    <!-- 필요만큼 계속 추가 -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                </section>
+
+                <section id="tab-oilpump" class="product_tab_panel">
+                    <!-- 오일펌프 탭 -->
+                </section>
+
+                <section id="tab-thermostat" class="product_tab_panel">
+                    <!-- 써모스탯 탭 -->
+                </section>
+
+                <section id="tab-tensioner" class="product_tab_panel">
+                    <!-- 텐셔너 탭 -->
+                </section>
+
+                <section id="tab-idler" class="product_tab_panel">
+                    <!-- 아이들러 탭 -->
+                </section>
+            </main>
         </div>
     </div>
 
