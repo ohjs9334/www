@@ -46,3 +46,15 @@
 .btn_round a,
 .btn_round button{color:var(--black);padding:0 32px}
 
+@media (min-width:768px) and (max-width:1228px) {
+    .btn_round{height:48px;line-height:46px;font-size:16px}
+    .btn_round a,
+    .btn_round button{padding:0 26px}
+}
+
+
+@media (max-width:767px) {
+    .btn_round{height:42px;line-height:40px;font-size:14px}
+    .btn_round a,
+    .btn_round button{padding:0 22px}
+}
