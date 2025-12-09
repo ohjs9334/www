@@ -47,10 +47,66 @@
 .btn_round a,
 .btn_round button{color:var(--black);padding:0 32px}
 
+
+/* 상세페이지 */
+.cont_detail_wrap{max-width:1920px;margin:0 auto;padding:80px 180px 100px;box-sizing: border-box;}
+.detail_header{text-align:center;padding:100px 0 64px;border-bottom:1px solid #e2e2e2;box-sizing: border-box;}
+.detail_header .detail_info{display: flex;gap:24px;justify-content: center;}
+.detail_header .detail_info .cate_txt{font-size:18px;color:var(--black);font-weight:700}
+.detail_header .detail_info .date_txt{font-size:18px;color:var(--black);font-weight:400}
+.detail_header .detail_tit{margin-top:24px;font-size:48px;color:var(--black);font-weight:700;line-height: 62px;word-break: keep-all;overflow-wrap: break-word;}
+.detail_header .social_list{display: flex;gap:16px;justify-content: center;margin-top:64px}
+.detail_header .social_list .social_item a{display: block;width:48px;height:48px;border:1px solid var(--black);border-radius:50%;}
+.detail_header .social_list .social_item.facebook a{background: url(../images/ico_facebook.png) 50% 50% / 12px 18px no-repeat;}
+.detail_header .social_list .social_item.naver a{background: url(../images/ico_naver.png) 50% 50% / 14px 14px no-repeat;}
+.detail_header .social_list .social_item.kakao a{background: url(../images/ico_kakao.png) 50% 50% / 30px 30px no-repeat;}
+.detail_header .social_list .social_item.link a{background: url(../images/ico_link.png) 50% 50% / 22px 17px no-repeat;}
+
+.detail_body{margin:0 auto;padding:100px 0;max-width: 1032px;box-sizing: border-box;}
+.detail_body .detail_media{margin:0 auto;width: 100%; max-height:580px;text-align: center;}
+.detail_body .detail_media img{width: 100%; height:100%;}
+.detail_body .txt_area{margin-top:36px}
+.detail_body .txt_area .detail_section p{color:var(--black);font-size:18px;line-height: 28px;}
+.detail_body .txt_area .detail_section ~ .detail_section{margin-top:28px}
+.detail_body .detail_meta{margin-top:100px}
+.detail_body .detail_meta .meta_tags{display: flex;gap:16px;color:#6e6e6e;font-size:16px}
+.detail_body .meta_source{margin-top:24px;display: flex;gap:16px;color:#6e6e6e}
+.detail_body .meta_source .meta_label{font-size:16px;font-weight:700;}
+.detail_body .meta_source .meta_value{font-size:16px;}
+
+.detail_footer{padding-top:64px;text-align:center;border-top:1px solid #e2e2e2;box-sizing: border-box;}
+
+
 @media (min-width:768px) and (max-width:1228px) {
     .btn_round{height:48px;line-height:46px;font-size:16px}
     .btn_round a,
     .btn_round button{padding:0 26px}
+
+    /* 상세페이지 */
+    .cont_detail_wrap{padding:64px 38px;box-sizing: border-box;}
+    .detail_header{padding:64px 0 36px}
+    .detail_header .detail_info{gap:16px}
+    .detail_header .detail_info .cate_txt,
+    .detail_header .detail_info .date_txt{font-size:14px}
+    .detail_header .detail_tit{margin-top:16px;font-size:32px;line-height: 42px}
+    .detail_header .social_list{gap:14px;margin-top:36px}
+    .detail_header .social_list .social_item a{display: block;width:42px;height:42px}
+    .detail_header .social_list .social_item.facebook a{background-size: 10px 16px;}
+    .detail_header .social_list .social_item.naver a{background-size: 12px 12px;}
+    .detail_header .social_list .social_item.kakao a{background-size: 26px 26px;}
+    .detail_header .social_list .social_item.link a{background-size: 19px 15px;}
+
+    .detail_body{padding:36px 0 65px}
+    .detail_body .txt_area{margin-top:24px}
+    .detail_body .txt_area .detail_section p{font-size:16px;line-height: 24px;}
+    .detail_body .txt_area .detail_section ~ .detail_section{margin-top:24px}
+    .detail_body .detail_meta{margin-top:64px}
+    .detail_body .detail_meta .meta_tags{font-size:14px}
+    .detail_body .meta_source{margin-top:12px;gap:12px}
+    .detail_body .meta_source .meta_label,
+    .detail_body .meta_source .meta_value{font-size:14px;}
+
+    .detail_footer{padding-top:36px}
 }
 
 
@@ -58,4 +114,30 @@
     .btn_round{height:42px;line-height:40px;font-size:14px}
     .btn_round a,
     .btn_round button{padding:0 22px}
+
+    /* 상세페이지 */
+    .cont_detail_wrap{padding:56px 24px 36px}
+    .detail_header{padding:36px 0 24px}
+    .detail_header .detail_info{gap:12px}
+    .detail_header .detail_info .cate_txt,
+    .detail_header .detail_info .date_txt{font-size:13px}
+    .detail_header .detail_tit{margin-top:14px;font-size:20px;line-height:28px}
+    .detail_header .social_list{gap:12px;margin-top:24px}
+    .detail_header .social_list .social_item a{display: block;width:36px;height:36px}
+    .detail_header .social_list .social_item.facebook a{background-size: 10px 15px;}
+    .detail_header .social_list .social_item.naver a{background-size: 11px 11px;}
+    .detail_header .social_list .social_item.kakao a{background-size: 22px 22px;}
+    .detail_header .social_list .social_item.link a{background-size: 17px 13px;}
+
+    .detail_body{padding:24px 0 36px}
+    .detail_body .txt_area{margin-top:12px}
+    .detail_body .txt_area .detail_section p{font-size:14px;line-height: 20px;}
+    .detail_body .txt_area .detail_section ~ .detail_section{margin-top:20px}
+    .detail_body .detail_meta{margin-top:36px}
+    .detail_body .detail_meta .meta_tags{font-size:12px}
+    .detail_body .meta_source{margin-top:8px;gap:8px}
+    .detail_body .meta_source .meta_label,
+    .detail_body .meta_source .meta_value{font-size:12px;}
+
+    .detail_footer{padding-top:24px}
 }
