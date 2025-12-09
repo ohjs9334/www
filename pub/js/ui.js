@@ -104,23 +104,19 @@ $(function(){
 
         /* 썸네일 스와이퍼 (워터펌프 모델들) */
         const thumbSwiper = new Swiper(".product_thumb_swiper", {
-            slidesPerView: 7,            // 데스크탑 기준 한 화면에 보이는 개수
-            spaceBetween: 24,
-            freeMode: true,              // 드래그로 부드럽게 이동
-            slideToClickedSlide: true,   // 썸네일 클릭 시 메인으로 이동
-            watchSlidesProgress: true,
+            slidesPerView: 'auto',
+            spaceBetween: 12,
             breakpoints: {
                 0: {
                     slidesPerView: 2,
-                    spaceBetween: 12,
                 },
                 768: {
                     slidesPerView: 3,
-                    spaceBetween: 12,
-                },
-                1229: {
-                    slidesPerView: 5,
                     spaceBetween: 16,
+                },
+                1228: {
+                    slidesPerView: 2,
+                    spaceBetween: 12,
                 },
             },
         });
@@ -161,6 +157,10 @@ $(function(){
         $(".modal_overlay").hide();
         $(".modal_practice").removeClass("open").hide();
     });
-
+    
+    // inner tab list 터치무
+    $('.inner_tab_list').on('touchmove', function (e) {
+        e.stopPropagation(); 
+    });
 
 });
