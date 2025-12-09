@@ -1,4 +1,15 @@
+function toggleRTL() {
+  document.querySelectorAll('p, span, strong, em, a, li, h1, h2, h3, h4, h5, h6, button, label').forEach(el => {
+
+    const hasImage = el.querySelector('img, svg, video, canvas');
+
+    if (!hasImage && el.textContent.trim() !== '') {
+      el.classList.toggle('rtl_txt');
+    }
+  });
+}
 $(function(){
+ 
     function setPcHeader() {
         if ($(window).width() >= 1229) {
             $(".header_area").off("mouseenter mouseleave")
