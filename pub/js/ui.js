@@ -70,16 +70,16 @@ $(function(){
 
 
     // 제품소개 탭 버튼
-    $(".product_tab_btn").on("click", function () {
+    $(".inner_tab_btn").on("click", function () {
 
         // 탭 버튼(li)의 is-active 처리
-        $(".product_tab_item").removeClass("is-active");
-        $(this).closest(".product_tab_item").addClass("is-active");
+        $(".inner_tab_item").removeClass("is-active");
+        $(this).closest(".inner_tab_item").addClass("is-active");
 
         // 탭 패널 전환
         const target = $(this).data("target");
 
-        $(".product_tab_panel").removeClass("is-active");
+        $(".inner_tab_panel").removeClass("is-active");
         $("#" + target).addClass("is-active");
 
     });
@@ -87,29 +87,41 @@ $(function(){
     // 제품소개 스와이퍼 부분
     /* 썸네일 스와이퍼 (워터펌프 모델들) */
     let thumbSwiper = new Swiper(".product_thumb_swiper", {
-        loop: true,
+        loop: false,
         spaceBetween: 8,
-        slidesPerView: 5,
-        freeMode: true,
+        slidesPerView: 8,
         watchSlidesProgress: true,
         breakpoints: {
-            1229: { slidesPerView: 6 },
-            768:  { slidesPerView: 5 },
-            480:  { slidesPerView: 4 },
-            0:    { slidesPerView: 3 }
+            1229: { slidesPerView: 7 },
+            768:  { slidesPerView: 4 },
+            480:  { slidesPerView: 3 },
+            0:    { slidesPerView: 2 }
         }
     });
 
     /* 메인 카드 스와이퍼 (워터펌프 모델들 상세) */
     let mainSwiper = new Swiper(".product_main_swiper", {
-        loop: true,
+        loop: false,
+        effect: "fade",
+        fadeEffect: {
+            crossFade: true
+        },
+        speed: 200,
         spaceBetween: 0,
         navigation: {
             nextEl: ".product_main_next",
             prevEl: ".product_main_prev"
         },
         thumbs: {
-            swiper: thumbSwiper
+            swiper: thumbSwiper,
+            // 활성 슬라이드 근처로 썸네일을 자동 스크롤
+            autoScrollOffset: 1
+        },
+        on: {
+            slideChange: function () {
+                const idx = this.realIndex != null ? this.realIndex : this.activeIndex;
+                thumbSwiper.slideTo(idx);
+            }
         }
     });
 
