@@ -182,67 +182,66 @@
         <section class="inner_visual">
             <div class="visual_inner">
                 <h2 class="visual_tit">제품소개</h2>
-            </div>
-        </section>
-        <section class="inner_content">
-           <div class="section_inner">
-               <!--  메뉴박스  -->
-               <div class="content_tab_box">
-                   <!--  홈메뉴 & 현재 페이지 네임  -->
-                   <div class="menu_guide_left_box">
-                       <a href="javascript:void(0);" class="guide_home_link">
-                           <i class="guide_home"></i>
-                       </a>
-                       <span class="menu_guide_left_text">제품소개</span>
-                   </div>
-                   <div class="inner_tab">
-                       <!-- 제품 카테고리 탭 (워터펌프 / 오일펌프 …) -->
-                       <ul class="inner_tab_list" role="tablist">
-                           <li class="inner_tab_item is-active">
-                               <button type="button" class="inner_tab_btn"
-                                       data-target="tab-waterpump" role="tab" aria-selected="true">
-                                   <span>워터펌프</span>
-                               </button>
-                           </li>
-                           <li class="inner_tab_item">
-                               <button type="button" class="inner_tab_btn"
-                                       data-target="tab-oilpump" role="tab" aria-selected="false">
-                                   <span>오일펌프</span>
-                               </button>
-                           </li>
-                           <li class="inner_tab_item">
-                               <button type="button" class="inner_tab_btn"
-                                       data-target="tab-thermostat" role="tab"
-                                       aria-selected="false">
-                                   <span>써모스탯</span>
-                               </button>
-                           </li>
-                           <li class="inner_tab_item">
-                               <button type="button" class="inner_tab_btn"
-                                       data-target="tab-tensioner" role="tab"
-                                       aria-selected="false">
-                                   <span>텐셔너</span>
-                               </button>
-                           </li>
-                           <li class="inner_tab_item">
-                               <button type="button" class="inner_tab_btn"
-                                       data-target="tab-idler" role="tab" aria-selected="false">
-                                   <span>아이들러</span>
-                               </button>
-                           </li>
-                       </ul>
-                   </div>
-               </div>
-               <div class="content_search_box">
-                   <form class="inner_search_form" action="" method="get">
-                       <label for="innerKeyword" class="blind">제품 검색</label>
-                       <input id="innerKeyword" name="keyword" type="text"
-                              class="inner_search_input" placeholder="찾는 제품명을 입력해 주세요.">
-                       <button type="submit" class="inner_search_btn">검색</button>
-                   </form>
-               </div>
-           </div>
-        </section>
+            </section>
+            <section class="inner_content">
+                <!--  메뉴박스  -->
+                <div class="content_tab_box">
+                    <!--  홈메뉴 & 현재 페이지 네임  -->
+                    <div class="breadcrumb">
+                        <a href="javascript:void(0);" class="guide_home_link">
+                            <i class="guide_home"></i>
+                        </a>
+                        <span class="breadcrumb_current">제품소개</span>
+                    </div>
+                    <div class="inner_tab">
+                        <!-- 제품 카테고리 탭 (워터펌프 / 오일펌프 …) -->
+                        <ul class="inner_tab_list" role="tablist">
+                            <li class="inner_tab_item is-active">
+                                <button type="button" class="inner_tab_btn"
+                                        data-target="tab-waterpump" role="tab" aria-selected="true">
+                                    <span>워터펌프</span>
+                                </button>
+                            </li>
+                            <li class="inner_tab_item">
+                                <button type="button" class="inner_tab_btn"
+                                        data-target="tab-oilpump" role="tab" aria-selected="false">
+                                    <span>오일펌프</span>
+                                </button>
+                            </li>
+                            <li class="inner_tab_item">
+                                <button type="button" class="inner_tab_btn"
+                                        data-target="tab-thermostat" role="tab"
+                                        aria-selected="false">
+                                    <span>써모스탯</span>
+                                </button>
+                            </li>
+                            <li class="inner_tab_item">
+                                <button type="button" class="inner_tab_btn"
+                                        data-target="tab-tensioner" role="tab"
+                                        aria-selected="false">
+                                    <span>텐셔너</span>
+                                </button>
+                            </li>
+                            <li class="inner_tab_item">
+                                <button type="button" class="inner_tab_btn"
+                                        data-target="tab-idler" role="tab" aria-selected="false">
+                                    <span>아이들러</span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content_search_box">
+                    <form class="inner_search_form" action="" method="get">
+                        <label for="innerKeyword" class="blind">제품 검색</label>
+                        <input id="innerKeyword" name="keyword" type="text"
+                               class="inner_search_input" placeholder="찾는 제품명을 입력해 주세요.">
+                        <button type="submit" class="inner_search_btn">검색</button>
+                    </form>
+                </div>
+            </section>
+
+        </div>
         <!-- 탭별 컨텐츠 -->
         <main class="product_tab_panels">
             <section id="tab-waterpump" class="inner_tab_panel is-active">

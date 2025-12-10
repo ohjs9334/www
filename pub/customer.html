@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>뉴오토정밀 - 홍보센터</title>
+    <title>뉴오토정밀 - 고객지원</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/pr_center.css">
+    <link rel="stylesheet" href="./css/customer.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <script src="./js/jquery.3.1.1.js"></script>
     <script src="./js/ui.js"></script>
@@ -176,15 +176,13 @@
     </header>
 
     <!--  컨텐츠  -->
-    <div class="contents pr_wrap">
-        <!--  백그라운드 비주얼  -->
-        <section class="inner_visual">
-            <div class="visual_inner">
-                <h2 class="visual_tit">제품소개</h2>
-            </div>
-        </section>
-        <section class="inner_content">
-            <div class="section_inner">
+    <div class="contents customer_wrap">
+        <div class="inner">
+            <!--  백그라운드 비주얼  -->
+            <section class="inner_visual">
+                <h2 class="visual_tit">고객지원</h2>
+            </section>
+            <section class="inner_content">
                 <!--  메뉴박스  -->
                 <div class="content_tab_box">
                     <!--  홈메뉴 & 현재 페이지 네임  -->
@@ -192,118 +190,54 @@
                         <a href="javascript:void(0);" class="guide_home_link">
                             <i class="guide_home"></i>
                         </a>
-                        <span class="breadcrumb_current">홍보센터</span>
+                        <span class="breadcrumb_current">고객지원</span>
                     </div>
                     <div class="inner_tab">
                         <!-- 홍보센터 탭 리스트 -->
                         <ul class="inner_tab_list" role="tablist">
                             <li class="inner_tab_item is-active">
-                                <button type="button" class="inner_tab_btn"
-                                        id="tab-btn-exhibition"
-                                        data-target="panel-exhibition"
-                                        role="tab"
-                                        aria-selected="true">
-                                    <span>전시회 참가</span>
+                                <button type="button" class="inner_tab_btn" id="tab-btn-inquiry" data-target="panel-inquiry" role="tab" aria-selected="true">
+                                    <span>INQUIRY</span>
                                 </button>
                             </li>
                             <li class="inner_tab_item">
-                                <button type="button" class="inner_tab_btn"
-                                        id="tab-btn-catalog"
-                                        data-target="panel-catalog"
-                                        role="tab"
-                                        aria-selected="false">
-                                    <span>카탈로그</span>
+                                <button type="button" class="inner_tab_btn" id="tab-btn-notice" data-target="panel-notice" role="tab" aria-selected="false">
+                                    <span>공지사항</span>
                                 </button>
                             </li>
                             <li class="inner_tab_item">
-                                <button type="button" class="inner_tab_btn"
-                                        id="tab-btn-news"
-                                        data-target="panel-news"
-                                        role="tab"
-                                        aria-selected="false">
-                                    <span>뉴스</span>
+                                <button type="button" class="inner_tab_btn" id="tab-btn-clients" data-target="panel-clients" role="tab" aria-selected="false">
+                                    <span>주요 고객사</span>
                                 </button>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <!-- 검색 -->
-                <div class="content_search_box">
-                    <form class="inner_search_form" action="" method="get">
-                        <label for="innerKeyword" class="blind">검색</label>
-                        <input id="innerKeyword" name="keyword" type="text"
-                               class="inner_search_input" placeholder="검색어를 입력해 주세요.">
-                        <button type="submit" class="inner_search_btn">검색</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- 메인 콘텐츠: 탭 패널 묶음 -->
-        <main class="pr_tab_panels">
-            <!-- 전시회 참가 패널 -->
-            <section id="panel-exhibition" class="inner_tab_panel is-active">
-                <div class="pr_list_section js-more-wrap" data-more-step="5">
-                    <ul class="pr_list">
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link" target="_blank">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">전시회 참가</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 압력수 등 다양한 기초를 기반으로 차량용 부품을
-                                        제작하고 있습니다. 워터펌프와 오일펌프 등 다양한 제품군을 구성하여
-                                        고객의 다양한 요구를 만족시키고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- 더보기 버튼 -->
-                    <div class="pr_list_more">
-                        <button type="button"
-                                class="btn_more js-more-btn">
-                            <span>더 보기</span>
-                        </button>
-                    </div>
-                </div>
             </section>
 
-            <!-- 카탈로그 패널 -->
-            <section id="panel-catalog" class="inner_tab_panel">
-            </section>
+            <!-- 메인 콘텐츠: 탭 패널 묶음 -->
+            <main class="customer_tab_panels_wrap">
 
-            <!-- 뉴스 패널 -->
-            <section id="panel-news" class="inner_tab_panel">
-                <!-- 뉴스 전용 클래스 분기 사용 -->
-                <div class="pr_list_section pr_list_section--news js-more-wrap"
-                     data-more-step="5">
+                <!-- INQUIRY -->
+                <section id="panel-inquiry" class="inner_tab_panel is-active" role="tabpanel" aria-labelledby="tab-btn-inquiry">
+                    
+                </section>
+                <!-- //INQUIRY -->
 
-                    <ul class="pr_list">
-                        <li class="pr_item js-more-item">…</li>
-                    </ul>
+                <!-- 공지사항 -->
+                <section id="panel-notice" class="inner_tab_panel" role="tabpanel" aria-labelledby="tab-btn-notice">
+                    2
+                </section>
+                <!-- //공지사항 -->
 
-                    <div class="pr_list_more">
-                        <button type="button"
-                                class="btn_more js-more-btn">
-                            <span>더 보기</span>
-                        </button>
-                    </div>
-                </div>
-            </section>
+                <!-- 주요 고객사 -->
+                <section id="panel-clients" class="inner_tab_panel" role="tabpanel" aria-labelledby="tab-btn-clients">
+                    3
+                </section>
+                <!-- //주요 고객사 -->
+            </main>
 
-        </main>
+        </div>
     </div>
 
     <!--   푸터   -->
@@ -344,40 +278,4 @@
 
 </div>
 </body>
-<script>
-  /* -----------------------------
-     공통: 리스트 더보기
-    --------------------------- */
-  $('.js-more-wrap').each(function () {
-    const $wrap = $(this);
-    const $items = $wrap.find('.js-more-item');
-    const $btn = $wrap.find('.js-more-btn');
-    const $moreArea = $wrap.find('.pr_list_more');
-
-    // 기본 5개씩 펼쳐지도록, data-more-step 으로 개별 설정 가능
-    const step = parseInt($wrap.data('more-step'), 10) || 5;
-    let shown = step;
-
-    // 처음 상태 세팅
-    $items.hide().slice(0, shown).show();
-
-    // 처음부터 전체 개수보다 적으면 "영역 전체" 숨김
-    if (shown >= $items.length) {
-      $moreArea.hide();   // ← $btn.hide() 말고 이걸로!
-    }
-
-    // 더보기 클릭
-    $btn.on('click', function (e) {
-      e.preventDefault();
-
-      shown += step;
-      $items.slice(0, shown).fadeIn(200);
-
-      // 버튼 불 필요한 상황 시, 버튼 영역 숨김
-      if (shown >= $items.length) {
-        $moreArea.hide();
-      }
-    });
-  });
-</script>
 </html>
