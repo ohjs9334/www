@@ -8,6 +8,7 @@
 /* -----------------------------------
    제품소개 페이지
 ----------------------------------- */
+.contents.products_wrap{overflow: hidden;}
 .inner{margin: 64px 120px 36px;}
 .interval_wrap{margin: 0 120px;}
 .interval_wrap.sub{margin: 0 16px 0 38px;}
@@ -80,23 +81,24 @@
 .product_main_next::before{display: block;content: "";width: 52px;height: 52px;background-size: 52px 52px;background-repeat: no-repeat;background-position: center;background-image: url("data:image/svg+xml,%0A%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='51' height='51' rx='25.5' stroke='black'/%3E%3Cpath d='M31.2969 25.2031C31.7188 25.6719 31.7188 26.375 31.2969 26.7969L23.7969 34.2969C23.3281 34.7656 22.625 34.7656 22.2031 34.2969C21.7344 33.875 21.7344 33.1719 22.2031 32.75L28.9062 26.0469L22.2031 19.2969C21.7344 18.875 21.7344 18.1719 22.2031 17.75C22.625 17.2812 23.3281 17.2812 23.75 17.75L31.2969 25.2031Z' fill='black'/%3E%3C/svg%3E%0A");}
 
 /* 썸네일 라인업 */
-.product_thumb_swiper{border-radius:20px;background:#fff;margin-left: 142px;padding-right: 16px;box-sizing: border-box;}
+.product_thumb_swiper{border-radius:20px;background:#fff;box-sizing: border-box;padding-right: 16px;}
 .product_thumb_swiper .swiper-wrapper{align-items:stretch;}
 /* 추가 */
 .product_thumb_swiper .swiper-slide{display:flex;}
 .product_thumb_swiper .swiper-slide .product_thumb_item{display:flex;flex-direction:column;justify-content:space-between;height:100%;}
 
 /* 한 개 썸네일의 기본 폭 */
-.product_thumb_swiper .swiper-slide{width:180px; border:1px solid #E2E2EC;border-radius: 20px;overflow: hidden;padding: 16px;box-sizing: border-box;cursor: pointer;}
+.product_thumb_swiper .swiper-slide{border:1px solid #E2E2EC;border-radius: 20px;overflow: hidden;padding: 16px;box-sizing: border-box;cursor: pointer;}
 .product_thumb_swiper .swiper-slide-thumb-active{border:1px solid var(--black);border-radius: 20px;}
 .product_thumb_item{display:flex;flex-direction:column;align-items:flex-start;width:100%;gap: 16px;}
 .product_thumb_img{display:flex;justify-content: center;width:100%;height:136px;overflow:hidden;}
 .product_thumb_img img{width:136px;height:136px;object-fit:cover;display:block;}
-.product_thumb_name{display: -webkit-box;height: 40px;font-size:var(--font18);line-height:26px;font-weight: 700;text-align: left;word-break: break-all;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+.product_thumb_name{display: -webkit-box;font-size:var(--font18);height: 52px; line-height:26px;font-weight: 700;text-align: left;word-break: break-all;overflow:hidden;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
 
 /* -----------------------------------
    테블릿
 ----------------------------------- */
+
 
 @media (max-width:1228px) {
   .inner{margin: 36px 36px 64px;}
@@ -126,6 +128,7 @@
   .product_main_prev,
   .product_main_next{display: none !important;}
   .product_thumb_swiper{margin-left: 0;}
+  .product_thumb_swiper .swiper-wrapper{padding-left: 38px;padding-right: 16px;}
   .product_thumb_swiper .product_thumb_img{height: 108px;}
   .product_thumb_swiper .product_thumb_img img{width: 108px;height: 108px;}
   .product_thumb_swiper .swiper-slide{padding: 12px;}
@@ -175,6 +178,6 @@
   .product_thumb_swiper .swiper-slide{padding: 8px;border-radius: 8px;}
   .product_thumb_swiper .swiper-slide .product_thumb_item{gap: 8px;}
   .product_thumb_swiper .product_thumb_name{font-size: 13px;line-height:18px;}
-
+  .product_thumb_swiper .swiper-wrapper{padding-left: 16px;padding-right: 8px;}
 }
 

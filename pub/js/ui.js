@@ -107,15 +107,16 @@ $(function(){
             slidesPerView: 'auto',
             spaceBetween: 12,
             breakpoints: {
-                0: {
+                280: {
                     slidesPerView: 2,
+                    spaceBetween: 12,
                 },
                 768: {
                     slidesPerView: 3,
                     spaceBetween: 16,
                 },
                 1228: {
-                    slidesPerView: 2,
+                    slidesPerView: 6,
                     spaceBetween: 12,
                 },
             },
