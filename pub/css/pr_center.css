@@ -6,22 +6,14 @@
     홍보센터 전시회 참가
   ------------------------------ */
 /* 메인 비주얼 */
-.visual_box{margin: 64px 120px 36px; display: flex;align-items: center; justify-content: center;border-radius: 16px; background: url("../../pub/images/pr/pr_exh_visual.png") 100% / 100% no-repeat; max-width: 1680px; height: 452px;}
+.visual_inner{margin: 0 auto; display: flex;align-items: center; justify-content: center;border-radius: 16px; background: url("../../pub/images/pr/pr_exh_visual.png") center / cover  no-repeat; max-width: 1680px;height: 452px;}
 
-/* 탭 버튼 */
-.section_inner{margin: 0 120px 0;}
-
-/* 전체 섹션 */
-.pr_list_section {border-top: 1px solid #e5e5e5;}
 
 /* 리스트 */
+.pr_list_panels{margin: 36px 120px 0;}
+.pr_list_section {border-top: 1px solid #e5e5e5;}
 .pr_list {list-style: none;margin: 0;padding: 0;}
-
-/* 한 줄 */
 .pr_item {border-bottom: 1px solid #e5e5e5;}
-.visual_box{margin: 0 auto; display: flex;align-items: center; justify-content: center;border-radius: 16px; background: url("../../pub/images/pr/pr_exh_visual.png") 100% / 100% no-repeat; max-width: 1680px; height:452px}
-
-/* 링크 전체 클릭 영역 */
 .pr_item_link {display: flex;align-items: stretch;padding: 32px 40px;text-decoration: none;color: inherit;}
 
 /* 썸네일 */
@@ -30,13 +22,9 @@
 
 /* 텍스트 영역 */
 .pr_item_body {flex: 1 1 auto;padding-left: 40px;}
-
 .pr_item_category {font-size: 12px;color: #999;margin-bottom: 6px;}
-
 .pr_item_title {font-size: 16px;font-weight: 600;margin-bottom: 8px;}
-
 .pr_item_desc {font-size: 13px;color: #666;line-height: 1.6;margin-bottom: 10px;}
-
 .pr_item_date {font-size: 12px;color: #aaa;}
 
 /* 더보기 버튼 영역 */
@@ -46,14 +34,12 @@
 
 @media (max-width:1228px) {
   /* 전시회 참가 */
-  .visual_box{margin: 36px 38px 16px;}
-  .section_inner{margin: 0 38px 0;}
-  .section_inner .content_tab_box{margin-bottom: 16px;}
+
 
 }
 @media (max-width:768px) {
   /* 전시회 참가 */
-  .visual_box{margin: 24px;}
+
 
 }
 

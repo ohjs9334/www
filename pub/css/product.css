@@ -11,7 +11,7 @@
 .contents.products_wrap{overflow: hidden;}
 .interval_wrap{margin: 0 38px;}
 .interval_wrap.sub{margin: 0 16px 0 168px;}
-.visual_inner{margin: 0 auto; display: flex;align-items: center; justify-content: center;border-radius: 16px; background: url("../../pub/images/product/product_back.png") 100% / 100% no-repeat; max-width: 1680px; height:452px}
+.visual_inner{margin: 0 auto; display: flex;align-items: center; justify-content: center;border-radius: 16px; background: url("../../pub/images/product/product_back.png") center / cover no-repeat; max-width: 1680px; height:452px}
 
 /* 1712px  > 1560px 구간 */
 /* 제품 이름 및 소개 */
