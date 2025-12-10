@@ -142,6 +142,7 @@
     /*  제품소개 및 홍보센터 등 비주얼 메인  */
     .contents .inner_visual{margin: 36px 38px 0;}
     .inner_content .section_inner{margin: 0 38px 0;}
+    .inner_content .content_tab_box{margin-top: 16px;}
 }
 
 
