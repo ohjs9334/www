@@ -77,6 +77,34 @@
 .detail_footer{padding-top:64px;text-align:center;border-top:1px solid #e2e2e2;box-sizing: border-box;}
 
 
+/* 공통 탭 리스트*/
+.contents.products_wrap{overflow: hidden;}
+.inner{margin: 64px 120px 36px;}
+.interval_wrap{margin: 0 38px;}
+.interval_wrap.sub{margin: 0 16px 0 168px;}
+.inner_visual .visual_tit{font-size: var(--font48);line-height: normal;color: var(--white);text-align: center;font-weight: 700;}
+
+.inner_content .content_tab_box{display: flex; align-items: center; justify-content: space-between; margin: 32px auto 24px; max-width: 1560px; box-sizing: border-box;}
+.inner_content .menu_guide_left_box{display: flex;align-items: center;}
+.inner_content .menu_guide_left_box i.guide_home{display: block;width: 18px;height: 16px;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%0A%3Csvg width='18' height='16' viewBox='0 0 18 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.9688 8C17.9688 8.5625 17.5 9 16.9688 9H15.9688L16 14C16 14.0938 16 14.1875 16 14.25V14.75C16 15.4688 15.4375 16 14.75 16H14.25C14.1875 16 14.1562 16 14.125 16C14.0938 16 14.0312 16 14 16H13H12.25C11.5312 16 11 15.4688 11 14.75V14V12C11 11.4688 10.5312 11 10 11H8C7.4375 11 7 11.4688 7 12V14V14.75C7 15.4688 6.4375 16 5.75 16H5H4C3.9375 16 3.90625 16 3.84375 16C3.8125 16 3.78125 16 3.75 16H3.25C2.53125 16 2 15.4688 2 14.75V11.25C2 11.25 2 11.2188 2 11.1875V9H1C0.4375 9 0 8.5625 0 8C0 7.71875 0.09375 7.46875 0.3125 7.25L8.3125 0.25C8.53125 0.03125 8.78125 0 9 0C9.21875 0 9.46875 0.0625 9.65625 0.21875L17.625 7.25C17.875 7.46875 18 7.71875 17.9688 8Z' fill='black'/%3E%3C/svg%3E%0A");}
+.inner_content .menu_guide_left_box .menu_guide_left_text{display: block;font-size: var(--font24);line-height: 30px;color: var(--black);text-align: center;font-weight: 700; padding-left: 34px; box-sizing: border-box; position: relative;}
+.inner_content .menu_guide_left_box .menu_guide_left_text::before{content: ""; display: block; clear: both; width: 10px; height: 16px; margin: 0 12px; position: absolute;left: 0;top: 50%; transform: translateY(-50%); background-repeat: no-repeat; background-position: center; background-image: url("data:image/svg+xml,%0A%3Csvg width='10' height='16' viewBox='0 0 7 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.90625 5.1875C6.09375 5.375 6.09375 5.71875 5.90625 5.90625L0.90625 10.9062C0.71875 11.0938 0.375 11.0938 0.1875 10.9062C0 10.7188 0 10.375 0.1875 10.1875L4.84375 5.53125L0.1875 0.90625C0 0.71875 0 0.375 0.1875 0.1875C0.375 0 0.71875 0 0.90625 0.1875L5.90625 5.1875Z' fill='%236E6E6E'/%3E%3C/svg%3E%0A");}
+
+/* 탭 메뉴 */
+.inner_content .inner_tab .inner_tab_list{display: flex;flex-wrap: nowrap;}
+.inner_content .inner_tab .inner_tab_list .inner_tab_item{display: flex;flex-wrap: nowrap;}
+.inner_content .inner_tab .inner_tab_list .inner_tab_item span{display:block;font-size: var(--font16);line-height: 20px; font-weight: 500; color: var(--black);border-radius: 60px;box-sizing: border-box;padding: 14px 28px;}
+.inner_content .inner_tab .inner_tab_list .inner_tab_item.is-active span{color: var(--white);background-color: var(--black);}
+
+/* 검색창 */
+.content_search_box{display: flex;justify-content: flex-end;max-width: 1560px; margin:0 auto 36px;box-sizing: border-box;}
+.content_search_box .inner_search_form{position:relative;display:flex;align-items:center;width:360px;max-width:100%;}
+.content_search_box .inner_search_input{width:100%;padding:18px 90px 18px 28px;border:none;border-radius:40px;background:#F9F9FC;font-size:var(--font18);line-height: 32px;color:var(--black);outline:none;box-sizing:border-box;}
+.content_search_box .inner_search_input::placeholder{color:#6E6E6E;}
+.content_search_box .inner_search_btn{position:absolute;right:28px;width:18px;height:18px;padding:0;border:none;background:transparent;cursor:pointer;font-size:0;}
+.content_search_box .inner_search_btn::before{content:"";display:block;width:100%;height:100%;background-repeat:no-repeat;background-position:center;background-size:contain;background-image:url("data:image/svg+xml,%0A%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.9375 7.3125C12.9375 5.30859 11.8477 3.48047 10.125 2.46094C8.36719 1.44141 6.22266 1.44141 4.5 2.46094C2.74219 3.48047 1.6875 5.30859 1.6875 7.3125C1.6875 9.35156 2.74219 11.1797 4.5 12.1992C6.22266 13.2188 8.36719 13.2188 10.125 12.1992C11.8477 11.1797 12.9375 9.35156 12.9375 7.3125ZM11.8477 13.0781C10.582 14.0625 9 14.625 7.3125 14.625C3.26953 14.625 0 11.3555 0 7.3125C0 3.30469 3.26953 0 7.3125 0C11.3203 0 14.625 3.30469 14.625 7.3125C14.625 9.03516 14.0273 10.6172 13.043 11.8828L17.4023 16.2422L18 16.8398L16.8047 18L16.207 17.4023L11.8477 13.043V13.0781Z' fill='black'/%3E%3C/svg%3E%0A");}
+
+
 @media (min-width:768px) and (max-width:1228px) {
     .btn_round{height:48px;line-height:46px;font-size:16px}
     .btn_round a,

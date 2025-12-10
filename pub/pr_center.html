@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/product.css">
     <link rel="stylesheet" href="./css/pr_center.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <script src="./js/ui.js"></script>
@@ -176,11 +175,11 @@
     </header>
 
     <!--  컨텐츠  -->
-    <div class="contents products_wrap">
+    <div class="contents pr_wrap">
         <div class="inner">
             <!--  백그라운드 비주얼  -->
             <section class="inner_visual">
-                <h2 class="visual_tit">연구개발</h2>
+                <h2 class="visual_tit">홍보센터</h2>
             </section>
             <section class="inner_content">
                 <!--  메뉴박스  -->
@@ -190,20 +189,81 @@
                         <a href="javascript:void(0);" class="guide_home_link">
                             <i class="guide_home"></i>
                         </a>
-                        <span class="menu_guide_left_text">연구개발</span>
+                        <span class="menu_guide_left_text">홍보센터</span>
+                    </div>
+                    <div class="inner_tab">
+                        <!-- 홍보센터 탭 리스트 -->
+                        <ul class="inner_tab_list" role="tablist">
+                            <li class="inner_tab_item is-active">
+                                <button type="button"
+                                        class="inner_tab_btn"
+                                        id="tab-btn-exhibition"
+                                        data-target="panel-exhibition"
+                                        role="tab"
+                                        aria-selected="true">
+                                    <span>전시회 참가</span>
+                                </button>
+                            </li>
+                            <li class="inner_tab_item">
+                                <button type="button"
+                                        class="inner_tab_btn"
+                                        id="tab-btn-catalog"
+                                        data-target="panel-catalog"
+                                        role="tab"
+                                        aria-selected="false">
+                                    <span>카탈로그</span>
+                                </button>
+                            </li>
+                            <li class="inner_tab_item">
+                                <button type="button"
+                                        class="inner_tab_btn"
+                                        id="tab-btn-news"
+                                        data-target="panel-news"
+                                        role="tab"
+                                        aria-selected="false">
+                                    <span>뉴스</span>
+                                </button>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="content_search_box">
-                    <form class="product_search_form" action="" method="get">
-                        <label for="productKeyword" class="blind">제품 검색</label>
-                        <input id="productKeyword" name="keyword" type="text"
-                               class="product_search_input" placeholder="찾는 제품명을 입력해 주세요.">
-                        <button type="submit" class="product_search_btn">검색</button>
+                    <form class="inner_search_form" action="" method="get">
+                        <label for="innerKeyword" class="blind">검색</label>
+                        <input id="innerKeyword" name="keyword" type="text"
+                               class="inner_search_input" placeholder="검색어를 입력해 주세요.">
+                        <button type="submit" class="inner_search_btn">검색</button>
                     </form>
                 </div>
             </section>
-            <!-- 연구개발 컨텐츠 -->
-            <main></main>
+
+            <!-- 메인 콘텐츠: 탭 패널 묶음 -->
+            <main class="pr_tab_panels_wrap">
+
+                <!-- 전시회 참가 패널 -->
+                <section id="panel-exhibition"
+                         class="pr_tab_panel is-active"
+                         role="tabpanel"
+                         aria-labelledby="tab-btn-exhibition">
+                    <!-- 전시회 리스트들 여기 -->
+                </section>
+
+                <!-- 카탈로그 패널 -->
+                <section id="panel-catalog"
+                         class="pr_tab_panel"
+                         role="tabpanel"
+                         aria-labelledby="tab-btn-catalog">
+                </section>
+
+                <!-- 뉴스 패널 -->
+                <section id="panel-news"
+                         class="pr_tab_panel"
+                         role="tabpanel"
+                         aria-labelledby="tab-btn-news">
+                </section>
+
+            </main>
+
         </div>
     </div>
 
