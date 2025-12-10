@@ -77,12 +77,12 @@
 .detail_footer{padding-top:64px;text-align:center;border-top:1px solid #e2e2e2;box-sizing: border-box;}
 
  /*  제품소개 및 홍보센터 등 비주얼 메인  */
-.contents .inner_visual{margin: 64px 120px 0;}
+.contents .visual_box{margin: 64px 120px 0;}
 .inner_content .section_inner{margin: 0 120px 0;}
 
 /* 공통 탭 리스트*/
 .contents.products_wrap{overflow: hidden;}
-.inner_visual .visual_tit{font-size: var(--font48);line-height: normal;color: var(--white);text-align: center;font-weight: 700;}
+.visual_box .visual_tit{font-size: var(--font48);line-height: normal;color: var(--white);text-align: center;font-weight: 700;}
 
 .inner_content .content_tab_box{display: flex; align-items: center; justify-content: space-between; margin: 36px auto 0;padding: 16px; max-width: 1560px; box-sizing: border-box;}
 .inner_content .breadcrumb{display: flex;align-items: center;}
@@ -140,7 +140,7 @@
 
 
     /*  제품소개 및 홍보센터 등 비주얼 메인  */
-    .contents .inner_visual{margin: 36px 38px 0;}
+    .contents .visual_box{margin: 36px 38px 0;}
     .inner_content .section_inner{margin: 0 38px 0;}
 }
 
@@ -178,7 +178,7 @@
 
 
     /*  공통 영역 탭 > 브레드크럼 > 서치   */
-    .contents .inner_visual{margin: 24px 24px 0;}
+    .contents .visual_box{margin: 24px 24px 0;}
     .inner_content .section_inner{margin: 0 24px 0;}
     .inner_content .inner_tab {width: 100%;overflow-x: auto;overflow-y: hidden;}
     .inner_content .inner_tab::-webkit-scrollbar {display: none;}
