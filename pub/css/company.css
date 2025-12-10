@@ -80,7 +80,7 @@
 .history_area .history_con .history_list{margin-top:16px}
 .history_area .history_list li{display: flex;gap:12px}
 .history_area .history_list .history_date{display:block; width:80px;color:#949494;font-size:18px;font-weight:500;line-height:38px;}
-.history_area .history_list .history_desc{color:var(--black);font-size:18px;font-weight:400;line-height: 38px;}
+.history_area .history_list .history_desc{color:var(--black);font-size:18px;font-weight:400;line-height: 38px;flex:1}
 
 /* -----------------------------------
    테블릿
