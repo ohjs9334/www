@@ -156,5 +156,5 @@ header .lnb_wrap.open{display:block;}
     .footer .footer_nav{display:none;}
     .footer .footer_copy {margin-top:40px;font-size:10px;line-height:12px}
 
-    .contents{padding:55px 0 100px; min-height:800px;}
+    .contents{padding:55px 0 36px; min-height:800px;}
 }

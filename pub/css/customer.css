@@ -1,9 +1,9 @@
 @charset "utf-8";
-.pr_center_wrap{max-width:1920px;margin:0 auto;padding-bottom:0;}
+.customer_wrap{max-width:1920px;margin:0 auto;}
 
 
 /* 메인 비주얼 */
-.visual_inner{margin:0 auto;display:flex;align-items:center;justify-content:center;border-radius:16px;background:url("../../pub/images/product/product_back.png") center / cover no-repeat;max-width:1680px;height:452px}
+.visual_inner{margin:0 auto;display:flex;align-items:center;justify-content:center;border-radius:16px;background:url("../../pub/images/customer/bg_customer.png") center / cover no-repeat;max-width:1680px;height:452px}
 
 /* INQUIRY */
 .customer_tab_panels_wrap{margin:64px auto 0;max-width:1680px;}
@@ -43,7 +43,7 @@
 @media (max-width:1228px) {
   .customer_tab_panels_wrap{margin:36px 38px 0}
   .map_area{aspect-ratio: 692 / 330;border-radius: 16px;}
-  .cont_inquiry{margin-top:24px;padding:0;justify-content:normal;gap:0;flex-wrap:wrap;}
+  .cont_inquiry{margin-top:24px;padding:0;justify-content:normal;gap:0;flex-wrap:wrap;flex-direction: column;}
   .cont_inquiry .inquiry_info{padding-bottom:36px;}
   .cont_inquiry .inquiry_info .info_tit{font-size:24px;line-height:29px;}
   .cont_inquiry .inquiry_info .info_txt:first-of-type{margin-top:16px}
@@ -57,9 +57,38 @@
   .inquiry_form_area .inquiry_form_list .text_area textarea{height:144px;padding:18px 28px;line-height:19px;border-radius:24px;font-size:16px}
 
   .agree_area{padding:0;margin-top:24px}
+  .agree_area .chk_ipt{margin-top:16px}
+  .agree_area .chk_ipt label .chk_box,
+  .agree_area .chk_ipt label .chk_box::before{width:14px;height:14px}
+  .agree_area .chk_ipt label{gap:12px}
+  .agree_area .chk_ipt .label_txt, 
+  .agree_area .chk_ipt .label_txt a{font-size:16px}
+  .agree_area .btn_round{margin-top:16px}
 }
 @media (max-width:768px) {
+    .customer_tab_panels_wrap {margin: 24px 24px 0;}
+    .map_area{aspect-ratio: 312 / 198;border-radius: 12px;}
+    .cont_inquiry{margin-top:16px;}
+    .cont_inquiry .inquiry_info{padding-bottom:24px;}
+    .cont_inquiry .inquiry_info .info_tit{font-size:18px;line-height:26px;}
+    .cont_inquiry .inquiry_info .info_txt:first-of-type{margin-top:12px}
+    .cont_inquiry .inquiry_info .info_txt {font-size: 14px;line-height:22px}
+    .cont_inquiry .inquiry_form_area{padding-top:24px}
+    .cont_inquiry .inquiry_form_area .inquiry_guide p{font-size:14px;line-height:22px;word-break: keep-all;}
+    .inquiry_form_area .inquiry_form_list ul{gap:12px;margin-top:16px;}
+    .inquiry_form_area .inquiry_form_list li{width:100%;gap:6px;flex-direction: column;}
+    .inquiry_form_area .inquiry_form_list .inquiry_label{margin-top:0;width: 100%;font-size: 14px;}
+    .inquiry_form_area .inquiry_form_list .ipt input {height: 42px;line-height: 40px;padding: 12px 22px;font-size: 14px}
+    .inquiry_form_area .inquiry_form_list .text_area textarea{height:126px;padding:16px 24px;line-height:17px;border-radius:21px;font-size:14px}
 
+    .agree_area{margin-top:16px;text-align: left;}
+    .agree_area .chk_ipt{margin-top:12px;justify-content: flex-start;}
+    .agree_area .chk_ipt label .chk_box,
+    .agree_area .chk_ipt label .chk_box::before{width:14px;height:14px}
+    .agree_area .chk_ipt label{gap:10px}
+    .agree_area .chk_ipt .label_txt, 
+    .agree_area .chk_ipt .label_txt a{font-size:14px}
+    .agree_area .btn_round{margin-top:12px}
 }
 
 
