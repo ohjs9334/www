@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>뉴오토정밀 - 고객지원</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/layout.css">
+    
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/customer.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
@@ -183,106 +182,123 @@
 
             </div>
         </section>
-        <section class="inner_content">
-            <!--  메뉴박스  -->
-            <div class="content_tab_box">
-                <!--  홈메뉴 & 현재 페이지 네임  -->
-                <div class="breadcrumb">
-                    <a href="javascript:void(0);" class="guide_home_link">
-                        <i class="guide_home"></i>
-                    </a>
-                    <span class="breadcrumb_current">고객지원</span>
-                </div>
-                <div class="inner_tab">
-                    <!-- 홍보센터 탭 리스트 -->
-                    <ul class="inner_tab_list" role="tablist">
-                        <li class="inner_tab_item is-active">
-                            <button type="button" class="inner_tab_btn" id="tab-btn-inquiry" data-target="panel-inquiry" role="tab" aria-selected="true">
-                                <span>INQUIRY</span>
-                            </button>
-                        </li>
-                        <li class="inner_tab_item">
-                            <button type="button" class="inner_tab_btn" id="tab-btn-notice" data-target="panel-notice" role="tab" aria-selected="false">
-                                <span>공지사항</span>
-                            </button>
-                        </li>
-                        <li class="inner_tab_item">
-                            <button type="button" class="inner_tab_btn" id="tab-btn-clients" data-target="panel-clients" role="tab" aria-selected="false">
-                                <span>주요 고객사</span>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
+        <section class="cont_box">
+            <div class="section_inner">
+                <!--  메뉴박스  -->
+                    <div class="content_tab_box">
+                        <!--  홈메뉴 & 현재 페이지 네임  -->
+                        <div class="breadcrumb">
+                            <a href="javascript:void(0);" class="guide_home_link">
+                                <i class="guide_home"></i>
+                            </a>
+                            <span class="breadcrumb_current">고객지원</span>
+                        </div>
+                        <div class="inner_tab">
+                            <!-- 홍보센터 탭 리스트 -->
+                            <ul class="inner_tab_list" role="tablist">
+                                <li class="inner_tab_item is-active">
+                                    <button type="button" class="inner_tab_btn" id="tab-btn-inquiry" data-target="panel-inquiry" role="tab" aria-selected="true">
+                                        <span>INQUIRY</span>
+                                    </button>
+                                </li>
+                                <li class="inner_tab_item">
+                                    <button type="button" class="inner_tab_btn" id="tab-btn-notice" data-target="panel-notice" role="tab" aria-selected="false">
+                                        <span>공지사항</span>
+                                    </button>
+                                </li>
+                                <li class="inner_tab_item">
+                                    <button type="button" class="inner_tab_btn" id="tab-btn-clients" data-target="panel-clients" role="tab" aria-selected="false">
+                                        <span>주요 고객사</span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
             </div>
         </section>
         <main class="customer_tab_panels_wrap">
             <!-- INQUIRY -->
             <section id="panel-inquiry" class="inner_tab_panel is-active" role="tabpanel" aria-labelledby="tab-btn-inquiry">
-                <div class="map_area" style="border:1px solid red">
-                    맵영역
-                </div>
-                <div>
-                    <div>
-                        <h3>뉴오토정밀(주)</h3>
-                        경기도 화성시 안녕남로 97-21
-                        031-224-6771
-                        newauto@newautokorea.com
+                <div class="map_area" style="border:1px solid red"></div>
+                <div class="cont_inquiry">
+                    <div class="inquiry_info">
+                        <h3 class="info_tit">뉴오토정밀(주)</h3>
+                        <p class="info_txt">경기도 화성시 안녕남로 97-21</p>
+                        <p class="info_txt">031-224-6771</p>
+                        <p class="info_txt">newauto@newautokorea.com</p>
                     </div>
-                    <div>
-                        <p>뉴오토정밀의 제품에 대한 자세한 상담을 원하신다면 아래의 정보를 입력하여 주시기 바랍니다. </p>
-                        <p>담당자가 확인 후 빠르게 회신드리겠습니다.</p>
-                        <div>
+                    <div class="inquiry_form_area">
+                        <div class="inquiry_guide">
+                            <p>뉴오토정밀의 제품에 대한 자세한 상담을 원하신다면 아래의 정보를 입력하여 주시기 바랍니다.</p>
+                            <p>담당자가 확인 후 빠르게 회신드리겠습니다.</p>
+                        </div>
+                        <div class="inquiry_form_list">
                             <ul>
                                 <li> 
-                                    <label for=""><span>회사명</span></label>
+                                    <label for="" class="inquiry_label"><span>회사명 <em class="required">*</em></span></label>
                                     <div class="ipt">
                                         <input type="text" id="" placeholder="회사명을 입력해 주세요.">
                                     </div>
                                 </li>
                                 <li> 
-                                    <label for=""><span>부서명</span></label>
+                                    <label for="" class="inquiry_label"><span>부서명</span></label>
                                     <div class="ipt">
-                                        <input type="text" id="" placeholder="회사명을 입력해 주세요.">
+                                        <input type="text" id="" placeholder="부서명을 입력해 주세요.">
                                     </div>
                                 </li>
                                 <li> 
-                                    <label for=""><span>이름</span></label>
+                                    <label for="" class="inquiry_label"><span>이름 <em class="required">*</em></span></label>
                                     <div class="ipt">
-                                        <input type="text" id="" placeholder="회사명을 입력해 주세요.">
+                                        <input type="text" id="" placeholder="이름을 입력해 주세요.">
                                     </div>
                                 </li>
                                 <li> 
-                                    <label for=""><span>직급</span></label>
+                                    <label for="" class="inquiry_label"><span>직급</span></label>
                                     <div class="ipt">
-                                        <input type="text" id="" placeholder="회사명을 입력해 주세요.">
+                                        <input type="text" id="" placeholder="직급을 입력해 주세요.">
                                     </div>
                                 </li>
                                 <li> 
-                                    <label for=""><span>휴대폰</span></label>
+                                    <label for="" class="inquiry_label"><span>휴대폰 <em class="required">*</em></span></label>
                                     <div class="ipt">
-                                        <input type="text" id="" placeholder="회사명을 입력해 주세요.">
+                                        <input type="text" id="" placeholder="휴대폰 번호를 입력해 주세요.">
                                     </div>
                                 </li>
                                 <li> 
-                                    <label for=""><span>이메일</span></label>
+                                    <label for="" class="inquiry_label"><span>이메일</span></label>
                                     <div class="ipt">
-                                        <input type="text" id="" placeholder="회사명을 입력해 주세요.">
+                                        <input type="text" id="" placeholder="이메일을 입력해 주세요.">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="" class="inquiry_label"><span>제품</span></label>
+                                    <div class="ipt">
+                                        <input type="text" id="" placeholder="문의하실 제품명을 입력해 주세요.">
                                     </div>
                                 </li>
                                 <li> 
-                                    <label for=""><span>제품</span></label>
-                                    <div class="ipt">
-                                        <input type="text" id="" placeholder="회사명을 입력해 주세요.">
-                                    </div>
-                                </li>
-                                <li> 
-                                    <label for=""><span>문의사항</span></label>
+                                    <label for="" class="inquiry_label"><span>문의사항 <em class="required">*</em></span></label>
                                     <div class="text_area">
-                                        <textarea name="" id="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem laudantium dicta velit recusandae rerum laboriosam doloribus labore sed voluptatum? Perferendis, accusamus incidunt. Doloremque repellat ratione optio commodi provident enim.</textarea>
+                                        <textarea name="" id=""placeholder="문의사항을 작성해 주세요."></textarea>
                                     </div>
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+                <div class="agree_area">
+                    <div>
+                        captcha 
+                    </div>
+                    <div class="chk_ipt">
+                        <label for="agree">
+                            <input type="checkbox" id="agree">
+                            <div class="chk_box"></div>
+                            <p class="label_txt"><a href="#">개인정보 수집 및 이용</a>에 대하여 동의합니다.</p>
+                        </label>
+                    </div>
+                    <div class="btn_round">
+                        <button type="button">제출하기</button>
                     </div>
                 </div>
             </section>
@@ -296,7 +312,7 @@
 
             <!-- 주요 고객사 -->
             <section id="panel-clients" class="inner_tab_panel" role="tabpanel" aria-labelledby="tab-btn-clients">
-                3
+                
             </section>
             <!-- //주요 고객사 -->
         </main>
@@ -340,4 +356,5 @@
 
 </div>
 </body>
+
 </html>

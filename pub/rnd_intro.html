@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>뉴오토정밀 - 연구개발</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/layout.css">
+    
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/rnd.css">
+    <link rel="stylesheet" href="./css/product.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <script src="./js/jquery.3.1.1.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/ui.js"></script>
 </head>
 <body>
-<div class="wrap rnd_wrap">
+<div class="wrap product_intro">
     <!--   헤더   -->
     <header>
         <div class="header_area">
@@ -178,16 +177,15 @@
 
     <!--  컨텐츠  -->
     <div class="contents products_wrap">
-        <!--  백그라운드 비주얼  -->
-        <section class="visual_box">
-            <div class="visual_inner">
+        <div class="inner">
+            <!--  백그라운드 비주얼  -->
+            <section class="visual_box">
                 <h2 class="visual_tit">연구개발</h2>
-            </div>
-        </section>
-        <section class="inner_content">
-            <div class="section_inner">
+            </section>
+            <section class="cont_box">
+                <!--  메뉴박스  -->
                 <div class="content_tab_box">
-                    <!--  브레드크럼  -->
+                    <!--  홈메뉴 & 현재 페이지 네임  -->
                     <div class="breadcrumb">
                         <a href="javascript:void(0);" class="guide_home_link">
                             <i class="guide_home"></i>
@@ -195,76 +193,18 @@
                         <span class="breadcrumb_current">연구개발</span>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- 연구개발 컨텐츠 -->
-        <!-- 연구개발 컨텐츠 -->
-        <main class="rnd_main">
-            <!-- 상단 소개 텍스트 영역 -->
-            <div class="rnd_intro">
-                <h3 class="rnd_intro_title">
-                    뉴오토정밀 연구소는<br>
-                    자동차부품 산업에서 글로벌 전문 기업으로<br>
-                    연구와 투자를 이어가고 있습니다.
-                </h3>
-                <p class="rnd_intro_text">
-                    내연기관 엔진 부품에서 친환경 자동차부품 생산에 이르기까지 기존의 경험과 새로운 기술력을 바탕으로<br>
-                    고객의 요구를 만족하기 위하여 신기술 개발, 전문 인력양성, 품질 개선을 향한 끊임없는 연구와 최선의 노력을 다하고 있습니다.
-                </p>
-            </div>
-            <section class="rnd_list">
-                <!-- 연구개발 분야 -->
-                <article class="rnd_card rnd_card--field">
-                    <div class="rnd_card_inner">
-                        <div class="rnd_card_text">
-                            <strong class="rnd_card_title">연구개발 분야</strong>
-                            <p class="rnd_card_desc">
-                                자동차 엔진 냉각과 윤활을 위한 워터펌프, 오일펌프, 써모스텟, 텐션베어링 부품을 개발하고 있으며, 친환경 자동차 부품으로<br>
-                                전동식 워터펌프와 전동식 오일펌프 등 신규 부품 개발을 진행하고 있습니다.
-                            </p>
-                        </div>
-                        <button type="button" class="rnd_card_more"
-                                data-target="#rndModalField">
-                            <span class="blind">자세히 보기</span>
-                        </button>
-                    </div>
-                </article>
-
-                <!-- 연구성과 -->
-                <!-- 요구사항 = 연구성과 hidden -->
-                <article class="rnd_card rnd_card--result" style="display: none;">
-                    <div class="rnd_card_inner">
-                        <div class="rnd_card_text">
-                            <strong class="rnd_card_title">연구성과</strong>
-                            <p class="rnd_card_desc">
-                                연구성과에 대한 간략한 설명 텍스트…
-                            </p>
-                        </div>
-                        <button type="button" class="rnd_card_more"
-                                data-target="#rndModalResult">
-                            <span class="blind">자세히 보기</span>
-                        </button>
-                    </div>
-                </article>
-
-                <!-- 품질경영 -->
-                <article class="rnd_card rnd_card--quality">
-                    <div class="rnd_card_inner">
-                        <div class="rnd_card_text">
-                            <strong class="rnd_card_title">품질경영</strong>
-                            <p class="rnd_card_desc">
-                                품질경영에 대한 간략한 설명 텍스트…
-                            </p>
-                        </div>
-                        <button type="button" class="rnd_card_more"
-                                data-target="#rndModalQuality">
-                            <span class="blind">자세히 보기</span>
-                        </button>
-                    </div>
-                </article>
-
+                <div class="content_search_box">
+                    <form class="product_search_form" action="" method="get">
+                        <label for="productKeyword" class="blind">제품 검색</label>
+                        <input id="productKeyword" name="keyword" type="text"
+                               class="product_search_input" placeholder="찾는 제품명을 입력해 주세요.">
+                        <button type="submit" class="product_search_btn">검색</button>
+                    </form>
+                </div>
             </section>
-        </main>
+            <!-- 연구개발 컨텐츠 -->
+            <main></main>
+        </div>
     </div>
 
     <!--   푸터   -->

@@ -6,7 +6,7 @@
     홍보센터 전시회 참가
   ------------------------------ */
 /* 메인 비주얼 */
-.visual_inner{background: url("../../pub/images/pr/pr_exh_visual.png") center / cover  no-repeat;height: 452px;}
+.visual_inner{margin: 0 auto; display: flex;align-items: center; justify-content: center;border-radius: 16px; background: url("../../pub/images/pr/pr_exh_visual.png") center / cover  no-repeat; max-width: 1680px;height: 452px;}
 /*  리스트  */
 .pr_list_panels{margin: 36px 120px 0;box-sizing: border-box;}
 .pr_list {display: flex;gap: 24px;flex-direction: column;}
@@ -23,7 +23,7 @@
 
 @media (max-width:1228px) {
   .contents.pr_wrap{padding-bottom: 64px;}
-  .visual_inner{background: url("../../pub/images/pr/pr_exh_visual_tbl.png") center / cover  no-repeat;height: 226px;}
+  .visual_inner{background: url("../../pub/images/pr/pr_exh_visual_tbl.png") center / cover  no-repeat; max-width: 1680px;height: 226px;}
   .pr_list_panels{margin: 36px 38px 0;}
   .pr_item_thumb{flex: 0 0 338px;}
   .pr_item_thumb img{border-radius: 16px;}
@@ -39,8 +39,8 @@
 
 @media (max-width:768px) {
   .contents.pr_wrap{padding-bottom: 36px;}
-  .visual_inner{background: url("../../pub/images/pr/pr_exh_visual_mo.png") center / cover no-repeat;height: 136px;}
-  .inner_content .inner_tab .inner_tab_list .inner_tab_item span{padding: 10px 20px;}
+  .visual_inner{background: url("../../pub/images/pr/pr_exh_visual_mo.png") center / cover  no-repeat; max-width: 1680px;height: 136px;}
+  .cont_box .inner_tab .inner_tab_list .inner_tab_item span{padding: 10px 20px;}
   .pr_list_panels{margin: 24px 24px 0;}
   .pr_item_thumb{flex: 1;}
   .pr_item_thumb img{border-radius: 12px;}
