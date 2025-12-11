@@ -857,38 +857,35 @@
     });
 
     $(function () {
-      function openModal(targetSelector) {
-        let $modal = $(targetSelector);
-        $modal.addClass('is-open');
-        $('body').addClass('no-scroll');
-      }
-
-      function closeModal($modal) {
-        $modal.removeClass('is-open');
-        $('body').removeClass('no-scroll');
-      }
-
       $('.js-open-modal').on('click', function (e) {
         e.preventDefault();
         let target = $(this).data('target');
-        openModal(target);
+        let $modal = $(target);
+
+        if ($modal.length) {
+          $modal.addClass('is-open');
+          $('body').addClass('no-scroll');
+        }
       });
 
       $(document).on('click', '.modal_overlay .modal_close', function () {
         let $modal = $(this).closest('.modal_overlay');
-        closeModal($modal);
+        $modal.removeClass('is-open');
+        $('body').removeClass('no-scroll');
       });
 
       $(document).on('click', '.modal_overlay', function (e) {
         if ($(e.target).is('.modal_overlay')) {
-          closeModal($(this));
+          $(this).removeClass('is-open');
+          $('body').removeClass('no-scroll');
         }
       });
 
       $(document).on('keyup', function (e) {
         if (e.key === 'Escape') {
           $('.modal_overlay.is-open').each(function () {
-            closeModal($(this));
+            $('.modal_overlay.is-open').removeClass('is-open');
+            $('body').removeClass('no-scroll');
           });
         }
       });
