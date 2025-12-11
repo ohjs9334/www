@@ -2,7 +2,7 @@
     Modal Practice
    -------------------- */
 body.no-scroll {overflow: hidden;}
-.modal_overlay{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:#0009;z-index:9;}
+.modal_overlay{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:#0009;z-index:20;}
 .modal_overlay.is-open{display:flex;}
 
 .modal_divider{margin:64px 0;border:0;border-top:1px solid #e2e2e2;}
