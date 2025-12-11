@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/company.css">
+    <link rel="stylesheet" href="./css/modal.css"/>
     <script src="./js/jquery.3.1.1.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/ui.js"></script>
@@ -301,7 +302,8 @@
                     <div class="cert_area con_box cert_swiper">
                         <ul class="cert_list swiper-wrapper">
                             <li class="cert_item swiper-slide">
-                                <a href="" class="cert_link">
+                                <a href="#none" class="cert_link js-open-modal"
+                                    data-target="#qualityModal">
                                     <div class="txt_box">
                                         <strong class="cert_tit">IATF 16949</strong>
                                         <p class="cert_desc">IATF 16949 인증을 취득함으로써 고객의 특정 요구사항을 충족하는 시스템을 수립하고 지속적인 개선과 결함 예방 및 산포와 낭비 감소를 위한 품질경영시스템을 갖추어 기업의 경쟁력 제고합니다.</p>
@@ -310,7 +312,8 @@
                                 </a>
                             </li>
                             <li class="cert_item swiper-slide">
-                                <a href="" class="cert_link">
+                                <a href="#none" class="cert_link js-open-modal"
+                                    data-target="#qualityModal">
                                     <div class="txt_box">
                                         <strong class="cert_tit">ISO 9001</strong>
                                         <p class="cert_desc">ISO 9001은 제품 및 서비스에 이르기까지 전 생산 과정에 걸친 품질보증 체계로써 인증 취득으로 고객에게 기업의 신뢰감 제공합니다.</p>
@@ -319,7 +322,8 @@
                                 </a>
                             </li>
                             <li class="cert_item swiper-slide">
-                                <a href="" class="cert_link">
+                                <a href="#none" class="cert_link js-open-modal"
+                                    data-target="#environmentModal">
                                     <div class="txt_box">
                                         <strong class="cert_tit">ISO 14001</strong>
                                         <p class="cert_desc">ISO 14001은 기업이나 조직이 환경에 미치는 영향을 최소화하고, 지속가능한 개발 및 경영전략을 수립할 수 있도록 하는 환경경영시스템이며, 인증 취득으로 환경 위험성의 효율적 관리 및 개선합니다.</p>
@@ -497,6 +501,177 @@
                 </div>
             </section>
         </div>
+        <!-- 품질경영시스템 모달 시작 -->
+        <div id="qualityModal" class="modal_overlay">
+            <!-- 모달 영역 -->
+            <article class="modal_practice quality_ver1" role="dialog">
+                <div class="modal_header">
+                    <button type="button" class="modal_close btn_close" aria-label="닫기">
+                        <span class="blind">닫기</span>
+                    </button>
+                </div>
+                <div class="modal_content">
+                    <!-- 상단 영역 -->
+                    <section class="quality_modal_top">
+                        <!-- 타이틀 / 설명 -->
+                        <div class="quality_modal_header">
+                            <p class="quality_modal_subtitle">품질경영시스템</p>
+                            <h1 class="quality_modal_title">IATF 16949 / ISO 9001</h1>
+
+                            <ul class="quality_modal_desc_list">
+                                <li>
+                                    <p>뉴오토정밀의 품질활동은 지속적인 개선과 경향 예방 및 산포와 낭비 감소를 위한
+                                        품질경영시스템을 갖추어 기업의 경쟁력을 제고하고 고객만족을 위하여 최선을 다하고 있습니다.</p>
+                                </li>
+                                <li>
+                                    <p>뉴오토정밀은 고객만족을 위하여 우수하고 안전한 품질의 제품과 서비스를 제공하고 있으며,
+                                        품질경영시스템을 최고경영자의 리더십 아래 품질을 최우선으로 관리하고 있습니다.</p>
+                                </li>
+                                <li>
+                                    <p>고객만족을 위하여 청정 환경에 적합한 품질목표를 설정하고, 이를 달성하기 위한
+                                        품질경영시스템을 수립하며 모든 임직원은 품질목표를 달성하기 위하여 끊임없이 노력하고 있습니다.</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 인증서 영역 -->
+                        <div class="quality_modal_cert_area" aria-label="인증서">
+                            <div class="quality_modal_cert_box">
+                                <img src="./images/modal_img/intro_certify.png" alt="품질인증서사진">
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="modal_divider"/>
+
+                    <!-- 품질경영 카드 영역 -->
+                    <section class="quality_modal_section">
+                        <h2 class="quality_modal_section_title">품질경영</h2>
+
+                        <div class="quality_modal_card_area">
+                            <!-- 카드 1 -->
+                            <article class="quality_modal_card">
+                                <h3 class="quality_modal_card_title">
+                                    품질을 최우선으로 관리하여 최고 품질의 제품을 고객에게 공급
+                                </h3>
+                                <ul class="quality_modal_card_list">
+                                    <li><p>선제적 대응을 통한 예방 품질확보</p></li>
+                                    <li><p>품질 경쟁력 우수기업을 통한 품질인증 획득</p></li>
+                                    <li><p>고객만족의 품질혁신</p></li>
+                                </ul>
+                            </article>
+
+                            <!-- 카드 2 -->
+                            <article class="quality_modal_card">
+                                <h3 class="quality_modal_card_title">
+                                    모든 구성원의 적극적인 참여와 프로세스 접근방법을 이해하고 실행하여 지속적으로 발전
+                                </h3>
+                                <ul class="quality_modal_card_list">
+                                    <li><p>고객 불량 유출 방지</p></li>
+                                    <li><p>예방 품질 활동과 사전점검 활동</p></li>
+                                    <li><p>불만 사항 지속적 개선</p></li>
+                                </ul>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </div>
+        <!-- 품질경영시스템 모달 끝 -->
+
+        <!-- 환경경영시스템 모달 시작 -->
+        <div id="environmentModal" class="modal_overlay">
+            <!-- 환경경영시스템 모달 영역 -->
+            <article class="modal_practice quality_ver2" role="dialog">
+                <div class="modal_header">
+                    <button type="button" class="modal_close btn_close" aria-label="닫기">
+                        <span class="blind">닫기</span>
+                    </button>
+                </div>
+                <div class="modal_content">
+                    <!-- 상단 영역 -->
+                    <section class="quality_modal_top">
+                        <!-- 타이틀 / 설명 -->
+                        <div class="quality_modal_header">
+                            <p class="quality_modal_subtitle">환경경영시스템</p>
+                            <h1 class="quality_modal_title">ISO 1400</h1>
+
+                            <ul class="quality_modal_desc_list">
+                                <li>
+                                    <p>
+                                        뉴오토정밀의 기업활동은 기업이나 조직이 환경에 미치는 영향을 최소화하고 조화를 생각하며,
+                                        환경위험성의 효율적 관리 및 개선과 무재해 기업으로 환경안전보건 선도기업을 지향합니다.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 인증서 영역 -->
+                        <div class="quality_modal_cert_area" aria-label="인증서">
+                            <div class="quality_modal_cert_box">
+                                <img src="./images/modal_img/iso14001_modal.png" alt="인증서사진">
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="modal_divider"/>
+
+                    <!-- 품질경영 카드 영역 -->
+                    <section class="quality_modal_section">
+                        <h2 class="quality_modal_section_title">품질경영</h2>
+
+                        <div class="quality_modal_card_area">
+                            <!-- 카드 1 -->
+                            <article class="quality_modal_card">
+                                <h3 class="quality_modal_card_title">
+                                    Environment
+                                </h3>
+                                <ul class="quality_modal_card_list">
+                                    <li>
+                                        <p>
+                                            뉴오토정밀은 환경 오염물질의 배출을 최소화하고 효율적인 에너지 사용을 위하여 체계적으로 관리하고 있으며, 유해물질 관리 시스템을 구축하여
+                                            다가오는 미래의 환경 악화를 최소화하기 위하여 노력하고 있습니다.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </article>
+
+                            <!-- 카드 2 -->
+                            <article class="quality_modal_card">
+                                <h3 class="quality_modal_card_title">
+                                    Safety
+                                </h3>
+                                <ul class="quality_modal_card_list">
+                                    <li>
+                                        <p>
+                                            중대사고 “제로화＂정책을 시행하고 있으며, 사업장 순회 점검, 위험성 평가 등을 시행하고 있습니다. 또한, 임직원의 안전을 최우선으로 주기적인
+                                            안전보건 교육을 실시하고 있습니다.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </article>
+
+                            <!-- 카드 3 -->
+                            <article class="quality_modal_card">
+                                <h3 class="quality_modal_card_title">
+                                    Health
+                                </h3>
+                                <ul class="quality_modal_card_list">
+                                    <li>
+                                        <p>
+                                            건강한 일터를 만들어가기 위하여 작업환경 개선을 통해 건강한 회사를 추구하고 있으며, 건강검진 실시 및 건강관리실을 운영하고, 건강증진을 위한
+                                            프로그램을 시행하고 있습니다.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </div>
+        <!-- 환경경영시스템 모달 끝 -->
+
         <footer class="footer">
             <div class="footer_inner">
                 <div class="footer_top">
@@ -679,6 +854,44 @@
                 spaceBetween: 24,
             }
         },
+    });
+
+    $(function () {
+      function openModal(targetSelector) {
+        let $modal = $(targetSelector);
+        $modal.addClass('is-open');
+        $('body').addClass('no-scroll');
+      }
+
+      function closeModal($modal) {
+        $modal.removeClass('is-open');
+        $('body').removeClass('no-scroll');
+      }
+
+      $('.js-open-modal').on('click', function (e) {
+        e.preventDefault();
+        let target = $(this).data('target');
+        openModal(target);
+      });
+
+      $(document).on('click', '.modal_overlay .modal_close', function () {
+        let $modal = $(this).closest('.modal_overlay');
+        closeModal($modal);
+      });
+
+      $(document).on('click', '.modal_overlay', function (e) {
+        if ($(e.target).is('.modal_overlay')) {
+          closeModal($(this));
+        }
+      });
+
+      $(document).on('keyup', function (e) {
+        if (e.key === 'Escape') {
+          $('.modal_overlay.is-open').each(function () {
+            closeModal($(this));
+          });
+        }
+      });
     });
 </script>
 </html>
