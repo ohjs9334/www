@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/rnd.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <script src="./js/jquery.3.1.1.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
@@ -223,7 +224,7 @@
                                 전동식 워터펌프와 전동식 오일펌프 등 신규 부품 개발을 진행하고 있습니다.
                             </p>
                         </div>
-                        <button type="button" class="rnd_card_more"
+                        <button type="button" class="rnd_card_more js-open-modal"
                                 data-target="#rndModalField">
                             <span class="blind">자세히 보기</span>
                         </button>
@@ -240,7 +241,7 @@
                                 연구성과에 대한 간략한 설명 텍스트…
                             </p>
                         </div>
-                        <button type="button" class="rnd_card_more"
+                        <button type="button" class="rnd_card_more js-open-modal"
                                 data-target="#rndModalResult">
                             <span class="blind">자세히 보기</span>
                         </button>
@@ -256,7 +257,7 @@
                                 품질경영에 대한 간략한 설명 텍스트…
                             </p>
                         </div>
-                        <button type="button" class="rnd_card_more"
+                        <button type="button" class="rnd_card_more js-open-modal"
                                 data-target="#rndModalQuality">
                             <span class="blind">자세히 보기</span>
                         </button>
@@ -265,6 +266,109 @@
 
             </section>
         </main>
+    </div>
+    <!-- 연구개발 분야 모달 -->
+    <div id="rndModalField" class="modal_overlay">
+        <article class="modal_practice quality_ver1" role="dialog">
+            <div class="modal_header">
+                <button type="button" class="modal_close btn_close" aria-label="닫기">
+                    <span class="blind">닫기</span>
+                </button>
+            </div>
+
+            <div class="modal_content">
+                <!-- 상단 영역 -->
+                <section class="quality_modal_top">
+                    <!-- 타이틀 / 설명 -->
+                    <div class="quality_modal_header">
+                        <p class="quality_modal_subtitle">연구개발</p>
+                        <h1 class="quality_modal_title">타이틀을 입력해 주세요. 최대 한줄로 입력해 주세요.</h1>
+
+                        <ul class="quality_modal_desc_list">
+                            <li>
+                                <p>
+                                    자동차 엔진 냉각과 윤활을 위한 워터펌프, 오일펌프, 써모스탯, 텐션베어링 부품을 개발하고 있으며,
+                                    친환경 자동차 부품으로 전동식 워터펌프와 전동식 오일펌프 등 신규 부품 개발을 진행하고 있습니다.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="quality_modal_cert_area" aria-label="이미지 슬라이드">
+                        <div class="rnd_modal_swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./images/rnd/field_img01.png" alt="연구개발">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/rnd/field_img02.png" alt="연구개발">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/rnd/field_img03.png" alt="연구개발">
+                                </div>
+                            </div>
+
+                            <button type="button" class="swiper-button-prev"></button>
+                            <button type="button" class="swiper-button-next"></button>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </div>
+
+    <!-- 품질경영 분야 모달 -->
+    <div id="rndModalQuality" class="modal_overlay">
+        <article class="modal_practice quality_ver1" role="dialog">
+            <div class="modal_header">
+                <button type="button" class="modal_close btn_close" aria-label="닫기">
+                    <span class="blind">닫기</span>
+                </button>
+            </div>
+
+            <div class="modal_content">
+                <!-- 상단 영역 -->
+                <section class="quality_modal_top">
+                    <!-- 타이틀 / 설명 -->
+                    <div class="quality_modal_header">
+                        <p class="quality_modal_subtitle">품질경영 </p>
+                        <h1 class="quality_modal_title">타이틀을 입력해 주세요. 최대 한줄로 입력해 주세요.</h1>
+
+                        <ul class="quality_modal_desc_list">
+                            <li>
+                                <p>
+                                    자동차 엔진 냉각과 윤활을 위한 워터펌프, 오일펌프, 써모스탯, 텐션베어링 부품을 개발하고 있으며,
+                                    친환경 자동차 부품으로 전동식 워터펌프와 전동식 오일펌프 등 신규 부품 개발을 진행하고 있습니다.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="quality_modal_cert_area" aria-label="이미지 슬라이드">
+                        <div class="rnd_modal_swiper swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./images/rnd/field_img01.png" alt="품질경영">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/rnd/field_img02.png" alt="품질경영">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./images/rnd/field_img03.png" alt="품질경영">
+                                </div>
+                            </div>
+
+                            <button type="button" class="swiper-button-prev"></button>
+                            <button type="button" class="swiper-button-next"></button>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </article>
     </div>
 
     <!--   푸터   -->
@@ -305,4 +409,63 @@
 
 </div>
 </body>
+<script>
+
+  $(function () {
+
+    $('.js-open-modal').on('click', function (e) {
+      e.preventDefault();
+      var target = $(this).data('target');
+      var $modal = $(target);
+
+      if ($modal.length) {
+        $modal.addClass('is-open');
+        $('body').addClass('no-scroll');
+      }
+    });
+
+    $(document).on('click', '.modal_overlay .modal_close', function () {
+      var $modal = $(this).closest('.modal_overlay');
+      $modal.removeClass('is-open');
+      $('body').removeClass('no-scroll');
+    });
+
+    $(document).on('click', '.modal_overlay', function (e) {
+      if ($(e.target).is('.modal_overlay')) {
+        $(this).removeClass('is-open');
+        $('body').removeClass('no-scroll');
+      }
+    });
+
+    $(document).on('keyup', function (e) {
+      if (e.key === 'Escape') {
+        $('.modal_overlay.is-open').removeClass('is-open');
+        $('body').removeClass('no-scroll');
+      }
+    });
+
+    // R&D 모달 내부 스와이퍼 초기화
+    $('.rnd_modal_swiper').each(function (index, el) {
+      var $el = $(el);
+
+      if ($el.data('rndSwiper')) return;
+
+      var swiper = new Swiper(el, {
+        loop: true,
+        speed: 600,
+        navigation: {
+          nextEl: $el.find('.swiper-button-next')[0],
+          prevEl: $el.find('.swiper-button-prev')[0]
+        },
+        pagination: {
+          el: $el.find('.swiper-pagination')[0],
+          clickable: true
+        },
+      });
+
+      $el.data('rndSwiper', swiper);
+    });
+  });
+
+</script>
 </html>
