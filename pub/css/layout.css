@@ -107,7 +107,7 @@ header .lnb_wrap.open{display:block;}
     .footer .footer_company{font-size:18px;line-height:26px;}
     .footer .footer_nav ul li a{font-size:12px;line-height:22px;}
 
-    .contents{padding:65px 0 64px; min-height:800px;}
+    .contents{padding:65px 0 64px; min-height:800px;box-sizing: border-box;}
 }
 
 /* -----------------------------------
