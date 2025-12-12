@@ -7,6 +7,7 @@
     
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/customer.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <script src="./js/jquery.3.1.1.js"></script>
     <script src="./js/ui.js"></script>
@@ -294,7 +295,10 @@
                         <label for="agree">
                             <input type="checkbox" id="agree">
                             <div class="chk_box"></div>
-                            <p class="label_txt"><a href="#">개인정보 수집 및 이용</a>에 대하여 동의합니다.</p>
+                            <p class="label_txt">
+                                <a href="#privateModal" class="js-open-modal" data-modal="privateModal">
+                                    개인정보 수집 및 이용</a>에 대하여 동의합니다.
+                            </p>
                         </label>
                     </div>
                     <div class="btn_round">
@@ -317,6 +321,61 @@
             <!-- //주요 고객사 -->
         </main>
     </div>
+    <!--  개인정보 모달  -->
+    <div id="privateModal" class="modal_overlay" aria-hidden="true">
+        <article class="modal_practice modal_private" role="dialog" aria-labelledby="privateModalTitle" tabindex="1">
+            <div class="modal_header">
+                <button type="button" class="modal_close btn_close" aria-label="닫기">
+                    <span class="blind">닫기</span>
+                </button>
+            </div>
+
+            <div class="modal_content">
+                <h2 id="privateModalTitle" class="private_title">[필수] 개인정보 수집·이용에 대한 안내</h2>
+                <div class="private_section">
+                    <p>
+                        뉴오토정밀(주)는 이용자의 개인정보를 보호하고 적절한 서비스를 제공하기 위해 개인정보를 수집하고 있습니다.
+                        문의하신 사항에 대한 답변을 받고자 하시는 경우 개인정보 수집·이용에 대한 안내에 동의하셔야 합니다.
+                    </p>
+                </div>
+                <div class="private_section">
+                    <p class="private_subtitle">제1조(수집항목 및 이용목적)</p>
+                    <ol class="private_ol">
+                        <li>
+                            1) 회사는 문의사항을 위한 업무 지원 등의 정보 교류를 위해 아래와 같이 개인정보를 수집하고 있습니다.
+                            <ul class="private_ul">
+                                <li>항목 : 수집항목, 수집목적, 보유기간 안내, 이름, 소속, 전자우편, 연락처, [필수]문의사항 확인, 처리 결과</li>
+                                <li>회신 3년간 보관 후 지체없이 파기</li>
+                            </ul>
+                        </li>
+                        <li>
+                            2) 웹사이트를 이용한 서비스 이용과정이나 사업처리 과정에서 아래와 같은 정보들이 자동으로 생성되어 수집될 수 있습니다.
+                            <p>
+                                ※ 접속IP정보, 쿠키, 접속로그, 서비스 이용기록
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="private_section">
+                    <p class="private_subtitle">제2조(개인정보 수집·이용에 대한 동의)</p>
+                    <p>
+                        회사는 이용자에게 개인정보 수집 및 이용에 대해 동의할 수 있는 절차를 마련하였습니다.
+                        동의하는 경우 입력하신 개인정보를 당사의 DB에 저장하고 동의서에 명시된 이용목적대로 회사가 이용하는 것에
+                        동의하는 것으로 간주합니다. 이용자는 개인정보 수집·이용에 대하여 동의하지 않을 수 있고,
+                        동의하지 않는 경우 서비스 제공이 제한될 수 있습니다.
+                    </p>
+                </div>
+
+                <div class="private_section private_notice">
+                    <p>
+                        * 뉴오토정밀(주)는 이용자의 개인정보를 소중히 생각하고 개인정보 보호에 최선을 다하고 있으며,
+                        "개인정보보호법" 및 "정보통신망 이용촉진 및 정보보호 등에 관한 법률" 등 개인정보보호에 관한 제반 법령을 준수합니다.
+                    </p>
+                </div>
+            </div>
+        </article>
+    </div>
+    <!--  개인정보 모달 끝  -->
 
     <!--   푸터   -->
     <footer class="footer">
@@ -355,6 +414,48 @@
     </footer>
 
 </div>
+<script>
+  (function ($) {
+    function openModal($overlay) {
+      if (!$overlay || !$overlay.length) return;
+      $overlay.addClass('is-open').attr('aria-hidden', 'false');
+      $('body').addClass('no-scroll');
+
+      var $dialog = $overlay.find('[role="dialog"]').first();
+      $dialog.attr('tabindex', '-1').focus();
+    }
+    function closeModal($overlay) {
+      if (!$overlay || !$overlay.length) return;
+      $overlay.removeClass('is-open').attr('aria-hidden', 'true');
+      $('body').removeClass('no-scroll');
+    }
+
+    $(document).on('click', '.js-open-modal', function (e) {
+      e.preventDefault();
+      var id = $(this).data('modal');
+      var $overlay = $('#' + id);
+      openModal($overlay);
+    });
+
+    $(document).on('click', '.modal_overlay .modal_close', function () {
+      closeModal($(this).closest('.modal_overlay'));
+    });
+
+    $(document).on('click', '.modal_overlay', function (e) {
+      if ($(e.target).is('.modal_overlay')) {
+        closeModal($(this));
+      }
+    });
+
+    $(document).on('keyup', function (e) {
+      if (e.key === 'Escape') {
+        $('.modal_overlay.is-open').each(function () {
+          closeModal($(this));
+        });
+      }
+    });
+  })(jQuery);
+</script>
 </body>
 
 </html>
