@@ -16,6 +16,7 @@
 /* 1712px  > 1560px 구간 */
 /* 제품 이름 및 소개 */
 .product_tab_panels{margin:36px auto 0;}
+.product_tab_panels .inner_tab_panel{max-width: 100%}
 .product_tab_panels .result_wrap{margin:0 120px;}
 .product_tab_panels .product_tab_result {max-width: 1560px;margin: 0 auto;}
 .product_tab_panels .product_tab_result strong{display:block;font-size:var(--font32);line-height:38px;font-weight:700;color:var(--black);margin-bottom:24px;}
