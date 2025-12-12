@@ -185,7 +185,7 @@
                 <h2 class="visual_tit">연구개발</h2>
             </div>
         </section>
-        <section class="inner_content">
+        <section class="cont_box">
             <div class="section_inner">
                 <div class="content_tab_box">
                     <!--  브레드크럼  -->
@@ -445,7 +445,9 @@
     $('.rnd_modal_swiper').each(function (index, el) {
       var $el = $(el);
 
-      if ($el.data('rndSwiper')) return;
+      if ($el.data('rndSwiper')) {
+        return;
+      }
 
       var swiper = new Swiper(el, {
         loop: false,
