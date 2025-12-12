@@ -269,7 +269,7 @@
     </div>
     <!-- 연구개발 분야 모달 -->
     <div id="rndModalField" class="modal_overlay">
-        <article class="modal_practice quality_ver1" role="dialog">
+        <article class="modal_practice" role="dialog">
             <div class="modal_header">
                 <button type="button" class="modal_close btn_close" aria-label="닫기">
                     <span class="blind">닫기</span>
@@ -281,7 +281,7 @@
                 <section class="quality_modal_top">
                     <!-- 타이틀 / 설명 -->
                     <div class="quality_modal_header">
-                        <p class="quality_modal_subtitle">연구개발</p>
+                        <p class="quality_modal_subtitle">연구개발 분야</p>
                         <h1 class="quality_modal_title">타이틀을 입력해 주세요. 최대 한줄로 입력해 주세요.</h1>
 
                         <ul class="quality_modal_desc_list">
@@ -295,16 +295,16 @@
                     </div>
 
                     <div class="quality_modal_cert_area" aria-label="이미지 슬라이드">
-                        <div class="rnd_modal_swiper swiper">
+                        <div class="rnd_modal_swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="./images/rnd/field_img01.png" alt="연구개발">
+                                    <img src="./images/rnd/rnd_swiper_field1.png" alt="연구개발">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="./images/rnd/field_img02.png" alt="연구개발">
+                                    <img src="./images/rnd/rnd_swiper_field1.png" alt="연구개발">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="./images/rnd/field_img03.png" alt="연구개발">
+                                    <img src="./images/rnd/rnd_swiper_field1.png" alt="연구개발">
                                 </div>
                             </div>
 
@@ -321,7 +321,7 @@
 
     <!-- 품질경영 분야 모달 -->
     <div id="rndModalQuality" class="modal_overlay">
-        <article class="modal_practice quality_ver1" role="dialog">
+        <article class="modal_practice" role="dialog">
             <div class="modal_header">
                 <button type="button" class="modal_close btn_close" aria-label="닫기">
                     <span class="blind">닫기</span>
@@ -333,7 +333,7 @@
                 <section class="quality_modal_top">
                     <!-- 타이틀 / 설명 -->
                     <div class="quality_modal_header">
-                        <p class="quality_modal_subtitle">품질경영 </p>
+                        <p class="quality_modal_subtitle">품질경영</p>
                         <h1 class="quality_modal_title">타이틀을 입력해 주세요. 최대 한줄로 입력해 주세요.</h1>
 
                         <ul class="quality_modal_desc_list">
@@ -347,16 +347,16 @@
                     </div>
 
                     <div class="quality_modal_cert_area" aria-label="이미지 슬라이드">
-                        <div class="rnd_modal_swiper swiper">
+                        <div class="rnd_modal_swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="./images/rnd/field_img01.png" alt="품질경영">
+                                    <img src="./images/rnd/rnd_swiper_quality.png" alt="품질경영">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="./images/rnd/field_img02.png" alt="품질경영">
+                                    <img src="./images/rnd/rnd_swiper_quality.png" alt="품질경영">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="./images/rnd/field_img03.png" alt="품질경영">
+                                    <img src="./images/rnd/rnd_swiper_quality.png" alt="품질경영">
                                 </div>
                             </div>
 
@@ -451,7 +451,7 @@
       if ($el.data('rndSwiper')) return;
 
       var swiper = new Swiper(el, {
-        loop: true,
+        loop: false,
         speed: 600,
         navigation: {
           nextEl: $el.find('.swiper-button-next')[0],

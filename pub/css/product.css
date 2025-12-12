@@ -55,7 +55,7 @@
 
 .product_main_next{right: 0 !important;}
 .product_main_next::after{display: none;}
-.product_main_next::before{display: block;content: "";width: 52px;height: 52px;background-size: 52px 52px;background-repeat: no-repeat;background-position: center;background-image: url("data:image/svg+xml,%0A%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='51' height='51' rx='25.5' stroke='black'/%3E%3Cpath d='M31.2969 25.2031C31.7188 25.6719 31.7188 26.375 31.2969 26.7969L23.7969 34.2969C23.3281 34.7656 22.625 34.7656 22.2031 34.2969C21.7344 33.875 21.7344 33.1719 22.2031 32.75L28.9062 26.0469L22.2031 19.2969C21.7344 18.875 21.7344 18.1719 22.2031 17.75C22.625 17.2812 23.3281 17.2812 23.75 17.75L31.2969 25.2031Z' fill='black'/%3E%3C/svg%3E%0A");}
+.product_main_next::before{display: block;content: "";width: 52px;height: 52px;background-size: 52px 52px;background-repeat: no-repeat;background-position: center;background-image: url("data:image/svg+xml,%0A%3Csvg width='52' height='52' viewBox='0 0 52 52' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='52' height='52' rx='26' fill='white'/%3E%3Cpath d='M31.2969 25.2031C31.7188 25.6719 31.7188 26.375 31.2969 26.7969L23.7969 34.2969C23.3281 34.7656 22.625 34.7656 22.2031 34.2969C21.7344 33.875 21.7344 33.1719 22.2031 32.75L28.9062 26.0469L22.2031 19.2969C21.7344 18.875 21.7344 18.1719 22.2031 17.75C22.625 17.2812 23.3281 17.2812 23.75 17.75L31.2969 25.2031Z' fill='black'/%3E%3C/svg%3E%0A");}
 
 /* 썸네일 라인업 */
 .product_thumb_swiper{border-radius:20px;background:#fff;box-sizing: border-box;padding-right: 16px;}

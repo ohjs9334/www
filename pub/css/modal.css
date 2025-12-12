@@ -11,8 +11,8 @@ body.no-scroll {overflow: hidden;}
 .modal_practice .modal_close{width: 48px;height: 48px;background: url("../images/modal_img/ico_close_btn.png") 100% / 100% no-repeat;border: none;}
 .modal_content{overflow-y: auto;padding: 0 64px 64px 64px;box-sizing: border-box;}
 .modal_practice .quality_modal_top{display:flex;gap:24px;justify-content: space-between;}
-.modal_practice .quality_modal_subtitle{margin:36px 0 16px;font-size:var(--font24);font-weight:700;line-height:30px;color:var(--black);}
-.modal_practice .quality_modal_title{margin-bottom:24px;font-size:var(--font48);font-weight:700;letter-spacing:-.5px;}
+.modal_practice .quality_modal_subtitle{margin:28px 0 16px;font-size:var(--font24);font-weight:700;line-height:30px;color:var(--black);}
+.modal_practice .quality_modal_title{margin-bottom:36px;font-size:var(--font48);font-weight:700;letter-spacing:-.5px;}
 .modal_practice .quality_modal_desc_list{list-style:none;color:var(--black);max-width: 704px;}
 .modal_practice .quality_modal_desc_list li{position: relative;}
 .modal_practice .quality_modal_desc_list li p{font-size:var(--font18);font-weight:400;line-height:30px;}
@@ -24,7 +24,7 @@ body.no-scroll {overflow: hidden;}
 .modal_practice .quality_modal_card_area{display:flex;gap:16px;margin-top:24px;}
 .modal_practice .quality_modal_card{display:flex;flex-direction:column;gap:10px;width:100%;padding:36px;box-sizing:border-box;border-radius:24px;background:#F9F9FC;}
 .modal_practice .quality_modal_card_icon{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:999px;background:#e0e0e0;font-size:0;}
-.modal_practice .quality_modal_card_title{font-size:18px;font-weight:600;line-height:1.5;color:var(--black);}
+.modal_practice .quality_modal_card_title{font-size:18px;font-weight:600;line-height:22px;color:var(--black);}
 .modal_practice .quality_modal_card_list li{position: relative;}
 .modal_practice .quality_modal_card_list li p{font-size:var(--font16);line-height:1.5;color:var(--black);}
 .modal_practice .quality_modal_card_list li+li{margin-top:4px;}
@@ -40,6 +40,26 @@ body.no-scroll {overflow: hidden;}
 .modal_practice.quality_ver2 .quality_modal_cert_box img{max-width: 308px;}
 .modal_practice.quality_ver2 .quality_modal_section_title{display: none;}
 
+
+/* 연구개발 모달창 */
+.rnd_wrap .modal_practice .quality_modal_top{flex-direction: column;gap: 64px;}
+.rnd_wrap .modal_practice .quality_modal_desc_list{max-width: 100%;}
+.rnd_wrap .modal_practice .quality_modal_desc_list li p{line-height: 26px;}
+
+.rnd_wrap .modal_practice .quality_modal_cert_area{position: relative; overflow: hidden;padding-bottom: 30px;box-sizing: border-box;}
+.rnd_wrap .rnd_modal_swiper{max-width: 1196px;border-radius: 16px;overflow: hidden;}
+.rnd_wrap .rnd_modal_swiper .swiper-slide img {width: 100%;height: 100%;object-fit: cover;display: block;}
+.rnd_wrap .rnd_modal_swiper .swiper-pagination {bottom: 0;}
+
+.rnd_wrap .rnd_modal_swiper .swiper-pagination-bullet{background: var(--black);opacity: 0.3;width: 10px;height: 10px;}
+.rnd_wrap .rnd_modal_swiper .swiper-pagination-bullet-active{background: var(--black);opacity: 1;}
+.swiper-button-prev,
+.swiper-button-next{width: 52px !important;height: 52px !important;}
+.rnd_wrap .swiper-button-prev::after{display: none;}
+.rnd_wrap .swiper-button-prev::before{display: block;content: "";width: 52px;height: 52px;background-size: 52px 52px;background-repeat: no-repeat;background-position: center;background-image: url("../images/rnd/ico_arr_defualt.png");transform: rotate(180deg);}
+.rnd_wrap .swiper-button-next::after{display: none;}
+.rnd_wrap .swiper-button-next::before{display: block;content: "";width: 52px;height: 52px;background-size: 52px 52px;background-repeat: no-repeat;background-position: center;background-image: url("../images/rnd/ico_arr_defualt.png");}
+
 /* --------------------
    Responsive
    -------------------- */
@@ -51,8 +71,8 @@ body.no-scroll {overflow: hidden;}
   .modal_practice .modal_close{width: 40px;height: 40px;}
   .modal_practice .quality_modal_subtitle{margin-top: 16px;}
   .modal_content{padding: 0 36px 36px 36px;}
-  .modal_practice .quality_modal_subtitle{font-size:var(--font18);line-height: 24px;}
-  .modal_practice .quality_modal_title{font-size:var(--font32);line-height: 38px;}
+  .modal_practice .quality_modal_subtitle{font-size:var(--font18);line-height: 24px;margin: 8px 0 12px;}
+  .modal_practice .quality_modal_title{font-size:var(--font32);line-height: 38px;margin-bottom: 24px;}
   .modal_practice .quality_modal_desc_list li p{font-size:var(--font16);line-height:24px;}
   .modal_practice .quality_modal_top{flex-direction:column;}
   .modal_practice .quality_modal_top .quality_modal_cert_area{justify-content:center;}
@@ -62,13 +82,18 @@ body.no-scroll {overflow: hidden;}
   .modal_practice .quality_modal_card_title{font-size: var(--font14);}
   .modal_practice .quality_modal_card .quality_modal_card_list li p{font-size: 13px;}
   .modal_practice .quality_modal_cert_box img{max-width: 620px;}
-
-  /* 품질경영시스템 */
   .modal_practice.quality_ver1 .quality_modal_desc_list li+li:before{top: 10px;}
 
   /* 환경경영시스템 */
   .modal_practice.quality_ver2 .quality_modal_cert_box img{max-width: 302px;}
   .modal_practice.quality_ver2 .quality_modal_section_title{display: block; font-size: var(--font18)}
+
+  /* 연구개발 분야 모달 */
+  .rnd_wrap .rnd_modal_swiper{border-radius: 12px;}
+  .rnd_wrap .modal_practice .quality_modal_top{gap: 36px;}
+  .rnd_wrap .swiper-button-prev::before{width: 44px;height: 44px;background-size: 44px 44px;}
+  .rnd_wrap .swiper-button-next::before{width: 44px;height: 44px;background-size: 44px 44px;}
+  .rnd_wrap .rnd_modal_swiper .swiper-pagination-bullet{width: 8px;height: 8px;}
 
 
 }
@@ -93,6 +118,13 @@ body.no-scroll {overflow: hidden;}
   /* 환경경영시스템 */
   .modal_practice.quality_ver2 .quality_modal_cert_area .quality_modal_cert_box{max-width: 302px;}
   .modal_practice.quality_ver2 .quality_modal_section_title{display: block;}
+
+  /* 연구개발 분야 */
+  .rnd_wrap .modal_practice .quality_modal_top{gap: 24px;}
+  .rnd_wrap .rnd_modal_swiper{border-radius: 8px;}
+  .rnd_wrap .swiper-button-prev,
+  .rnd_wrap .swiper-button-next{display: none;}
+  .rnd_wrap .rnd_modal_swiper .swiper-pagination-bullet{width: 6px;height: 6px;}
 
 }
 
