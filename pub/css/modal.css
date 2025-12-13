@@ -26,11 +26,11 @@ body.no-scroll {overflow: hidden;}
 .modal_practice .quality_modal_cert_box{margin-top: 80px;}
 .modal_practice .quality_modal_cert_box img{width: 100%;max-width: 440px;height: auto;object-fit: contain;}
 .modal_practice .quality_modal_section{display:block;}
-.modal_practice .quality_modal_section_title{font-size:24px;font-weight:700;}
+.modal_practice .quality_modal_section_title{font-size:var(--font24);font-weight:700;}
 .modal_practice .quality_modal_card_area{display:flex;gap:16px;margin-top:24px;}
 .modal_practice .quality_modal_card{display:flex;flex-direction:column;gap:10px;width:100%;padding:36px;box-sizing:border-box;border-radius:24px;background:#F9F9FC;}
 .modal_practice .quality_modal_card_icon{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:999px;background:#e0e0e0;font-size:0;}
-.modal_practice .quality_modal_card_title{font-size:18px;font-weight:600;line-height:22px;color:var(--black);}
+.modal_practice .quality_modal_card_title{font-size:var(--font18);font-weight:600;line-height:22px;color:var(--black);}
 .modal_practice .quality_modal_card_list li{position: relative;}
 .modal_practice .quality_modal_card_list li p{font-size:var(--font16);line-height:1.5;color:var(--black);}
 .modal_practice .quality_modal_card_list li+li{margin-top:4px;}
@@ -85,9 +85,9 @@ body.no-scroll{overflow:hidden;}
 .private_subtitle{font-size:var(--font16);line-height:22px;margin-top: 24px;}
 
 .private_ol{margin-top:10px;}
-.private_ol > li{font-size:14px;line-height:26px;}
+.private_ol > li{font-size:var(--font14);line-height:26px;}
 .private_ul{padding-left:24px;box-sizing: border-box;}
-.private_ul > li{font-size:14px;line-height:26px;list-style:disc;}
+.private_ul > li{font-size:var(--font14);line-height:26px;list-style:disc;}
 
 
 /* 태블릿 */

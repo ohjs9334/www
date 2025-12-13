@@ -9,7 +9,7 @@
 .main_wrap .visual_banner .slide_item .slide_inner{position:relative;width:100%;height:100%;box-sizing:border-box}
 .main_wrap .visual_banner .slide_item .txt_box{position:absolute;top:416px;left:180px;color:var(--white);}
 .main_wrap .visual_banner .slide_item .txt_box .visual_tit{font-size:56px;font-weight:700;line-height: 56px;}
-.main_wrap .visual_banner .slide_item .txt_box .visual_desc{margin-top:24px;font-size:18px;line-height:28px}
+.main_wrap .visual_banner .slide_item .txt_box .visual_desc{margin-top:24px;font-size:var(--font18);line-height:28px}
 .main_wrap .visual_banner .slide_item .txt_box .visual_desc span{display:block;}
 .main_wrap .visual_banner .swiper-button-next{width:52px;height:52px;background:url(../images/img_banner_arr_r.png) 100%/ 100% no-repeat; right:64px;}
 .main_wrap .visual_banner .swiper-button-prev{width:52px;height:52px;background:url(../images/img_banner_arr_l.png) 100%/ 100% no-repeat; left:64px;right: auto}
@@ -22,7 +22,7 @@
 .main_wrap .visual_banner .custom-bar-progress .progress_bar {position: absolute;top: 0;left: 0;width: 0%;height: 100%;background: var(--white);}/* 채워지는 BAR */
 .main_wrap .visual_banner .autoplay-toggle-btn {display: flex;align-items: center;justify-content: center;width: 16px;height: 16px;background-color: transparent;border: none;cursor: pointer;padding: 0;z-index: 10;}
 .main_wrap .visual_banner .autoplay-toggle-btn.pause::before {content: ''; display: block;color: #fff;font-family: sans-serif;width: 9px;height: 16px;background: url(../images/img_pause.png) 100% / 100% no-repeat;}/* Pause 상태 아이콘 */
-.main_wrap .visual_banner .autoplay-toggle-btn.play::before {content: '▶'; display: block;color: #fff;font-size: 14px;line-height: 16px;margin-left: 3px;}/* Play 상태 아이콘 */
+.main_wrap .visual_banner .autoplay-toggle-btn.play::before {content: '▶'; display: block;color: #fff;font-size:var(--font14);line-height: 16px;margin-left: 3px;}/* Play 상태 아이콘 */
 
 .main_wrap .tit_area{display: flex;justify-content: space-between;box-sizing: border-box;padding:0 180px}
 .main_wrap .section_tit{font-size:48px;color:var(--black);font-weight:700;line-height:58px;word-break:keep-all;}
@@ -48,7 +48,7 @@
 .main_wrap .company_prod .prod_list{margin-top:64px;margin-left: 180px;padding-right: 180px;}
 .main_wrap .company_prod .prod_list .prod_item{max-width: 372px;height:496px;}
 .main_wrap .company_prod .prod_list .prod_link{height:100%; display: flex;flex-direction: column;justify-content: space-between;align-items: center; border-radius: 24px;background: var(--white);padding:48px;box-sizing: border-box;}
-.main_wrap .company_prod .prod_list .prod_link .prod_name{width:100%;color:var(--black);font-size:32px;font-weight:700;line-height:38px}
+.main_wrap .company_prod .prod_list .prod_link .prod_name{width:100%;color:var(--black);font-size:var(--font32);font-weight:700;line-height:38px}
 .main_wrap .company_prod .prod_list .prod_link .img_prod {width:240px;height:258px}
 .main_wrap .company_prod .prod_list .prod_link .img_prod img{width:100%;height: 100%;}
 /* 최신 소식 */
@@ -63,15 +63,15 @@
 .main_wrap .company_news .company_news_list .new_img{width: 100%;height:210px;border-radius: 24px;overflow: hidden;box-sizing: border-box;}
 .main_wrap .company_news .company_news_list .new_img img{width: 100%;}
 .main_wrap .company_news .company_news_list .new_info {margin-top:24px}
-.main_wrap .company_news .company_news_list .new_info .news_cate{color:var(--black);font-size:16px;font-weight:700;line-height:24px}
-.main_wrap .company_news .company_news_list .new_info .news_tit{color:var(--black);font-size:24px;font-weight:700;line-height: 34px;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;align-self: stretch;text-overflow: ellipsis;overflow: hidden;}
-.main_wrap .company_news .company_news_list .new_info .date{display: block;margin-top:12px;font-size:16px;line-height:24px;color:var(--black)}
+.main_wrap .company_news .company_news_list .new_info .news_cate{color:var(--black);font-size:var(--font16);font-weight:700;line-height:24px}
+.main_wrap .company_news .company_news_list .new_info .news_tit{color:var(--black);font-size:var(--font24);font-weight:700;line-height: 34px;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;align-self: stretch;text-overflow: ellipsis;overflow: hidden;}
+.main_wrap .company_news .company_news_list .new_info .date{display: block;margin-top:12px;font-size:var(--font16);line-height:24px;color:var(--black)}
 
 .main_wrap .company_info .inner{display: flex; max-width: 1920px;margin:0 auto}
 .main_wrap .company_info .info_item{width: 50%;flex:1;text-align: center;padding:100px 0;background-size: 100% 330px;background-position: 100%;background-repeat: no-repeat;}
 .main_wrap .company_info .info_item.catalog_box{background-image :url(../images/bg_catalog.png)}
 .main_wrap .company_info .info_item.research_box{background-image : url(../images/bg_research.png)}
-.main_wrap .company_info .tit{color:var(--white);font-size:32px;font-weight:700;}
+.main_wrap .company_info .tit{color:var(--white);font-size:var(--font32);font-weight:700;}
 .main_wrap .company_info .btn_round{border-color:var(--white)}
 .main_wrap .company_info .btn_round a,
 .main_wrap .company_info .btn_round button{color:var(--white)}
@@ -83,7 +83,7 @@
     .main_wrap .section_tit.pc_tit{display:none;}
     .main_wrap .section_tit.mo_tit{display:block;}
     .main_wrap .tit_area{padding:0 38px}
-    .main_wrap .section_tit{font-size:32px;line-height: 42px;}
+    .main_wrap .section_tit{font-size:var(--font32);line-height: 42px;}
     .main_wrap .btn_round{margin-top:24px}
 
     
@@ -96,7 +96,7 @@
     .main_wrap .visual_banner .slide_item .txt_box{top:386px;left:38px;}
     .main_wrap .visual_banner .slide_item .txt_box .visual_tit{font-size:48px;line-height: 58px;}
     .main_wrap .visual_banner .slide_item .txt_box .visual_tit span{display: block;}
-    .main_wrap .visual_banner .slide_item .txt_box .visual_desc{margin-top:12px;font-size:14px;line-height:20px;}
+    .main_wrap .visual_banner .slide_item .txt_box .visual_desc{margin-top:12px;font-size:var(--font14);line-height:20px;}
     .main_wrap .visual_banner .custom-bar-wrap{padding:0 38px}
     .main_wrap .visual_banner .custom-bar-progress .progress_wrap {gap:12px}
 
@@ -108,16 +108,16 @@
     .main_wrap .company_prod .prod_list {margin-top:36px;margin-left:38px;padding-right:38px;}
     .main_wrap .company_prod .prod_list .prod_item{max-width:338px;height:450px;}
     .main_wrap .company_prod .prod_list .prod_link{padding:36px;border-radius: 16px;}
-    .main_wrap .company_prod .prod_list .prod_link .prod_name{font-size:24px;line-height: 34px;}
+    .main_wrap .company_prod .prod_list .prod_link .prod_name{font-size:var(--font24);line-height: 34px;}
     
     .main_wrap .company_news{padding: 64px 0;}
     .main_wrap .company_news .company_news_list{margin:36px 0 0 38px;padding-right: 38px;}
     .main_wrap .company_news .company_news_list .new_item{width: 337px;}
     .main_wrap .company_news .company_news_list .new_img{height:190px;border-radius:16px;}
     .main_wrap .company_news .company_news_list .new_info {margin-top:20px}
-    .main_wrap .company_news .company_news_list .new_info .news_cate{font-size:14px;line-height:17px}
+    .main_wrap .company_news .company_news_list .new_info .news_cate{font-size:var(--font14);line-height:17px}
     .main_wrap .company_news .company_news_list .new_info .news_tit{font-size:20px;line-height:28px;}
-    .main_wrap .company_news .company_news_list .new_info .date{margin-top:12px;font-size:14px;line-height:20px}
+    .main_wrap .company_news .company_news_list .new_info .date{margin-top:12px;font-size:var(--font14);line-height:20px}
 
     .main_wrap .company_info .inner{flex-direction: column;}
     .main_wrap .company_info .info_item{width: 100%;padding:80px 0;background-size: 100% 270px}
@@ -130,14 +130,14 @@
 ----------------------------------- */
 @media (max-width:767px) {
     
-    .main_wrap .section_tit{font-size:24px;line-height: 34px;}
+    .main_wrap .section_tit{font-size:var(--font24);line-height: 34px;}
     .main_wrap .btn_round{margin-top:16px}
     .main_wrap .swiper_btn_box{display: none;}
 
     .main_wrap .visual_banner .slide_item{height: 540px;}
     .main_wrap .visual_banner .slide_item .txt_box{top:192px;left:24px;width:224px;word-break: keep-all;}
-    .main_wrap .visual_banner .slide_item .txt_box .visual_tit{font-size:24px;line-height:34px;}
-    .main_wrap .visual_banner .slide_item .txt_box .visual_desc{margin-top:12px;font-size:14px;line-height:20px;}
+    .main_wrap .visual_banner .slide_item .txt_box .visual_tit{font-size:var(--font24);line-height:34px;}
+    .main_wrap .visual_banner .slide_item .txt_box .visual_desc{margin-top:12px;font-size:var(--font14);line-height:20px;}
     .main_wrap .visual_banner .slide_item .txt_box .visual_tit span,
     .main_wrap .visual_banner .slide_item .txt_box .visual_desc span{display: inline;}
     .main_wrap .visual_banner .custom-bar-wrap{padding:0 24px}
@@ -151,7 +151,7 @@
     .main_wrap .company_prod .prod_list {margin-top:36px;margin-left:38px;padding-right:38px;}
     .main_wrap .company_prod .prod_list .prod_item{max-width:258px;height:344px;}
     .main_wrap .company_prod .prod_list .prod_link{padding:36px;border-radius: 16px;}
-    .main_wrap .company_prod .prod_list .prod_link .prod_name{font-size:18px;line-height: 21px;}
+    .main_wrap .company_prod .prod_list .prod_link .prod_name{font-size:var(--font18);line-height: 21px;}
     .main_wrap .company_prod .prod_list .prod_link .img_prod{width: 203px;height: 188px;}
     .main_wrap .company_news{padding: 36px 0;}
     .main_wrap .company_news .company_news_list{margin:24px 0 0 24px;padding-right: 24px;}
@@ -159,11 +159,11 @@
     .main_wrap .company_news .company_news_list .new_img{height:100%;border-radius:12px;}
     .main_wrap .company_news .company_news_list .new_info {margin-top:16px}
     .main_wrap .company_news .company_news_list .new_info .news_cate{font-size:12px;line-height:20px}
-    .main_wrap .company_news .company_news_list .new_info .news_tit{font-size:18px;line-height:26px;margin-top:8px}
+    .main_wrap .company_news .company_news_list .new_info .news_tit{font-size:var(--font18);line-height:26px;margin-top:8px}
     .main_wrap .company_news .company_news_list .new_info .date{margin-top:12px;font-size:12px;line-height:14px}
 
     .main_wrap .company_info .info_item{width: 100%;padding:48px 0;background-size: 100% 188px}
-    .main_wrap .company_info .info_item .tit{font-size:24px;line-height: 34px;}
+    .main_wrap .company_info .info_item .tit{font-size:var(--font24);line-height: 34px;}
 }
 
 

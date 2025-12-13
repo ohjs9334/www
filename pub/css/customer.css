@@ -12,20 +12,20 @@
 .map_box{position:relative;width:100%;max-height:552px;aspect-ratio:1680 / 552;box-sizing:border-box;border-radius:24px;overflow:hidden;}
 .cont_inquiry{margin-top:100px;display:flex;justify-content:space-between;gap:192px;box-sizing:border-box;padding:0 60px}
 .cont_inquiry .inquiry_info{}
-.cont_inquiry .inquiry_info .info_tit{color:var(--black);font-size:32px;font-weight:700;line-height:38px;}
-.cont_inquiry .inquiry_info .info_txt{font-size:18px;font-weight:700;line-height:32px;color:var(--black)}
+.cont_inquiry .inquiry_info .info_tit{color:var(--black);font-size:var(--font32);font-weight:700;line-height:38px;}
+.cont_inquiry .inquiry_info .info_txt{font-size:var(--font18);font-weight:700;line-height:32px;color:var(--black)}
 .cont_inquiry .inquiry_info .info_txt:first-of-type{margin-top:36px}
 .cont_inquiry .inquiry_form_area{max-width:1032px;}
-.cont_inquiry .inquiry_form_area .inquiry_guide p{font-size:18px;font-weight:700;line-height:28px;color:var(--black)}
+.cont_inquiry .inquiry_form_area .inquiry_guide p{font-size:var(--font18);font-weight:700;line-height:28px;color:var(--black)}
 .inquiry_form_area .inquiry_form_list ul{display:flex;flex-wrap:wrap;gap:24px;margin-top:36px;}
 .inquiry_form_area .inquiry_form_list li{display:flex;width:calc(50% - 12px);gap:33px;}
 .inquiry_form_area .inquiry_form_list li:nth-child(7),
 .inquiry_form_area .inquiry_form_list li:nth-child(8){width:100%;}
-.inquiry_form_area .inquiry_form_list .inquiry_label{display:block;margin-top:20px;width:77px;color:var(--black);font-size:18px;font-weight:700;}
+.inquiry_form_area .inquiry_form_list .inquiry_label{display:block;margin-top:20px;width:77px;color:var(--black);font-size:var(--font18);font-weight:700;}
 .inquiry_form_area .inquiry_form_list .ipt,
 .inquiry_form_area .inquiry_form_list .text_area{flex:1;width:100%;}
-.inquiry_form_area .inquiry_form_list .ipt input{width:100%;height:56px;line-height:54px;padding:12px 28px;box-sizing:border-box;border-radius:100px;background:#f9f9fc;font-size:18px;font-weight: 400;}
-.inquiry_form_area .inquiry_form_list .text_area textarea{width:100%;height:168px;padding:20px 28px;line-height:21px;box-sizing:border-box;border-radius:28px;background:#f9f9fc;font-size:18px;font-weight: 400;}
+.inquiry_form_area .inquiry_form_list .ipt input{width:100%;height:56px;line-height:54px;padding:12px 28px;box-sizing:border-box;border-radius:100px;background:#f9f9fc;font-size:var(--font18);font-weight: 400;}
+.inquiry_form_area .inquiry_form_list .text_area textarea{width:100%;height:168px;padding:20px 28px;line-height:21px;box-sizing:border-box;border-radius:28px;background:#f9f9fc;font-size:var(--font18);font-weight: 400;}
 .inquiry_form_area .inquiry_form_list .ipt input::placeholder,
 .inquiry_form_area .inquiry_form_list .text_area textarea::placeholder{color:#D2D2DC}
 
@@ -37,7 +37,7 @@
 .agree_area .chk_ipt label .chk_box::before{position: absolute;top:-1px;left: -1px; content: "";display: block;width: 16px;height: 16px;background-color: #e2e2e2;cursor: pointer;mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' fill='white'%3E%3Cpath d='M448.1 118.2L437 129.7 173.6 404l-11.5 12-11.5-12L11.1 258.8 0 247.2l23.1-22.2 11.1 11.5L162.1 369.8 414 107.5 425 96l23.1 22.2z'/%3E%3C/svg%3E");mask-size: 9px 10px;mask-position: center;mask-repeat: no-repeat;}
 .agree_area .chk_ipt input:checked ~ .chk_box{background-color:var(--black);border:1px solid var(--black)}
 .agree_area .chk_ipt .label_txt,
-.agree_area .chk_ipt .label_txt a{flex:1;color:var(--black);font-size:18px;line-height: 21px;}
+.agree_area .chk_ipt .label_txt a{flex:1;color:var(--black);font-size:var(--font18);line-height: 21px;}
 .agree_area .chk_ipt .label_txt a{text-decoration-line: underline; text-underline-offset: 2px;}
 .agree_area .btn_round{margin-top:24px}
 
@@ -46,16 +46,16 @@
   .map_box{aspect-ratio: 692 / 330;border-radius: 16px;}
   .cont_inquiry{margin-top:24px;padding:0;justify-content:normal;gap:0;flex-wrap:wrap;flex-direction: column;}
   .cont_inquiry .inquiry_info{padding-bottom:36px;}
-  .cont_inquiry .inquiry_info .info_tit{font-size:24px;line-height:29px;}
+  .cont_inquiry .inquiry_info .info_tit{font-size:var(--font24);line-height:29px;}
   .cont_inquiry .inquiry_info .info_txt:first-of-type{margin-top:16px}
-  .cont_inquiry .inquiry_info .info_txt {font-size: 16px;line-height:26px}
+  .cont_inquiry .inquiry_info .info_txt {font-size:var(--font16);line-height:26px}
   .cont_inquiry .inquiry_form_area{padding-top:36px;border-top:1px solid #E2E2E2}
-  .cont_inquiry .inquiry_form_area .inquiry_guide p{font-size:16px;line-height:24px;}
+  .cont_inquiry .inquiry_form_area .inquiry_guide p{font-size:var(--font16);line-height:24px;}
   .inquiry_form_area .inquiry_form_list ul{gap:16px;margin-top:24px;}
   .inquiry_form_area .inquiry_form_list li{width:calc(50% - 8px);gap:24px;}
-  .inquiry_form_area .inquiry_form_list .inquiry_label{margin-top:14px;width: 78px;font-size: 16px;}
-  .inquiry_form_area .inquiry_form_list .ipt input {height: 48px;line-height: 46px;padding: 12px 24px;font-size: 16px}
-  .inquiry_form_area .inquiry_form_list .text_area textarea{height:144px;padding:18px 28px;line-height:19px;border-radius:24px;font-size:16px}
+  .inquiry_form_area .inquiry_form_list .inquiry_label{margin-top:14px;width: 78px;font-size:var(--font16);}
+  .inquiry_form_area .inquiry_form_list .ipt input {height: 48px;line-height: 46px;padding: 12px 24px;font-size:var(--font16)}
+  .inquiry_form_area .inquiry_form_list .text_area textarea{height:144px;padding:18px 28px;line-height:19px;border-radius:24px;font-size:var(--font16)}
 
   .agree_area{padding:0;margin-top:24px}
   .agree_area .chk_ipt{margin-top:16px}
@@ -63,7 +63,7 @@
   .agree_area .chk_ipt label .chk_box::before{width:14px;height:14px}
   .agree_area .chk_ipt label{gap:12px}
   .agree_area .chk_ipt .label_txt, 
-  .agree_area .chk_ipt .label_txt a{font-size:16px}
+  .agree_area .chk_ipt .label_txt a{font-size:var(--font16)}
   .agree_area .btn_round{margin-top:16px}
 }
 @media (max-width:768px) {
@@ -71,16 +71,16 @@
     .map_box{aspect-ratio: 312 / 198;border-radius: 12px;}
     .cont_inquiry{margin-top:16px;}
     .cont_inquiry .inquiry_info{padding-bottom:24px;}
-    .cont_inquiry .inquiry_info .info_tit{font-size:18px;line-height:26px;}
+    .cont_inquiry .inquiry_info .info_tit{font-size:var(--font18);line-height:26px;}
     .cont_inquiry .inquiry_info .info_txt:first-of-type{margin-top:12px}
-    .cont_inquiry .inquiry_info .info_txt {font-size: 14px;line-height:22px}
+    .cont_inquiry .inquiry_info .info_txt {font-size:var(--font14);line-height:22px}
     .cont_inquiry .inquiry_form_area{padding-top:24px}
-    .cont_inquiry .inquiry_form_area .inquiry_guide p{font-size:14px;line-height:22px;word-break: keep-all;}
+    .cont_inquiry .inquiry_form_area .inquiry_guide p{font-size:var(--font14);line-height:22px;word-break: keep-all;}
     .inquiry_form_area .inquiry_form_list ul{gap:12px;margin-top:16px;}
     .inquiry_form_area .inquiry_form_list li{width:100%;gap:6px;flex-direction: column;}
-    .inquiry_form_area .inquiry_form_list .inquiry_label{margin-top:0;width: 100%;font-size: 14px;}
-    .inquiry_form_area .inquiry_form_list .ipt input {height: 42px;line-height: 40px;padding: 12px 22px;font-size: 14px}
-    .inquiry_form_area .inquiry_form_list .text_area textarea{height:126px;padding:16px 24px;line-height:17px;border-radius:21px;font-size:14px}
+    .inquiry_form_area .inquiry_form_list .inquiry_label{margin-top:0;width: 100%;font-size:var(--font14);}
+    .inquiry_form_area .inquiry_form_list .ipt input {height: 42px;line-height: 40px;padding: 12px 22px;font-size:var(--font14)}
+    .inquiry_form_area .inquiry_form_list .text_area textarea{height:126px;padding:16px 24px;line-height:17px;border-radius:21px;font-size:var(--font14)}
 
     .agree_area{margin-top:16px;text-align: left;}
     .agree_area .chk_ipt{margin-top:12px;justify-content: flex-start;}
@@ -88,7 +88,7 @@
     .agree_area .chk_ipt label .chk_box::before{width:14px;height:14px}
     .agree_area .chk_ipt label{gap:10px}
     .agree_area .chk_ipt .label_txt, 
-    .agree_area .chk_ipt .label_txt a{font-size:14px}
+    .agree_area .chk_ipt .label_txt a{font-size:var(--font14)}
     .agree_area .btn_round{margin-top:12px}
 }
 
@@ -99,8 +99,8 @@
 
 .notice_area .notice_list .item a{display: flex;justify-content: space-between;gap:24px;align-items:center;padding:42px 0;border-top:1px solid #E2E2E2;box-sizing: border-box;}
 .notice_area .notice_list .item:last-child a{border-bottom:1px solid #E2E2E2;}
-.notice_area .notice_list .item a .notice_tit{flex:1;color:var(--black);font-size:24px;font-weight:700;line-height:34px;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;align-self: stretch;overflow: hidden;}
-.notice_area .notice_list .item a .notice_date{color:var(--blakc);font-size: 16px;}
+.notice_area .notice_list .item a .notice_tit{flex:1;color:var(--black);font-size:var(--font24);font-weight:700;line-height:34px;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;align-self: stretch;overflow: hidden;}
+.notice_area .notice_list .item a .notice_date{color:var(--blakc);font-size:var(--font16);}
 .notice_area .list_more {text-align: center;padding: 36px 0 0;margin:0 auto}
 .notice_area .btn_more span {display:block;border-radius: 60px;border: 1px solid var(--black);background: var(--white);font-size: var(--font18);line-height: 22px;font-weight: 500;cursor: pointer;padding: 16px 32px; box-sizing: border-box;}
 .clients_map svg{width:100%;height:100%;aspect-ratio: 2 / 1;}
@@ -117,14 +117,14 @@ svg path.country.active {fill: #ff6a00;fill-opacity:1;cursor: pointer;}
 
 @media (max-width:1228px) {
   .notice_area .notice_list .item a{gap:16px;padding:28px 0}
-  .notice_area .notice_list .item a .notice_tit{font-size:18px;line-height:26px}
-  .notice_area .notice_list .item a .notice_date{font-size: 14px;}
+  .notice_area .notice_list .item a .notice_tit{font-size:var(--font18);line-height:26px}
+  .notice_area .notice_list .item a .notice_date{font-size:var(--font14);}
   .notice_area .list_more {text-align: center;padding: 32px 0 0;}
   .notice_area .btn_more span {font-size: var(--font16);line-height: 20px;padding: 14px 26px;}
 }
 @media (max-width:768px) {
   .notice_area .notice_list .item a{gap:12px;padding:16px 0;flex-direction: column;align-items: flex-start;}
-  .notice_area .notice_list .item a .notice_tit{font-size:14px;line-height:20px}
+  .notice_area .notice_list .item a .notice_tit{font-size:var(--font14);line-height:20px}
   .notice_area .notice_list .item a .notice_date{font-size: 13px;}
   .notice_area .list_more {text-align: center;padding: 16px 0 0;}
   .notice_area .btn_more span {font-size: var(--font14);line-height: 18px;padding: 12px 22px; }
@@ -137,19 +137,19 @@ svg path.country.active {fill: #ff6a00;fill-opacity:1;cursor: pointer;}
 .clients_area{}
 .clients_area .txt_area{text-align: center;margin:0 120px 0;box-sizing: border-box;}
 .clients_area .txt_area .tit_clients{color:var(--black);font-size:48px;font-weight: 700;line-height: 62px;}
-.clients_area .txt_area .txt_clients {margin-top:24px;font-size:18px;line-height:28px;color:var(--black)}
+.clients_area .txt_area .txt_clients {margin-top:24px;font-size:var(--font18);line-height:28px;color:var(--black)}
 .clients_area .txt_area .txt_clients span{display: block;}
 .clients_map{margin-top:64px}
 @media (max-width:1228px) {
   .clients_area .txt_area{max-width: 488px;text-align: center;padding:0 38px;margin:0 auto}
-  .clients_area .txt_area .tit_clients{font-size:32px;line-height:42px;}
-  .clients_area .txt_area .txt_clients {margin-top:16px;font-size:16px;line-height:24px}
+  .clients_area .txt_area .tit_clients{font-size:var(--font32);line-height:42px;}
+  .clients_area .txt_area .txt_clients {margin-top:16px;font-size:var(--font16);line-height:24px}
   .clients_area .txt_area .txt_clients span{display:inline;}
   .clients_map{margin-top:36px}
 }
 @media (max-width:768px) {
   .clients_area .txt_area{text-align: center;padding:0 24px}
   .clients_area .txt_area .tit_clients{font-size:20px;line-height:28px;}
-  .clients_area .txt_area .txt_clients {margin-top:8px;font-size:14px;line-height:20px}
+  .clients_area .txt_area .txt_clients {margin-top:8px;font-size:var(--font14);line-height:20px}
   .clients_map{margin-top:24px}
 }
