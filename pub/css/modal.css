@@ -68,7 +68,7 @@ body.no-scroll {overflow: hidden;}
 body.no-scroll{overflow:hidden;}
 
 /* 개인정보 모달 */
-.modal_practice.modal_private{position:relative;width:min(1200px, calc(100% - 48px));margin:100px auto;background:#fff;border-radius:20px;box-sizing:border-box;}
+.modal_practice.modal_private{position:relative;width:min(1032px, calc(100% - 48px));margin:100px auto;background:#fff;border-radius:20px;box-sizing:border-box;}
 .modal_practice.modal_private .modal_close{position:absolute;top:24px;right:24px;width:40px;height:40px;border:none;background:transparent;cursor:pointer;}
 .modal_practice.modal_private .modal_close::before,
 .modal_practice.modal_private .modal_close::after{content:"";position:absolute;left:50%;top:50%;width:18px;height:2px;background:var(--black);transform-origin:center;}

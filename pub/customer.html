@@ -903,6 +903,53 @@
     });
   });
 })();
+
+
+  (function ($) {
+  function openModal($overlay) {
+    if (!$overlay || !$overlay.length) return;
+    $overlay.addClass('is-open').attr('aria-hidden', 'false');
+    $('body').addClass('no-scroll');
+    // 포커스 이동
+    var $dialog = $overlay.find('[role="dialog"]').first();
+    $dialog.attr('tabindex', '-1').focus();
+  }
+  function closeModal($overlay) {
+  if (!$overlay || !$overlay.length) return;
+  $overlay.removeClass('is-open').attr('aria-hidden', 'true');
+  $('body').removeClass('no-scroll');
+}
+
+  // 열기
+  $(document).on('click', '.js-open-modal', function (e) {
+  e.preventDefault();
+  var id = $(this).data('modal');
+  var $overlay = $('#' + id);
+  openModal($overlay);
+});
+
+  // 닫기(닫기 버튼)
+  $(document).on('click', '.modal_overlay .modal_close', function () {
+  closeModal($(this).closest('.modal_overlay'));
+});
+
+  // 닫기(오버레이 바깥 클릭)
+  $(document).on('click', '.modal_overlay', function (e) {
+  if ($(e.target).is('.modal_overlay')) {
+  closeModal($(this));
+}
+});
+
+  // 닫기(ESC)
+  $(document).on('keyup', function (e) {
+  if (e.key === 'Escape') {
+  $('.modal_overlay.is-open').each(function () {
+  closeModal($(this));
+});
+}
+});
+})(jQuery);
+
 </script>
 </body>
 
