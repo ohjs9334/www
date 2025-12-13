@@ -559,10 +559,9 @@
                     </ul>
                     <!-- 더보기 버튼 -->
                     <div class="pr_list_more">
-                        <button type="button"
-                                class="btn_more js-more-btn">
-                            <span>더 보기</span>
-                        </button>
+                        <div class="btn_round">
+                            <button type="button">더 보기</button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -581,9 +580,9 @@
                                 <span class="info-type">Korean</span>
                                 <span class="info-size">2.40MB</span>
                             </div>
-                            <button class="download-button" data-file="catalog5.pdf">
-                                <span>카탈로그 다운로드</span>
-                            </button>
+                            <div class="btn_round download-button">
+                                <button type="button">카탈로그 다운로드</button>
+                            </div>
                         </li>
                         <li class="catalog-item js-more-item">
                             <div class="catalog-category">카탈로그</div>
@@ -593,9 +592,9 @@
                                 <span class="info-type">Korean</span>
                                 <span class="info-size">2.40MB</span>
                             </div>
-                            <button class="download-button" data-file="catalog5.pdf">
-                                <span>카탈로그 다운로드</span>
-                            </button>
+                            <div class="btn_round download-button">
+                                <button type="button">카탈로그 다운로드</button>
+                            </div>
                         </li>
                         <li class="catalog-item js-more-item">
                             <div class="catalog-category">카탈로그</div>
@@ -605,9 +604,9 @@
                                 <span class="info-type">Korean</span>
                                 <span class="info-size">2.40MB</span>
                             </div>
-                            <button class="download-button" data-file="catalog5.pdf">
-                                <span>카탈로그 다운로드</span>
-                            </button>
+                            <div class="btn_round download-button">
+                                <button type="button">카탈로그 다운로드</button>
+                            </div>
                         </li>
                         <li class="catalog-item js-more-item">
                             <div class="catalog-category">카탈로그</div>
@@ -617,9 +616,9 @@
                                 <span class="info-type">Korean</span>
                                 <span class="info-size">2.40MB</span>
                             </div>
-                            <button class="download-button" data-file="catalog5.pdf">
-                                <span>카탈로그 다운로드</span>
-                            </button>
+                            <div class="btn_round download-button">
+                                <button type="button">카탈로그 다운로드</button>
+                            </div>
                         </li>
                         <li class="catalog-item js-more-item">
                             <div class="catalog-category">카탈로그</div>
@@ -629,9 +628,9 @@
                                 <span class="info-type">Korean</span>
                                 <span class="info-size">2.40MB</span>
                             </div>
-                            <button class="download-button" data-file="catalog5.pdf">
-                                <span>카탈로그 다운로드</span>
-                            </button>
+                            <div class="btn_round download-button">
+                                <button type="button">카탈로그 다운로드</button>
+                            </div>
                         </li>
                         <li class="catalog-item js-more-item">
                             <div class="catalog-category">카탈로그</div>
@@ -641,9 +640,9 @@
                                 <span class="info-type">Korean</span>
                                 <span class="info-size">2.40MB</span>
                             </div>
-                            <button class="download-button" data-file="catalog5.pdf">
-                                <span>카탈로그 다운로드</span>
-                            </button>
+                            <div class="btn_round download-button">
+                                <button type="button">카탈로그 다운로드</button>
+                            </div>
                         </li>
                         <li class="catalog-item js-more-item">
                             <div class="catalog-category">카탈로그</div>
@@ -653,9 +652,9 @@
                                 <span class="info-type">Korean</span>
                                 <span class="info-size">2.40MB</span>
                             </div>
-                            <button class="download-button" data-file="catalog5.pdf">
-                                <span>카탈로그 다운로드</span>
-                            </button>
+                            <div class="btn_round download-button">
+                                <button type="button">카탈로그 다운로드</button>
+                            </div>
                         </li>
                         <li class="catalog-item js-more-item">
                             <div class="catalog-category">카탈로그</div>
@@ -665,17 +664,16 @@
                                 <span class="info-type">Korean</span>
                                 <span class="info-size">2.40MB</span>
                             </div>
-                            <button class="download-button" data-file="catalog5.pdf">
-                                <span>카탈로그 다운로드</span>
-                            </button>
+                            <div class="btn_round download-button">
+                                <button type="button">카탈로그 다운로드</button>
+                            </div>
                         </li>
                     </ul>
                     <!-- 더보기 버튼 -->
                     <div class="pr_list_more">
-                        <button type="button"
-                                class="btn_more js-more-btn">
-                            <span>더 보기</span>
-                        </button>
+                        <div class="btn_round">
+                            <button type="button">더 보기</button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -896,10 +894,9 @@
                     </ul>
 
                     <div class="pr_list_more">
-                        <button type="button"
-                                class="btn_more js-more-btn">
-                            <span>더 보기</span>
-                        </button>
+                        <div class="btn_round">
+                            <button type="button">더 보기</button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -946,70 +943,4 @@
 
 </div>
 </body>
-<script>
-  /*  공통: 리스트 더보기  */
-  $('.js-more-wrap').each(function () {
-    const $wrap = $(this);
-    const $items = $wrap.find('.js-more-item');
-    const $btn = $wrap.find('.js-more-btn');
-    const $moreArea = $wrap.find('.pr_list_more');
-
-    // 기본 5개씩 펼쳐지도록, data-more-step 으로 개별 설정 가능
-    const step = parseInt($wrap.data('more-step'), 10) || 5;
-    let shown = step;
-
-    $items.hide().slice(0, shown).show();
-
-    // 처음부터 전체 개수보다 적으면 영역 숨김
-    if (shown >= $items.length) {
-      $moreArea.hide();
-    }
-
-    $btn.on('click', function (e) {
-      e.preventDefault();
-      shown += step;
-      $items.slice(0, shown).fadeIn(200);
-
-      // 버튼 불 필요한 상황 시, 버튼 영역 숨김
-      if (shown >= $items.length) {
-        $moreArea.hide();
-      }
-    });
-  });
-
-  /*  페이지 로드 완료 후 이벤트 리스너 등록  */
-  document.addEventListener('DOMContentLoaded', function () {
-    // 모든 다운로드 버튼 선택
-    const downloadButtons = document.querySelectorAll('.download-button');
-
-    // 각 버튼에 클릭 이벤트 리스너 등록
-    downloadButtons.forEach(button => {
-      button.addEventListener('click', function () {
-        // data-file 속성에서 파일명 가져오기
-        const filename = this.getAttribute('data-file');
-        downloadFile(filename);
-      });
-    });
-  });
-
-  /**
-   * 파일 다운로드 함수
-   * @param {string} filename - 다운로드할 파일명
-   */
-  function downloadFile(filename) {
-    // 실제 파일이 저장된 경로 설정
-    const fileUrl = '/path/to/files/' + filename;
-
-    // 동적으로 앵커 태그를 생성하여 다운로드 트리거
-    const link = document.createElement('a');
-    link.href = fileUrl;
-    link.download = filename;
-
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
-
-
-</script>
 </html>
