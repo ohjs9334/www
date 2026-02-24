@@ -162,17 +162,17 @@ svg path.country.active {fill: #ff6a00;fill-opacity:1;cursor: pointer;}
 .clients_area .txt_area .tit_clients{color:var(--black);font-size:48px;font-weight: 600;line-height: 62px;}
 .clients_area .txt_area .txt_clients {margin-top:24px;font-size:var(--font18);line-height:28px;color:var(--black)}
 .clients_area .txt_area .txt_clients span{display: block;}
-.clients_map{margin-top:64px}
+.clients_map{margin:64px 100px 0}/* 26/02/24 수정 */
 @media (max-width:1228px) {
   .clients_area .txt_area{max-width: 488px;text-align: center;padding:0 38px;margin:0 auto}
   .clients_area .txt_area .tit_clients{font-size:var(--font32);line-height:42px;}
   .clients_area .txt_area .txt_clients {margin-top:16px;font-size:var(--font16);line-height:24px}
   .clients_area .txt_area .txt_clients span{display:inline;}
-  .clients_map{margin-top:36px}
+  .clients_map{margin:36px 80px 0}/* 26/02/24 수정 */
 }
 @media (max-width:768px) {
+  .clients_map{margin:24px 60px 0}/* 26/02/24 수정 */
   .clients_area .txt_area{text-align: center;padding:0 24px}
   .clients_area .txt_area .tit_clients{font-size:20px;line-height:28px;}
   .clients_area .txt_area .txt_clients {margin-top:8px;font-size:var(--font14);line-height:20px}
-  .clients_map{margin-top:24px}
 }

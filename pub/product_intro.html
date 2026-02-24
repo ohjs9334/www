@@ -43,8 +43,7 @@
                                 <li><a href="#none">워터펌프</a></li>
                                 <li><a href="#none">오일펌프</a></li>
                                 <li><a href="#none">써모스탯</a></li>
-                                <li><a href="#none">텐셔너</a></li>
-                                <li><a href="#none">텐셔너</a></li>
+                                <li><a href="#none">텐셔너</a></li><!-- 02/24 수정 중복삭제 -->
                                 <li><a href="#none">아이들러</a></li>
                             </ul>
                         </li>
@@ -133,8 +132,7 @@
                                 <li><a href="#none">워터펌프</a></li>
                                 <li><a href="#none">오일펌프</a></li>
                                 <li><a href="#none">써모스탯</a></li>
-                                <li><a href="#none">텐셔너</a></li>
-                                <li><a href="#none">텐셔너</a></li>
+                                <li><a href="#none">텐셔너</a></li><!-- 02/24 수정 중복삭제 -->
                                 <li><a href="#none">아이들러</a></li>
                             </ul>
                         </li>
@@ -184,54 +182,55 @@
             </div>
         </section>
         <section class="cont_box">
+            <!-- 26/02/24 .section_inner 위로 이동 -->
+            <div class="content_tab_box">
+                <!--  홈메뉴 & 현재 페이지 네임  -->
+                <div class="breadcrumb">
+                    <a href="javascript:void(0);" class="guide_home_link">
+                        <i class="guide_home"></i>
+                    </a>
+                    <span class="breadcrumb_current">제품소개</span>
+                </div>
+                <div class="inner_tab">
+                    <!-- 제품 카테고리 탭 (워터펌프 / 오일펌프 …) -->
+                    <ul class="inner_tab_list" role="tablist">
+                        <li class="inner_tab_item is-active">
+                            <button type="button" class="inner_tab_btn"
+                                    data-target="tab-waterpump" role="tab" aria-selected="true">
+                                <span>워터펌프</span>
+                            </button>
+                        </li>
+                        <li class="inner_tab_item">
+                            <button type="button" class="inner_tab_btn"
+                                    data-target="tab-oilpump" role="tab" aria-selected="false">
+                                <span>오일펌프</span>
+                            </button>
+                        </li>
+                        <li class="inner_tab_item">
+                            <button type="button" class="inner_tab_btn"
+                                    data-target="tab-thermostat" role="tab"
+                                    aria-selected="false">
+                                <span>써모스탯</span>
+                            </button>
+                        </li>
+                        <li class="inner_tab_item">
+                            <button type="button" class="inner_tab_btn"
+                                    data-target="tab-tensioner" role="tab"
+                                    aria-selected="false">
+                                <span>텐셔너</span>
+                            </button>
+                        </li>
+                        <li class="inner_tab_item">
+                            <button type="button" class="inner_tab_btn"
+                                    data-target="tab-idler" role="tab" aria-selected="false">
+                                <span>아이들러</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
            <div class="section_inner">
                <!--  메뉴박스  -->
-               <div class="content_tab_box">
-                   <!--  홈메뉴 & 현재 페이지 네임  -->
-                   <div class="breadcrumb">
-                       <a href="javascript:void(0);" class="guide_home_link">
-                           <i class="guide_home"></i>
-                       </a>
-                       <span class="breadcrumb_current">제품소개</span>
-                   </div>
-                   <div class="inner_tab">
-                       <!-- 제품 카테고리 탭 (워터펌프 / 오일펌프 …) -->
-                       <ul class="inner_tab_list" role="tablist">
-                           <li class="inner_tab_item is-active">
-                               <button type="button" class="inner_tab_btn"
-                                       data-target="tab-waterpump" role="tab" aria-selected="true">
-                                   <span>워터펌프</span>
-                               </button>
-                           </li>
-                           <li class="inner_tab_item">
-                               <button type="button" class="inner_tab_btn"
-                                       data-target="tab-oilpump" role="tab" aria-selected="false">
-                                   <span>오일펌프</span>
-                               </button>
-                           </li>
-                           <li class="inner_tab_item">
-                               <button type="button" class="inner_tab_btn"
-                                       data-target="tab-thermostat" role="tab"
-                                       aria-selected="false">
-                                   <span>써모스탯</span>
-                               </button>
-                           </li>
-                           <li class="inner_tab_item">
-                               <button type="button" class="inner_tab_btn"
-                                       data-target="tab-tensioner" role="tab"
-                                       aria-selected="false">
-                                   <span>텐셔너</span>
-                               </button>
-                           </li>
-                           <li class="inner_tab_item">
-                               <button type="button" class="inner_tab_btn"
-                                       data-target="tab-idler" role="tab" aria-selected="false">
-                                   <span>아이들러</span>
-                               </button>
-                           </li>
-                       </ul>
-                   </div>
-               </div>
                <div class="content_search_box">
                    <form class="inner_search_form" action="" method="get">
                        <label for="innerKeyword" class="blind">제품 검색</label>
@@ -241,495 +240,497 @@
                    </form>
                </div>
            </div>
+           <!-- 26/02/24 main태그 section 안으로 이동 -->
+           <!-- 탭별 컨텐츠 -->
+           <main class="product_tab_panels">
+               <section id="tab-waterpump" class="inner_tab_panel is-active">
+                   <!-- 워터펌프 탭 -->
+                   <div class="result_wrap">
+                       <div class="product_tab_result">
+                           <strong>워터펌프</strong>
+                           <p class="result_text">
+                               실린더 블록 물 재킷 부위에 볼트로 체결되며, 벨트 또는 기어에 의해 크랭크축의 구동력을 전달받아 냉각수를 순환시켜 엔진에서 발생하는
+                               열을 감소시키는 제품입니다.
+                           </p>
+                       </div>
+                   </div>
+                   <!-- 제품 메인 슬라이더 + 썸네일 묶음 -->
+                   <section class="product_main_area">
+                       <div class="product_main_inner">
+                           <!-- 메인 카드 스와이퍼 -->
+                           <div class="interval_wrap">
+                               <div class="swiper product_main_swiper">
+                                   <div class="swiper-wrapper">
+   
+                                       <!-- 1번 제품 -->
+                                       <div class="swiper-slide">
+                                           <article class="product_card">
+                                               <div class="product_card_img">
+                                                   <img src="./images/product/product_waterpump.png"
+                                                        alt="Auto Water Pump 제품 이미지 1">
+                                               </div>
+                                               <div class="product_card_info">
+                                                   <p class="product_card_category_title">워터펌프</p>
+                                                   <h3 class="product_card_title">Auto Water Pump For
+                                                       HYUNDAI/KIA</h3>
+                                                   <p class="product_card_oem">OEM : 2151023001</p>
+   
+                                                   <dl class="product_card_spec_list">
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>브랜드</strong></dt>
+                                                           <dd>SLAM</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>엔진타입</strong></dt>
+                                                           <dd>Auto, Manual</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>외형치수</strong></dt>
+                                                           <dd>58 X 58 X 129 cm</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>무게</strong></dt>
+                                                           <dd>74kg</dd>
+                                                       </div>
+                                                   </dl>
+                                                   <div class="btn_round">
+                                                       <button type="button">제품 카탈로그 보기</button>
+                                                   </div>
+                                               </div>
+                                           </article>
+                                       </div>
+   
+                                       <!-- 2번 제품 -->
+                                       <div class="swiper-slide">
+                                           <article class="product_card">
+                                               <div class="product_card_img">
+                                                   <img src="./images/product/product_waterpump.png"
+                                                        alt="Auto Water Pump 제품 이미지 2">
+                                               </div>
+                                               <div class="product_card_info">
+                                                   <p class="product_card_category_title">워터펌프</p>
+                                                   <h3 class="product_card_title">Auto Water Pump For
+                                                       KIA SUV</h3>
+                                                   <p class="product_card_oem">OEM : 2151023002</p>
+   
+                                                   <dl class="product_card_spec_list">
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>브랜드</strong></dt>
+                                                           <dd>SLAM-2</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>엔진타입</strong></dt>
+                                                           <dd>Auto, Manual</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>외형치수</strong></dt>
+                                                           <dd>58 X 58 X 129 cm</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>무게</strong></dt>
+                                                           <dd>74kg</dd>
+                                                       </div>
+                                                   </dl>
+   
+                                                   <div class="btn_round">
+                                                       <button type="button">제품 카탈로그 보기</button>
+                                                   </div>
+                                               </div>
+                                           </article>
+                                       </div>
+   
+                                       <!-- 3번 제품 -->
+                                       <div class="swiper-slide">
+                                           <article class="product_card">
+                                               <div class="product_card_img">
+                                                   <img src="./images/product/product_waterpump.png"
+                                                        alt="Auto Water Pump 제품 이미지 3">
+                                               </div>
+                                               <div class="product_card_info">
+                                                   <p class="product_card_category_title">워터펌프</p>
+                                                   <h3 class="product_card_title">Auto Water Pump
+                                                       Premium Line</h3>
+                                                   <p class="product_card_oem">OEM : 2151023003</p>
+   
+                                                   <dl class="product_card_spec_list">
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>브랜드</strong></dt>
+                                                           <dd>SLAM-3</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>엔진타입</strong></dt>
+                                                           <dd>Auto, Manual</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>외형치수</strong></dt>
+                                                           <dd>58 X 58 X 129 cm</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>무게</strong></dt>
+                                                           <dd>74kg</dd>
+                                                       </div>
+                                                   </dl>
+   
+                                                   <div class="btn_round">
+                                                       <button type="button">제품 카탈로그 보기</button>
+                                                   </div>
+                                               </div>
+                                           </article>
+                                       </div>
+                                       <!-- 4번 제품 -->
+                                       <div class="swiper-slide">
+                                           <article class="product_card">
+                                               <div class="product_card_img">
+                                                   <img src="./images/product/product_waterpump.png"
+                                                        alt="Auto Water Pump 제품 이미지 3">
+                                               </div>
+                                               <div class="product_card_info">
+                                                   <p class="product_card_category_title">워터펌프</p>
+                                                   <h3 class="product_card_title">Auto Water Pump
+                                                       Premium Line</h3>
+                                                   <p class="product_card_oem">OEM : 2151023003</p>
+   
+                                                   <dl class="product_card_spec_list">
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>브랜드</strong></dt>
+                                                           <dd>SLAM-3</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>엔진타입</strong></dt>
+                                                           <dd>Auto, Manual</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>외형치수</strong></dt>
+                                                           <dd>58 X 58 X 129 cm</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>무게</strong></dt>
+                                                           <dd>74kg</dd>
+                                                       </div>
+                                                   </dl>
+   
+                                                   <div class="btn_round">
+                                                       <button type="button">제품 카탈로그 보기</button>
+                                                   </div>
+                                               </div>
+                                           </article>
+                                       </div>
+                                       <!-- 5번 제품 -->
+                                       <div class="swiper-slide">
+                                           <article class="product_card">
+                                               <div class="product_card_img">
+                                                   <img src="./images/product/product_waterpump.png"
+                                                        alt="Auto Water Pump 제품 이미지 3">
+                                               </div>
+                                               <div class="product_card_info">
+                                                   <p class="product_card_category_title">워터펌프</p>
+                                                   <h3 class="product_card_title">Auto Water Pump
+                                                       Premium Line</h3>
+                                                   <p class="product_card_oem">OEM : 2151023003</p>
+   
+                                                   <dl class="product_card_spec_list">
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>브랜드</strong></dt>
+                                                           <dd>SLAM-3</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>엔진타입</strong></dt>
+                                                           <dd>Auto, Manual</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>외형치수</strong></dt>
+                                                           <dd>58 X 58 X 129 cm</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>무게</strong></dt>
+                                                           <dd>74kg</dd>
+                                                       </div>
+                                                   </dl>
+   
+                                                   <div class="btn_round">
+                                                       <button type="button">제품 카탈로그 보기</button>
+                                                   </div>
+                                               </div>
+                                           </article>
+                                       </div>
+                                       <!-- 6번 제품 -->
+                                       <div class="swiper-slide">
+                                           <article class="product_card">
+                                               <div class="product_card_img">
+                                                   <img src="./images/product/product_waterpump.png"
+                                                        alt="Auto Water Pump 제품 이미지 3">
+                                               </div>
+                                               <div class="product_card_info">
+                                                   <p class="product_card_category_title">워터펌프</p>
+                                                   <h3 class="product_card_title">Auto Water Pump
+                                                       Premium Line</h3>
+                                                   <p class="product_card_oem">OEM : 2151023003</p>
+   
+                                                   <dl class="product_card_spec_list">
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>브랜드</strong></dt>
+                                                           <dd>SLAM-3</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>엔진타입</strong></dt>
+                                                           <dd>Auto, Manual</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>외형치수</strong></dt>
+                                                           <dd>58 X 58 X 129 cm</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>무게</strong></dt>
+                                                           <dd>74kg</dd>
+                                                       </div>
+                                                   </dl>
+   
+                                                   <div class="btn_round">
+                                                       <button type="button">제품 카탈로그 보기</button>
+                                                   </div>
+                                               </div>
+                                           </article>
+                                       </div>
+                                       <!-- 7번 제품 -->
+                                       <div class="swiper-slide">
+                                           <article class="product_card">
+                                               <div class="product_card_img">
+                                                   <img src="./images/product/product_waterpump.png"
+                                                        alt="Auto Water Pump 제품 이미지 3">
+                                               </div>
+                                               <div class="product_card_info">
+                                                   <p class="product_card_category_title">워터펌프</p>
+                                                   <h3 class="product_card_title">Auto Water Pump
+                                                       Premium Line</h3>
+                                                   <p class="product_card_oem">OEM : 2151023003</p>
+   
+                                                   <dl class="product_card_spec_list">
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>브랜드</strong></dt>
+                                                           <dd>SLAM-3</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>엔진타입</strong></dt>
+                                                           <dd>Auto, Manual</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>외형치수</strong></dt>
+                                                           <dd>58 X 58 X 129 cm</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>무게</strong></dt>
+                                                           <dd>74kg</dd>
+                                                       </div>
+                                                   </dl>
+   
+                                                   <div class="btn_round">
+                                                       <button type="button">제품 카탈로그 보기</button>
+                                                   </div>
+                                               </div>
+                                           </article>
+                                       </div>
+                                       <!-- 8번 제품 -->
+                                       <div class="swiper-slide">
+                                           <article class="product_card">
+                                               <div class="product_card_img">
+                                                   <img src="./images/product/product_waterpump.png"
+                                                        alt="Auto Water Pump 제품 이미지 8">
+                                               </div>
+                                               <div class="product_card_info">
+                                                   <p class="product_card_category_title">워터펌프</p>
+                                                   <h3 class="product_card_title">Auto Water Pump
+                                                       Premium Line</h3>
+                                                   <p class="product_card_oem">OEM : 2151023003</p>
+   
+                                                   <dl class="product_card_spec_list">
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>브랜드</strong></dt>
+                                                           <dd>SLAM-3</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>엔진타입</strong></dt>
+                                                           <dd>Auto, Manual</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>외형치수</strong></dt>
+                                                           <dd>58 X 58 X 129 cm</dd>
+                                                       </div>
+                                                       <div class="product_card_spec_item">
+                                                           <dt><strong>무게</strong></dt>
+                                                           <dd>74kg</dd>
+                                                       </div>
+                                                   </dl>
+   
+                                                   <div class="btn_round">
+                                                       <button type="button">제품 카탈로그 보기</button>
+                                                   </div>
+                                               </div>
+                                           </article>
+                                       </div>
+   
+                                   </div>
+   
+                                   <!-- 좌우 화살표 (메인 카드) -->
+                                   <div class="swiper-button-prev product_main_prev"></div>
+                                   <div class="swiper-button-next product_main_next"></div>
+                               </div>
+                           </div>
+   
+                           <!-- 하단 썸네일 스와이퍼 -->
+                           <div class="interval_wrap sub">
+                               <div class="product_thumb_swiper">
+                                   <div class="swiper-wrapper">
+   
+                                       <!-- 1번 제품 썸네일 -->
+                                       <div class="swiper-slide">
+                                           <button type="button" class="product_thumb_item">
+                                                   <span class="product_thumb_img">
+                                                     <img src="./images/product/product_waterpump.png"
+                                                          alt="Auto Water Pump 썸네일 1">
+                                                   </span>
+                                               <span class="product_thumb_name">Auto Water Pump Auto Water Pump AutoAutoAutoAutoAutoAutoAutoAuto</span>
+                                           </button>
+                                       </div>
+   
+                                       <!-- 2번 제품 썸네일 -->
+                                       <div class="swiper-slide">
+                                           <button type="button" class="product_thumb_item">
+                                                   <span class="product_thumb_img">
+                                                     <img src="./images/product/product_waterpump.png"
+                                                          alt="Auto Water Pump 썸네일 2">
+                                                   </span>
+                                               <span class="product_thumb_name">Auto Water Pump KIA Water Pump Auto</span>
+                                           </button>
+                                       </div>
+   
+                                       <!-- 3번 제품 썸네일 -->
+                                       <div class="swiper-slide">
+                                           <button type="button" class="product_thumb_item">
+                                                   <span class="product_thumb_img">
+                                                     <img src="./images/product/product_waterpump.png"
+                                                          alt="Auto Water Pump 썸네일 3">
+                                                   </span>
+                                               <span class="product_thumb_name">Auto Water Pump Premium Water Pump Auto</span>
+                                           </button>
+                                       </div>
+   
+                                       <!-- 4번 제품 썸네일 -->
+                                       <div class="swiper-slide">
+                                           <button type="button" class="product_thumb_item">
+                                                   <span class="product_thumb_img">
+                                                     <img src="./images/product/product_waterpump.png"
+                                                          alt="Auto Water Pump 썸네일 4">
+                                                   </span>
+                                               <span class="product_thumb_name">Auto Water Pump Premium Water Pump Auto</span>
+                                           </button>
+                                       </div>
+   
+                                       <!-- 5번 제품 썸네일 -->
+                                       <div class="swiper-slide">
+                                           <button type="button" class="product_thumb_item">
+                                                   <span class="product_thumb_img">
+                                                     <img src="./images/product/product_waterpump.png"
+                                                          alt="Auto Water Pump 썸네일 5">
+                                                   </span>
+                                               <span class="product_thumb_name">Auto Water Pump Premium Water Pump Auto</span>
+                                           </button>
+                                       </div>
+   
+                                       <!-- 6번 제품 썸네일 -->
+                                       <div class="swiper-slide">
+                                           <button type="button" class="product_thumb_item">
+                                                   <span class="product_thumb_img">
+                                                     <img src="./images/product/product_waterpump.png"
+                                                          alt="Auto Water Pump 썸네일 6">
+                                                   </span>
+                                               <span class="product_thumb_name">Auto Water Pump Premium Water Pump Auto</span>
+                                           </button>
+                                       </div>
+   
+                                       <!-- 7번 제품 썸네일 -->
+                                       <div class="swiper-slide">
+                                           <button type="button" class="product_thumb_item">
+                                                   <span class="product_thumb_img">
+                                                     <img src="./images/product/product_waterpump.png"
+                                                          alt="Auto Water Pump 썸네일 7">
+                                                   </span>
+                                               <span class="product_thumb_name">Auto Water Pump Premium Water Pump Auto</span>
+                                           </button>
+                                       </div>
+   
+                                       <!-- 8번 제품 썸네일 -->
+                                       <div class="swiper-slide">
+                                           <button type="button" class="product_thumb_item">
+                                                   <span class="product_thumb_img">
+                                                     <img src="./images/product/product_waterpump.png"
+                                                          alt="Auto Water Pump 썸네일 8">
+                                                   </span>
+                                               <span class="product_thumb_name">Auto Water Pump Premium Water Pump Auto</span>
+                                           </button>
+                                       </div>
+   
+                                   </div>
+                               </div>
+                           </div>
+   
+                       </div>
+                   </section>
+               </section>
+   
+               <section id="tab-oilpump" class="inner_tab_panel">
+                   <!-- 오일펌프 탭 -->
+                   <div class="result_wrap">
+                       <div class="product_tab_result">
+                           <strong>오일펌프</strong>
+                           <p class="result_text">
+                               실린더 블록 물 재킷 부위에 볼트로 체결되며, 벨트 또는 기어에 의해 크랭크축의 구동력을 전달받아 냉각수를 순환시켜 엔진에서 발생하는
+                               열을 감소시키는 제품입니다.
+                           </p>
+                       </div>
+                   </div>
+               </section>
+   
+               <section id="tab-thermostat" class="inner_tab_panel">
+                   <!-- 써모스탯 탭 -->
+                   <div class="result_wrap">
+                       <div class="product_tab_result">
+                           <strong>써모스탯</strong>
+                           <p class="result_text">
+                               실린더 블록 물 재킷 부위에 볼트로 체결되며, 벨트 또는 기어에 의해 크랭크축의 구동력을 전달받아 냉각수를 순환시켜 엔진에서 발생하는
+                               열을 감소시키는 제품입니다.
+                           </p>
+                       </div>
+                   </div>
+               </section>
+   
+               <section id="tab-tensioner" class="inner_tab_panel">
+                   <!-- 텐셔너 탭 -->
+                   <div class="result_wrap">
+                       <div class="product_tab_result">
+                           <strong>텐셔너</strong>
+                           <p class="result_text">
+                               실린더 블록 물 재킷 부위에 볼트로 체결되며, 벨트 또는 기어에 의해 크랭크축의 구동력을 전달받아 냉각수를 순환시켜 엔진에서 발생하는
+                               열을 감소시키는 제품입니다.
+                           </p>
+                       </div>
+                   </div>
+               </section>
+   
+               <section id="tab-idler" class="inner_tab_panel">
+                   <!-- 아이들러 탭 -->
+                   <div class="result_wrap">
+                       <div class="product_tab_result">
+                           <strong>아이들러</strong>
+                           <p class="result_text">
+                               실린더 블록 물 재킷 부위에 볼트로 체결되며, 벨트 또는 기어에 의해 크랭크축의 구동력을 전달받아 냉각수를 순환시켜 엔진에서 발생하는
+                               열을 감소시키는 제품입니다.
+                           </p>
+                       </div>
+                   </div>
+               </section>
+           </main>
+           <!--// 26/02/24 main태그 section 안으로 이동 -->
         </section>
-        <!-- 탭별 컨텐츠 -->
-        <main class="product_tab_panels">
-            <section id="tab-waterpump" class="inner_tab_panel is-active">
-                <!-- 워터펌프 탭 -->
-                <div class="result_wrap">
-                    <div class="product_tab_result">
-                        <strong>워터펌프</strong>
-                        <p class="result_text">
-                            실린더 블록 물 재킷 부위에 볼트로 체결되며, 벨트 또는 기어에 의해 크랭크축의 구동력을 전달받아 냉각수를 순환시켜 엔진에서 발생하는
-                            열을 감소시키는 제품입니다.
-                        </p>
-                    </div>
-                </div>
-                <!-- 제품 메인 슬라이더 + 썸네일 묶음 -->
-                <section class="product_main_area">
-                    <div class="product_main_inner">
-                        <!-- 메인 카드 스와이퍼 -->
-                        <div class="interval_wrap">
-                            <div class="swiper product_main_swiper">
-                                <div class="swiper-wrapper">
-
-                                    <!-- 1번 제품 -->
-                                    <div class="swiper-slide">
-                                        <article class="product_card">
-                                            <div class="product_card_img">
-                                                <img src="./images/product/product_waterpump.png"
-                                                     alt="Auto Water Pump 제품 이미지 1">
-                                            </div>
-                                            <div class="product_card_info">
-                                                <p class="product_card_category_title">워터펌프</p>
-                                                <h3 class="product_card_title">Auto Water Pump For
-                                                    HYUNDAI/KIA</h3>
-                                                <p class="product_card_oem">OEM : 2151023001</p>
-
-                                                <dl class="product_card_spec_list">
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>브랜드</strong></dt>
-                                                        <dd>SLAM</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>엔진타입</strong></dt>
-                                                        <dd>Auto, Manual</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>외형치수</strong></dt>
-                                                        <dd>58 X 58 X 129 cm</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>무게</strong></dt>
-                                                        <dd>74kg</dd>
-                                                    </div>
-                                                </dl>
-                                                <div class="btn_round">
-                                                    <button type="button">제품 카탈로그 보기</button>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-
-                                    <!-- 2번 제품 -->
-                                    <div class="swiper-slide">
-                                        <article class="product_card">
-                                            <div class="product_card_img">
-                                                <img src="./images/product/product_waterpump.png"
-                                                     alt="Auto Water Pump 제품 이미지 2">
-                                            </div>
-                                            <div class="product_card_info">
-                                                <p class="product_card_category_title">워터펌프</p>
-                                                <h3 class="product_card_title">Auto Water Pump For
-                                                    KIA SUV</h3>
-                                                <p class="product_card_oem">OEM : 2151023002</p>
-
-                                                <dl class="product_card_spec_list">
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>브랜드</strong></dt>
-                                                        <dd>SLAM-2</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>엔진타입</strong></dt>
-                                                        <dd>Auto, Manual</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>외형치수</strong></dt>
-                                                        <dd>58 X 58 X 129 cm</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>무게</strong></dt>
-                                                        <dd>74kg</dd>
-                                                    </div>
-                                                </dl>
-
-                                                <div class="btn_round">
-                                                    <button type="button">제품 카탈로그 보기</button>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-
-                                    <!-- 3번 제품 -->
-                                    <div class="swiper-slide">
-                                        <article class="product_card">
-                                            <div class="product_card_img">
-                                                <img src="./images/product/product_waterpump.png"
-                                                     alt="Auto Water Pump 제품 이미지 3">
-                                            </div>
-                                            <div class="product_card_info">
-                                                <p class="product_card_category_title">워터펌프</p>
-                                                <h3 class="product_card_title">Auto Water Pump
-                                                    Premium Line</h3>
-                                                <p class="product_card_oem">OEM : 2151023003</p>
-
-                                                <dl class="product_card_spec_list">
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>브랜드</strong></dt>
-                                                        <dd>SLAM-3</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>엔진타입</strong></dt>
-                                                        <dd>Auto, Manual</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>외형치수</strong></dt>
-                                                        <dd>58 X 58 X 129 cm</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>무게</strong></dt>
-                                                        <dd>74kg</dd>
-                                                    </div>
-                                                </dl>
-
-                                                <div class="btn_round">
-                                                    <button type="button">제품 카탈로그 보기</button>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- 4번 제품 -->
-                                    <div class="swiper-slide">
-                                        <article class="product_card">
-                                            <div class="product_card_img">
-                                                <img src="./images/product/product_waterpump.png"
-                                                     alt="Auto Water Pump 제품 이미지 3">
-                                            </div>
-                                            <div class="product_card_info">
-                                                <p class="product_card_category_title">워터펌프</p>
-                                                <h3 class="product_card_title">Auto Water Pump
-                                                    Premium Line</h3>
-                                                <p class="product_card_oem">OEM : 2151023003</p>
-
-                                                <dl class="product_card_spec_list">
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>브랜드</strong></dt>
-                                                        <dd>SLAM-3</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>엔진타입</strong></dt>
-                                                        <dd>Auto, Manual</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>외형치수</strong></dt>
-                                                        <dd>58 X 58 X 129 cm</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>무게</strong></dt>
-                                                        <dd>74kg</dd>
-                                                    </div>
-                                                </dl>
-
-                                                <div class="btn_round">
-                                                    <button type="button">제품 카탈로그 보기</button>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- 5번 제품 -->
-                                    <div class="swiper-slide">
-                                        <article class="product_card">
-                                            <div class="product_card_img">
-                                                <img src="./images/product/product_waterpump.png"
-                                                     alt="Auto Water Pump 제품 이미지 3">
-                                            </div>
-                                            <div class="product_card_info">
-                                                <p class="product_card_category_title">워터펌프</p>
-                                                <h3 class="product_card_title">Auto Water Pump
-                                                    Premium Line</h3>
-                                                <p class="product_card_oem">OEM : 2151023003</p>
-
-                                                <dl class="product_card_spec_list">
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>브랜드</strong></dt>
-                                                        <dd>SLAM-3</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>엔진타입</strong></dt>
-                                                        <dd>Auto, Manual</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>외형치수</strong></dt>
-                                                        <dd>58 X 58 X 129 cm</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>무게</strong></dt>
-                                                        <dd>74kg</dd>
-                                                    </div>
-                                                </dl>
-
-                                                <div class="btn_round">
-                                                    <button type="button">제품 카탈로그 보기</button>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- 6번 제품 -->
-                                    <div class="swiper-slide">
-                                        <article class="product_card">
-                                            <div class="product_card_img">
-                                                <img src="./images/product/product_waterpump.png"
-                                                     alt="Auto Water Pump 제품 이미지 3">
-                                            </div>
-                                            <div class="product_card_info">
-                                                <p class="product_card_category_title">워터펌프</p>
-                                                <h3 class="product_card_title">Auto Water Pump
-                                                    Premium Line</h3>
-                                                <p class="product_card_oem">OEM : 2151023003</p>
-
-                                                <dl class="product_card_spec_list">
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>브랜드</strong></dt>
-                                                        <dd>SLAM-3</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>엔진타입</strong></dt>
-                                                        <dd>Auto, Manual</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>외형치수</strong></dt>
-                                                        <dd>58 X 58 X 129 cm</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>무게</strong></dt>
-                                                        <dd>74kg</dd>
-                                                    </div>
-                                                </dl>
-
-                                                <div class="btn_round">
-                                                    <button type="button">제품 카탈로그 보기</button>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- 7번 제품 -->
-                                    <div class="swiper-slide">
-                                        <article class="product_card">
-                                            <div class="product_card_img">
-                                                <img src="./images/product/product_waterpump.png"
-                                                     alt="Auto Water Pump 제품 이미지 3">
-                                            </div>
-                                            <div class="product_card_info">
-                                                <p class="product_card_category_title">워터펌프</p>
-                                                <h3 class="product_card_title">Auto Water Pump
-                                                    Premium Line</h3>
-                                                <p class="product_card_oem">OEM : 2151023003</p>
-
-                                                <dl class="product_card_spec_list">
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>브랜드</strong></dt>
-                                                        <dd>SLAM-3</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>엔진타입</strong></dt>
-                                                        <dd>Auto, Manual</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>외형치수</strong></dt>
-                                                        <dd>58 X 58 X 129 cm</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>무게</strong></dt>
-                                                        <dd>74kg</dd>
-                                                    </div>
-                                                </dl>
-
-                                                <div class="btn_round">
-                                                    <button type="button">제품 카탈로그 보기</button>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                    <!-- 8번 제품 -->
-                                    <div class="swiper-slide">
-                                        <article class="product_card">
-                                            <div class="product_card_img">
-                                                <img src="./images/product/product_waterpump.png"
-                                                     alt="Auto Water Pump 제품 이미지 8">
-                                            </div>
-                                            <div class="product_card_info">
-                                                <p class="product_card_category_title">워터펌프</p>
-                                                <h3 class="product_card_title">Auto Water Pump
-                                                    Premium Line</h3>
-                                                <p class="product_card_oem">OEM : 2151023003</p>
-
-                                                <dl class="product_card_spec_list">
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>브랜드</strong></dt>
-                                                        <dd>SLAM-3</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>엔진타입</strong></dt>
-                                                        <dd>Auto, Manual</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>외형치수</strong></dt>
-                                                        <dd>58 X 58 X 129 cm</dd>
-                                                    </div>
-                                                    <div class="product_card_spec_item">
-                                                        <dt><strong>무게</strong></dt>
-                                                        <dd>74kg</dd>
-                                                    </div>
-                                                </dl>
-
-                                                <div class="btn_round">
-                                                    <button type="button">제품 카탈로그 보기</button>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-
-                                </div>
-
-                                <!-- 좌우 화살표 (메인 카드) -->
-                                <div class="swiper-button-prev product_main_prev"></div>
-                                <div class="swiper-button-next product_main_next"></div>
-                            </div>
-                        </div>
-
-                        <!-- 하단 썸네일 스와이퍼 -->
-                        <div class="interval_wrap sub">
-                            <div class="product_thumb_swiper">
-                                <div class="swiper-wrapper">
-
-                                    <!-- 1번 제품 썸네일 -->
-                                    <div class="swiper-slide">
-                                        <button type="button" class="product_thumb_item">
-                                                <span class="product_thumb_img">
-                                                  <img src="./images/product/product_waterpump.png"
-                                                       alt="Auto Water Pump 썸네일 1">
-                                                </span>
-                                            <span class="product_thumb_name">Auto Water Pump Auto Water Pump AutoAutoAutoAutoAutoAutoAutoAuto</span>
-                                        </button>
-                                    </div>
-
-                                    <!-- 2번 제품 썸네일 -->
-                                    <div class="swiper-slide">
-                                        <button type="button" class="product_thumb_item">
-                                                <span class="product_thumb_img">
-                                                  <img src="./images/product/product_waterpump.png"
-                                                       alt="Auto Water Pump 썸네일 2">
-                                                </span>
-                                            <span class="product_thumb_name">Auto Water Pump KIA Water Pump Auto</span>
-                                        </button>
-                                    </div>
-
-                                    <!-- 3번 제품 썸네일 -->
-                                    <div class="swiper-slide">
-                                        <button type="button" class="product_thumb_item">
-                                                <span class="product_thumb_img">
-                                                  <img src="./images/product/product_waterpump.png"
-                                                       alt="Auto Water Pump 썸네일 3">
-                                                </span>
-                                            <span class="product_thumb_name">Auto Water Pump Premium Water Pump Auto</span>
-                                        </button>
-                                    </div>
-
-                                    <!-- 4번 제품 썸네일 -->
-                                    <div class="swiper-slide">
-                                        <button type="button" class="product_thumb_item">
-                                                <span class="product_thumb_img">
-                                                  <img src="./images/product/product_waterpump.png"
-                                                       alt="Auto Water Pump 썸네일 4">
-                                                </span>
-                                            <span class="product_thumb_name">Auto Water Pump Premium Water Pump Auto</span>
-                                        </button>
-                                    </div>
-
-                                    <!-- 5번 제품 썸네일 -->
-                                    <div class="swiper-slide">
-                                        <button type="button" class="product_thumb_item">
-                                                <span class="product_thumb_img">
-                                                  <img src="./images/product/product_waterpump.png"
-                                                       alt="Auto Water Pump 썸네일 5">
-                                                </span>
-                                            <span class="product_thumb_name">Auto Water Pump Premium Water Pump Auto</span>
-                                        </button>
-                                    </div>
-
-                                    <!-- 6번 제품 썸네일 -->
-                                    <div class="swiper-slide">
-                                        <button type="button" class="product_thumb_item">
-                                                <span class="product_thumb_img">
-                                                  <img src="./images/product/product_waterpump.png"
-                                                       alt="Auto Water Pump 썸네일 6">
-                                                </span>
-                                            <span class="product_thumb_name">Auto Water Pump Premium Water Pump Auto</span>
-                                        </button>
-                                    </div>
-
-                                    <!-- 7번 제품 썸네일 -->
-                                    <div class="swiper-slide">
-                                        <button type="button" class="product_thumb_item">
-                                                <span class="product_thumb_img">
-                                                  <img src="./images/product/product_waterpump.png"
-                                                       alt="Auto Water Pump 썸네일 7">
-                                                </span>
-                                            <span class="product_thumb_name">Auto Water Pump Premium Water Pump Auto</span>
-                                        </button>
-                                    </div>
-
-                                    <!-- 8번 제품 썸네일 -->
-                                    <div class="swiper-slide">
-                                        <button type="button" class="product_thumb_item">
-                                                <span class="product_thumb_img">
-                                                  <img src="./images/product/product_waterpump.png"
-                                                       alt="Auto Water Pump 썸네일 8">
-                                                </span>
-                                            <span class="product_thumb_name">Auto Water Pump Premium Water Pump Auto</span>
-                                        </button>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-            </section>
-
-            <section id="tab-oilpump" class="inner_tab_panel">
-                <!-- 오일펌프 탭 -->
-                <div class="result_wrap">
-                    <div class="product_tab_result">
-                        <strong>오일펌프</strong>
-                        <p class="result_text">
-                            실린더 블록 물 재킷 부위에 볼트로 체결되며, 벨트 또는 기어에 의해 크랭크축의 구동력을 전달받아 냉각수를 순환시켜 엔진에서 발생하는
-                            열을 감소시키는 제품입니다.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="tab-thermostat" class="inner_tab_panel">
-                <!-- 써모스탯 탭 -->
-                <div class="result_wrap">
-                    <div class="product_tab_result">
-                        <strong>써모스탯</strong>
-                        <p class="result_text">
-                            실린더 블록 물 재킷 부위에 볼트로 체결되며, 벨트 또는 기어에 의해 크랭크축의 구동력을 전달받아 냉각수를 순환시켜 엔진에서 발생하는
-                            열을 감소시키는 제품입니다.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="tab-tensioner" class="inner_tab_panel">
-                <!-- 텐셔너 탭 -->
-                <div class="result_wrap">
-                    <div class="product_tab_result">
-                        <strong>텐셔너</strong>
-                        <p class="result_text">
-                            실린더 블록 물 재킷 부위에 볼트로 체결되며, 벨트 또는 기어에 의해 크랭크축의 구동력을 전달받아 냉각수를 순환시켜 엔진에서 발생하는
-                            열을 감소시키는 제품입니다.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="tab-idler" class="inner_tab_panel">
-                <!-- 아이들러 탭 -->
-                <div class="result_wrap">
-                    <div class="product_tab_result">
-                        <strong>아이들러</strong>
-                        <p class="result_text">
-                            실린더 블록 물 재킷 부위에 볼트로 체결되며, 벨트 또는 기어에 의해 크랭크축의 구동력을 전달받아 냉각수를 순환시켜 엔진에서 발생하는
-                            열을 감소시키는 제품입니다.
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </main>
     </div>
 
 </div>

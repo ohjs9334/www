@@ -51,7 +51,7 @@ $(function(){
  
     function setPcHeader() {
         if ($(window).width() >= 1229) {
-            $(".header_area").off("mouseenter mouseleave")
+            $(".gnb").off("mouseenter mouseleave")/* 26/02/24 */
             .on("mouseenter", function(){
                 $("header").removeClass("white");
                 $("header").removeClass("white");
@@ -66,7 +66,7 @@ $(function(){
             });
         } else {
             // 모바일/태블릿에서는 hover 제거
-            $(".header_area").off("mouseenter mouseleave").parent().removeClass("active");
+            $(".gnb").off("mouseenter mouseleave").parent().removeClass("active");/* 26/02/24 */
              $("header").removeClass("white");
         }
     }

@@ -61,8 +61,7 @@ header .lnb_wrap.open{display:block;}
 .footer .footer_detail .info_row span + span::before{content:"|";margin:0 10px;color:#6e6e6e;}
 .footer .footer_copy {margin-top:48px;font-size:12px;line-height:22px;color:#6e6e6e;line-height:14px;}
 
-.footer.footer_rtl .footer_detail .info_row span + span::before{ content: none;}
-.footer.footer_rtl .footer_detail .info_row span + span::after{ content: "|"; display: inline-block; margin: 0 10px; color: #6e6e6e; }
+.footer.footer_rtl .footer_detail .info_row span + span::before{ content: "|"; display: inline-block; margin: 0 10px; color: #6e6e6e; } /* 26/02/24 수정 */
 
 .contents{padding:80px 0 100px; min-height:800px;}
 /* -----------------------------------

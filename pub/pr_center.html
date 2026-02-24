@@ -42,8 +42,7 @@
                                 <li><a href="#none">워터펌프</a></li>
                                 <li><a href="#none">오일펌프</a></li>
                                 <li><a href="#none">써모스탯</a></li>
-                                <li><a href="#none">텐셔너</a></li>
-                                <li><a href="#none">텐셔너</a></li>
+                                <li><a href="#none">텐셔너</a></li><!-- 02/24 수정 중복삭제 -->
                                 <li><a href="#none">아이들러</a></li>
                             </ul>
                         </li>
@@ -132,8 +131,7 @@
                                 <li><a href="#none">워터펌프</a></li>
                                 <li><a href="#none">오일펌프</a></li>
                                 <li><a href="#none">써모스탯</a></li>
-                                <li><a href="#none">텐셔너</a></li>
-                                <li><a href="#none">텐셔너</a></li>
+                                <li><a href="#none">텐셔너</a></li><!-- 02/24 수정 중복삭제 -->
                                 <li><a href="#none">아이들러</a></li>
                             </ul>
                         </li>
@@ -183,50 +181,52 @@
             </div>
         </section>
         <section class="cont_box">
-            <div class="section_inner">
-                <!--  메뉴박스  -->
-                <div class="content_tab_box">
-                    <!--  브레드크럼  -->
-                    <div class="breadcrumb">
-                        <a href="javascript:void(0);" class="guide_home_link">
-                            <i class="guide_home"></i>
-                        </a>
-                        <span class="breadcrumb_current">홍보센터</span>
-                    </div>
-                    <div class="inner_tab">
-                        <!-- 홍보센터 탭 리스트 -->
-                        <ul class="inner_tab_list" role="tablist">
-                            <li class="inner_tab_item is-active">
-                                <button type="button" class="inner_tab_btn"
-                                        id="tab-btn-exhibition"
-                                        data-target="panel-exhibition"
-                                        role="tab"
-                                        aria-selected="true">
-                                    <span>전시회 참가</span>
-                                </button>
-                            </li>
-                            <li class="inner_tab_item">
-                                <button type="button" class="inner_tab_btn"
-                                        id="tab-btn-catalog"
-                                        data-target="panel-catalog"
-                                        role="tab"
-                                        aria-selected="false">
-
-                                    <span>카탈로그</span>
-                                </button>
-                            </li>
-                            <li class="inner_tab_item">
-                                <button type="button" class="inner_tab_btn"
-                                        id="tab-btn-news"
-                                        data-target="panel-news"
-                                        role="tab"
-                                        aria-selected="false">
-                                    <span>뉴스</span>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
+            <!-- 26/02/24 .section_inner 위로 이동 -->
+            <!--  메뉴박스  -->
+            <div class="content_tab_box">
+                <!--  브레드크럼  -->
+                <div class="breadcrumb">
+                    <a href="javascript:void(0);" class="guide_home_link">
+                        <i class="guide_home"></i>
+                    </a>
+                    <span class="breadcrumb_current">홍보센터</span>
                 </div>
+                <div class="inner_tab">
+                    <!-- 홍보센터 탭 리스트 -->
+                    <ul class="inner_tab_list" role="tablist">
+                        <li class="inner_tab_item is-active">
+                            <button type="button" class="inner_tab_btn"
+                                    id="tab-btn-exhibition"
+                                    data-target="panel-exhibition"
+                                    role="tab"
+                                    aria-selected="true">
+                                <span>전시회 참가</span>
+                            </button>
+                        </li>
+                        <li class="inner_tab_item">
+                            <button type="button" class="inner_tab_btn"
+                                    id="tab-btn-catalog"
+                                    data-target="panel-catalog"
+                                    role="tab"
+                                    aria-selected="false">
+
+                                <span>카탈로그</span>
+                            </button>
+                        </li>
+                        <li class="inner_tab_item">
+                            <button type="button" class="inner_tab_btn"
+                                    id="tab-btn-news"
+                                    data-target="panel-news"
+                                    role="tab"
+                                    aria-selected="false">
+                                <span>뉴스</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--// 26/02/24 .section_inner 위로 이동 -->
+            <div class="section_inner">
                 <!-- 검색 -->
                 <div class="content_search_box">
                     <form class="inner_search_form" action="" method="get">
@@ -237,671 +237,681 @@
                     </form>
                 </div>
             </div>
+            <!-- 26/02/24 main태그 section 안으로 이동 -->
+            <main class="pr_list_panels">
+                <!-- 전시회 참가 패널 -->
+                <section id="panel-exhibition" class="inner_tab_panel is-active">
+                    <div class="pr_list_section js-more-wrap" data-more-step="5">
+                        <div class="total_count"><!-- 26/02/24 total_count 추가 -->
+                            총 <span class="count_num">10개</span>
+                        </div>
+                        <ul class="pr_list">
+                            <!-- 전시회 참가 리스트 -->
+                            <li class="pr_item js-more-item">
+                                <a href="./pr_center_detail.html" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">전시회 참가</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                            <li class="pr_item js-more-item">
+                                <a href="javascript:void(0);" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">전시회 참가</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                            <li class="pr_item js-more-item">
+                                <a href="javascript:void(0);" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">전시회 참가</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                            <li class="pr_item js-more-item">
+                                <a href="javascript:void(0);" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">전시회 참가</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                            <li class="pr_item js-more-item">
+                                <a href="javascript:void(0);" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">전시회 참가</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                            <li class="pr_item js-more-item">
+                                <a href="javascript:void(0);" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">전시회 참가</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                            <li class="pr_item js-more-item">
+                                <a href="javascript:void(0);" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">전시회 참가</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                            <li class="pr_item js-more-item">
+                                <a href="javascript:void(0);" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">전시회 참가</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                            <li class="pr_item js-more-item">
+                                <a href="javascript:void(0);" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">전시회 참가</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                            <li class="pr_item js-more-item">
+                                <a href="javascript:void(0);" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">전시회 참가</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                            <li class="pr_item js-more-item">
+                                <a href="javascript:void(0);" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">전시회 참가</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                            <li class="pr_item js-more-item">
+                                <a href="javascript:void(0);" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">전시회 참가</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- 더보기 버튼 -->
+                        <div class="pr_list_more">
+                            <div class="btn_round">
+                                <button type="button">더 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <!-- 카탈로그 패널 -->
+                <section id="panel-catalog" class="inner_tab_panel">
+                    <div class="pr_list_section pr_list_section--catalog js-more-wrap"
+                         data-more-step="6">
+                         <div class="total_count"><!-- 26/02/24 total_count 추가 -->
+                            총 <span class="count_num">10개</span>
+                        </div>
+                        <!-- 카탈로그 리스트-->
+                        <ul class="catalog-list">
+                            <li class="catalog-item js-more-item">
+                                <div class="pr_item_category">카탈로그</div>
+                                <h3 class="pr_item_title">홍보센터의 자료실입니다. 카탈로그를 다운받으세요. 홍보센터의 자료실입니다. 카탈로그를 다운받으세요.</h3>
+                                <div class="catalog-info">
+                                    <span class="info-type">PDF</span>
+                                    <span class="info-type">Korean</span>
+                                    <span class="info-size">2.40MB</span>
+                                </div>
+                                <div class="btn_round download-button">
+                                    <button type="button">카탈로그 다운로드</button>
+                                </div>
+                            </li>
+                            <li class="catalog-item js-more-item">
+                                <div class="catalog-category">카탈로그</div>
+                                <h3 class="pr_item_title">홍보센터의 자료실입니다. 카탈로그를 다운받으세요.</h3>
+                                <div class="catalog-info">
+                                    <span class="info-type">PDF</span>
+                                    <span class="info-type">Korean</span>
+                                    <span class="info-size">2.40MB</span>
+                                </div>
+                                <div class="btn_round download-button">
+                                    <button type="button">카탈로그 다운로드</button>
+                                </div>
+                            </li>
+                            <li class="catalog-item js-more-item">
+                                <div class="catalog-category">카탈로그</div>
+                                <h3 class="pr_item_title">홍보센터의 자료실입니다. 카탈로그를 다운받으세요.</h3>
+                                <div class="catalog-info">
+                                    <span class="info-type">PDF</span>
+                                    <span class="info-type">Korean</span>
+                                    <span class="info-size">2.40MB</span>
+                                </div>
+                                <div class="btn_round download-button">
+                                    <button type="button">카탈로그 다운로드</button>
+                                </div>
+                            </li>
+                            <li class="catalog-item js-more-item">
+                                <div class="catalog-category">카탈로그</div>
+                                <h3 class="pr_item_title">홍보센터의 자료실입니다. 카탈로그를 다운받으세요.</h3>
+                                <div class="catalog-info">
+                                    <span class="info-type">PDF</span>
+                                    <span class="info-type">Korean</span>
+                                    <span class="info-size">2.40MB</span>
+                                </div>
+                                <div class="btn_round download-button">
+                                    <button type="button">카탈로그 다운로드</button>
+                                </div>
+                            </li>
+                            <li class="catalog-item js-more-item">
+                                <div class="catalog-category">카탈로그</div>
+                                <h3 class="pr_item_title">홍보센터의 자료실입니다. 카탈로그를 다운받으세요.</h3>
+                                <div class="catalog-info">
+                                    <span class="info-type">PDF</span>
+                                    <span class="info-type">Korean</span>
+                                    <span class="info-size">2.40MB</span>
+                                </div>
+                                <div class="btn_round download-button">
+                                    <button type="button">카탈로그 다운로드</button>
+                                </div>
+                            </li>
+                            <li class="catalog-item js-more-item">
+                                <div class="catalog-category">카탈로그</div>
+                                <h3 class="pr_item_title">홍보센터의 자료실입니다. 카탈로그를 다운받으세요.</h3>
+                                <div class="catalog-info">
+                                    <span class="info-type">PDF</span>
+                                    <span class="info-type">Korean</span>
+                                    <span class="info-size">2.40MB</span>
+                                </div>
+                                <div class="btn_round download-button">
+                                    <button type="button">카탈로그 다운로드</button>
+                                </div>
+                            </li>
+                            <li class="catalog-item js-more-item">
+                                <div class="catalog-category">카탈로그</div>
+                                <h3 class="pr_item_title">홍보센터의 자료실입니다. 카탈로그를 다운받으세요.</h3>
+                                <div class="catalog-info">
+                                    <span class="info-type">PDF</span>
+                                    <span class="info-type">Korean</span>
+                                    <span class="info-size">2.40MB</span>
+                                </div>
+                                <div class="btn_round download-button">
+                                    <button type="button">카탈로그 다운로드</button>
+                                </div>
+                            </li>
+                            <li class="catalog-item js-more-item">
+                                <div class="catalog-category">카탈로그</div>
+                                <h3 class="pr_item_title">홍보센터의 자료실입니다. 카탈로그를 다운받으세요.</h3>
+                                <div class="catalog-info">
+                                    <span class="info-type">PDF</span>
+                                    <span class="info-type">Korean</span>
+                                    <span class="info-size">2.40MB</span>
+                                </div>
+                                <div class="btn_round download-button">
+                                    <button type="button">카탈로그 다운로드</button>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 더보기 버튼 -->
+                        <div class="pr_list_more">
+                            <div class="btn_round">
+                                <button type="button">더 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <!-- 뉴스 패널 -->
+                <section id="panel-news" class="inner_tab_panel">
+                    <!-- 뉴스 전용 클래스 분기 사용 -->
+                    <div class="pr_list_section pr_list_section--news js-more-wrap"
+                         data-more-step="6">
+                        <div class="total_count"><!-- 26/02/24 total_count 추가 -->
+                            총 <span class="count_num">10개</span>
+                        </div>
+                        <ul class="pr_list">
+                            <li class="pr_item js-more-item">
+                                <a href="./pr_center_news_detail.html" class="pr_item_link">
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">뉴스</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 뉴스 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                            <li class="pr_item js-more-item">
+                                <a href="javascript:void(0);" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">뉴스</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 뉴스 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                            <li class="pr_item js-more-item">
+                                <a href="javascript:void(0);" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">뉴스</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 뉴스 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                            <li class="pr_item js-more-item">
+                                <a href="javascript:void(0);" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">뉴스</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 뉴스 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                            <li class="pr_item js-more-item">
+                                <a href="javascript:void(0);" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">뉴스</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 뉴스 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                            <li class="pr_item js-more-item">
+                                <a href="javascript:void(0);" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">뉴스</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 뉴스 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                            <li class="pr_item js-more-item">
+                                <a href="javascript:void(0);" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">뉴스</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 뉴스 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                            <li class="pr_item js-more-item">
+                                <a href="javascript:void(0);" class="pr_item_link">
+    
+                                    <!-- 썸네일 영역 -->
+                                    <div class="pr_item_thumb">
+                                        <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
+                                    </div>
+    
+                                    <!-- 텍스트 영역 -->
+                                    <div class="pr_item_body">
+                                        <p class="pr_item_category">뉴스</p>
+                                        <h3 class="pr_item_title">
+                                            뉴오토정밀 뉴스 페이지입니다. 제목을 입력해 주세요.
+                                        </h3>
+                                        <p class="pr_item_desc">
+                                            뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
+                                            SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
+                                            성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
+                                            ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
+                                            신뢰받는 기업으로 성장하고 있습니다.
+                                        </p>
+                                        <p class="pr_item_date">2024.07.15.</p>
+                                    </div>
+    
+                                </a>
+                            </li>
+                        </ul>
+    
+                        <div class="pr_list_more">
+                            <div class="btn_round">
+                                <button type="button">더 보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+            </main>
+            <!--// 26/02/24 main태그 section 안으로 이동 -->
         </section>
-        <main class="pr_list_panels">
-            <!-- 전시회 참가 패널 -->
-            <section id="panel-exhibition" class="inner_tab_panel is-active">
-                <div class="pr_list_section js-more-wrap" data-more-step="5">
-                    <ul class="pr_list">
-                        <!-- 전시회 참가 리스트 -->
-                        <li class="pr_item js-more-item">
-                            <a href="./pr_center_detail.html" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">전시회 참가</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">전시회 참가</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">전시회 참가</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">전시회 참가</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">전시회 참가</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">전시회 참가</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">전시회 참가</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">전시회 참가</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">전시회 참가</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">전시회 참가</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">전시회 참가</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">전시회 참가</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 전시회 참가 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- 더보기 버튼 -->
-                    <div class="pr_list_more">
-                        <div class="btn_round">
-                            <button type="button">더 보기</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 카탈로그 패널 -->
-            <section id="panel-catalog" class="inner_tab_panel">
-                <div class="pr_list_section pr_list_section--catalog js-more-wrap"
-                     data-more-step="6">
-                    <!-- 카탈로그 리스트-->
-                    <ul class="catalog-list">
-                        <li class="catalog-item js-more-item">
-                            <div class="pr_item_category">카탈로그</div>
-                            <h3 class="pr_item_title">홍보센터의 자료실입니다. 카탈로그를 다운받으세요. 홍보센터의 자료실입니다. 카탈로그를 다운받으세요.</h3>
-                            <div class="catalog-info">
-                                <span class="info-type">PDF</span>
-                                <span class="info-type">Korean</span>
-                                <span class="info-size">2.40MB</span>
-                            </div>
-                            <div class="btn_round download-button">
-                                <button type="button">카탈로그 다운로드</button>
-                            </div>
-                        </li>
-                        <li class="catalog-item js-more-item">
-                            <div class="catalog-category">카탈로그</div>
-                            <h3 class="pr_item_title">홍보센터의 자료실입니다. 카탈로그를 다운받으세요.</h3>
-                            <div class="catalog-info">
-                                <span class="info-type">PDF</span>
-                                <span class="info-type">Korean</span>
-                                <span class="info-size">2.40MB</span>
-                            </div>
-                            <div class="btn_round download-button">
-                                <button type="button">카탈로그 다운로드</button>
-                            </div>
-                        </li>
-                        <li class="catalog-item js-more-item">
-                            <div class="catalog-category">카탈로그</div>
-                            <h3 class="pr_item_title">홍보센터의 자료실입니다. 카탈로그를 다운받으세요.</h3>
-                            <div class="catalog-info">
-                                <span class="info-type">PDF</span>
-                                <span class="info-type">Korean</span>
-                                <span class="info-size">2.40MB</span>
-                            </div>
-                            <div class="btn_round download-button">
-                                <button type="button">카탈로그 다운로드</button>
-                            </div>
-                        </li>
-                        <li class="catalog-item js-more-item">
-                            <div class="catalog-category">카탈로그</div>
-                            <h3 class="pr_item_title">홍보센터의 자료실입니다. 카탈로그를 다운받으세요.</h3>
-                            <div class="catalog-info">
-                                <span class="info-type">PDF</span>
-                                <span class="info-type">Korean</span>
-                                <span class="info-size">2.40MB</span>
-                            </div>
-                            <div class="btn_round download-button">
-                                <button type="button">카탈로그 다운로드</button>
-                            </div>
-                        </li>
-                        <li class="catalog-item js-more-item">
-                            <div class="catalog-category">카탈로그</div>
-                            <h3 class="pr_item_title">홍보센터의 자료실입니다. 카탈로그를 다운받으세요.</h3>
-                            <div class="catalog-info">
-                                <span class="info-type">PDF</span>
-                                <span class="info-type">Korean</span>
-                                <span class="info-size">2.40MB</span>
-                            </div>
-                            <div class="btn_round download-button">
-                                <button type="button">카탈로그 다운로드</button>
-                            </div>
-                        </li>
-                        <li class="catalog-item js-more-item">
-                            <div class="catalog-category">카탈로그</div>
-                            <h3 class="pr_item_title">홍보센터의 자료실입니다. 카탈로그를 다운받으세요.</h3>
-                            <div class="catalog-info">
-                                <span class="info-type">PDF</span>
-                                <span class="info-type">Korean</span>
-                                <span class="info-size">2.40MB</span>
-                            </div>
-                            <div class="btn_round download-button">
-                                <button type="button">카탈로그 다운로드</button>
-                            </div>
-                        </li>
-                        <li class="catalog-item js-more-item">
-                            <div class="catalog-category">카탈로그</div>
-                            <h3 class="pr_item_title">홍보센터의 자료실입니다. 카탈로그를 다운받으세요.</h3>
-                            <div class="catalog-info">
-                                <span class="info-type">PDF</span>
-                                <span class="info-type">Korean</span>
-                                <span class="info-size">2.40MB</span>
-                            </div>
-                            <div class="btn_round download-button">
-                                <button type="button">카탈로그 다운로드</button>
-                            </div>
-                        </li>
-                        <li class="catalog-item js-more-item">
-                            <div class="catalog-category">카탈로그</div>
-                            <h3 class="pr_item_title">홍보센터의 자료실입니다. 카탈로그를 다운받으세요.</h3>
-                            <div class="catalog-info">
-                                <span class="info-type">PDF</span>
-                                <span class="info-type">Korean</span>
-                                <span class="info-size">2.40MB</span>
-                            </div>
-                            <div class="btn_round download-button">
-                                <button type="button">카탈로그 다운로드</button>
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- 더보기 버튼 -->
-                    <div class="pr_list_more">
-                        <div class="btn_round">
-                            <button type="button">더 보기</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 뉴스 패널 -->
-            <section id="panel-news" class="inner_tab_panel">
-                <!-- 뉴스 전용 클래스 분기 사용 -->
-                <div class="pr_list_section pr_list_section--news js-more-wrap"
-                     data-more-step="6">
-
-                    <ul class="pr_list">
-                        <li class="pr_item js-more-item">
-                            <a href="./pr_center_news_detail.html" class="pr_item_link">
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">뉴스</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 뉴스 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">뉴스</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 뉴스 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">뉴스</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 뉴스 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">뉴스</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 뉴스 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">뉴스</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 뉴스 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">뉴스</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 뉴스 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">뉴스</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 뉴스 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="pr_item js-more-item">
-                            <a href="javascript:void(0);" class="pr_item_link">
-
-                                <!-- 썸네일 영역 -->
-                                <div class="pr_item_thumb">
-                                    <img src="./images/sample_new_img.png" alt="뉴오토정밀 로고">
-                                </div>
-
-                                <!-- 텍스트 영역 -->
-                                <div class="pr_item_body">
-                                    <p class="pr_item_category">뉴스</p>
-                                    <h3 class="pr_item_title">
-                                        뉴오토정밀 뉴스 페이지입니다. 제목을 입력해 주세요.
-                                    </h3>
-                                    <p class="pr_item_desc">
-                                        뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과 ONE-STOP
-                                        SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게 신뢰받는 기업으로
-                                        성장하고 있습니다. 뉴오토정밀은 알루미늄 다이캐스팅 기술을 기반으로 자동차 엔진부품의 설계 및 제작과
-                                        ONE-STOP SYSTEM(맞춤형 관리 시스템)을 구축하여 고객 중심의 기술개발과 경영혁신으로 고객에게
-                                        신뢰받는 기업으로 성장하고 있습니다.
-                                    </p>
-                                    <p class="pr_item_date">2024.07.15.</p>
-                                </div>
-
-                            </a>
-                        </li>
-                    </ul>
-
-                    <div class="pr_list_more">
-                        <div class="btn_round">
-                            <button type="button">더 보기</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </main>
     </div>
 
 

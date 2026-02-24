@@ -37,7 +37,7 @@ body.no-scroll {overflow: hidden;}
     z-index: 10;
     overflow: visible !important;
 }
-.modal_header{ position: relative;top: 0;z-index: 12;background: #fff;display: flex;align-items: center;justify-content: flex-end;padding: 24px 24px 0;box-sizing: border-box;border-top-left-radius: 18px;border-top-right-radius: 18px;}
+.modal_header{ position: relative;top: 0;z-index: 12;background: #fff;display: flex;align-items: center;justify-content: flex-end;padding: 64px 24px 0;box-sizing: border-box;border-top-left-radius: 18px;border-top-right-radius: 18px;}/* 26/02/24 수정 */
 .modal_practice .modal_close{width: 52px;height: 52px;background: url("../images/modal_img/close.svg") center / 18px no-repeat;border: none; cursor: pointer;}
 .modal_content {
     overflow-y: visible !important; 

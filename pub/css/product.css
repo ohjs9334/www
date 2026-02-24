@@ -1,14 +1,15 @@
 /* --------------------
   Reset CSS
   -------------------- */
-@import url(./reset.css);
+  /* 26/02/24 import 삭제 */
+/* @import url(./reset.css);
 @import url(./common.css);
-@import url(./layout.css);
+@import url(./layout.css); */
 
 /* -----------------------------------
    제품소개 페이지
 ----------------------------------- */
-.contents.products_wrap{overflow: hidden;}
+/* 26/02/24 삭제 */
 .interval_wrap{margin: 0px;}
 .interval_wrap.sub{margin: 0 100px;}
 .visual_inner{background: url("../../pub/images/product/product_back.png") center / cover no-repeat;height: 452px;}
@@ -24,7 +25,7 @@
 
 /* 전체 스와이퍼 영역: 화살표 포함 1712px */
 .product_tab_panels .product_main_area{margin:64px auto 0;}
-.product_tab_panels .product_main_inner{margin:0 auto;display:flex;flex-direction:column;gap:24px;}
+.product_tab_panels .product_main_inner{margin:0 auto;display:flex;flex-direction:column;gap:24px;overflow: hidden;}/* 26/02/24 수정 */
 .product_tab_panels .product_main_swiper {
   width: 100%;
   max-width: 100%;
