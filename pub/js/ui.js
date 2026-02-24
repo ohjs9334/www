@@ -1,13 +1,52 @@
-function toggleRTL() {
+function toggleRTL2(n) {
+  
+	
   document.querySelectorAll('p, span, strong, em, a, li, h1, h2, h3, h4, h5, h6, button, label').forEach(el => {
 
     const hasImage = el.querySelector('img, svg, video, canvas');
 
-    if (!hasImage && el.textContent.trim() !== '') {
+    if (!hasImage && el.textContent.trim() !== '' ) {
       el.classList.toggle('rtl_txt');
     }
   });
 }
+
+function toggleRTL(n) {
+
+  const targets = document.querySelectorAll(
+    'p, span, strong, em, a, li, h1, h2, h3, h4, h5, h6, button, label'
+  );
+
+  targets.forEach(el => {
+
+    const hasImage = el.querySelector('img, svg, video, canvas');
+    const hasText  = el.textContent.trim() !== '';
+
+    // 이미지가 없고 텍스트가 있는 경우만 대상
+    if (!hasImage && hasText) {
+
+      if (n === 'UAE') {
+        // 아랍어일 때만 RTL 적용
+        el.classList.add('rtl_txt');
+      } else {
+        // 다른 언어면 무조건 원상복구
+        el.classList.remove('rtl_txt');
+      }
+
+    }
+  });
+
+  const footer = document.querySelector('.footer');
+
+  if (n === 'UAE') {
+    // 아랍어: 푸터 상자에 footer_rtl을 붙임 (구분선 정렬, 레이아웃 반전됨)
+    if (footer) footer.classList.add('footer_rtl');
+  } else {
+    // 그 외: footer_rtl을 떼어냄 (원상복구)
+    if (footer) footer.classList.remove('footer_rtl');
+  }
+}
+
 $(function(){
  
     function setPcHeader() {
@@ -38,9 +77,9 @@ $(function(){
     // 리사이즈 시 PC <-> 모바일 대응
     $(window).on("resize", setPcHeader);
 
-    // 메인페이지 헤더 스크롤 이벤트
     $(window).on("scroll", function() {
-        if ($(window).width() >= 1229 && $(".wrap").hasClass("main_wrap")) {
+        // 모든 해상도에서 메인페이지라면 스크롤 체크를 하도록 수정
+        if ($(".wrap").hasClass("main_wrap")) {
             if ($(window).scrollTop() === 0) {
                 $("header").addClass("white");
             } else {
